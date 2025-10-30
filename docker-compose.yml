@@ -14,7 +14,7 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     networks:
       - odoo-network
-    restart: unless-stopped
+    restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-odoo}"]
       interval: 10s
@@ -42,7 +42,7 @@ services:
       - "${ODOO_CHAT_PORT:-8072}:8072"
     networks:
       - odoo-network
-    restart: unless-stopped
+    restart: always
     command: --
       --dev=all
       --log-level=debug
@@ -62,7 +62,7 @@ services:
       - "${PGADMIN_PORT:-5050}:80"
     networks:
       - odoo-network
-    restart: unless-stopped
+    restart: always
     depends_on:
       - db
 
@@ -77,7 +77,7 @@ services:
       - "${NGINX_HTTPS_PORT:-443}:443"
     networks:
       - odoo-network
-    restart: unless-stopped
+    restart: always
     depends_on:
       - odoo
 
