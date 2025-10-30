@@ -121,3 +121,6 @@ addons/
 *.db
 *.sqlite
 *.sqlite3
+
+# Credentials
+CREDENTIALS.md
