@@ -105,7 +105,6 @@ dmypy.json
 *.pyo
 filestore/
 sessions/
-addons/
 *.pot
 *.log
 
