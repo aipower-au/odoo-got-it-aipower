@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Properties - New Status -->
+        <record id="property_1" model="estate.property">
+            <field name="name">Modern Villa in Bondi</field>
+            <field name="description">Stunning modern villa with ocean views, high-end finishes throughout</field>
+            <field name="postcode">2026</field>
+            <field name="expected_price">2500000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">350</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">200</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_pool'), ref('property_tag_sea_view')])]"/>
+        </record>
+
+        <record id="property_2" model="estate.property">
+            <field name="name">Cozy Apartment in Surry Hills</field>
+            <field name="description">Charming 2-bedroom apartment in the heart of Surry Hills</field>
+            <field name="postcode">2010</field>
+            <field name="expected_price">850000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">85</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_city_center'), ref('property_tag_renovated')])]"/>
+        </record>
+
+        <record id="property_3" model="estate.property">
+            <field name="name">Luxury Penthouse Sydney CBD</field>
+            <field name="description">Ultra-luxury penthouse with panoramic city and harbor views</field>
+            <field name="postcode">2000</field>
+            <field name="expected_price">5800000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">420</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_prime_location'), ref('property_tag_smart_home'), ref('property_tag_gym')])]"/>
+        </record>
+
+        <record id="property_4" model="estate.property">
+            <field name="name">Family House in Parramatta</field>
+            <field name="description">Spacious family home with large backyard, perfect for kids</field>
+            <field name="postcode">2150</field>
+            <field name="expected_price">1200000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">220</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">300</field>
+            <field name="garden_orientation">south</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_pet_friendly'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_5" model="estate.property">
+            <field name="name">Studio in Newtown</field>
+            <field name="description">Compact studio in vibrant Newtown, close to everything</field>
+            <field name="postcode">2042</field>
+            <field name="expected_price">450000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">42</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_studio"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_furnished'), ref('property_tag_city_center')])]"/>
+        </record>
+
+        <record id="property_6" model="estate.property">
+            <field name="name">Townhouse in Paddington</field>
+            <field name="description">Elegant Victorian townhouse with period features</field>
+            <field name="postcode">2021</field>
+            <field name="expected_price">1950000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">180</field>
+            <field name="facades">2</field>
+            <field name="garage">False</field>
+            <field name="garden">True</field>
+            <field name="garden_area">50</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_prime_location'), ref('property_tag_renovated')])]"/>
+        </record>
+
+        <record id="property_7" model="estate.property">
+            <field name="name">Waterfront Apartment Manly</field>
+            <field name="description">Breathtaking waterfront views, walk to Manly Beach</field>
+            <field name="postcode">2095</field>
+            <field name="expected_price">1650000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">145</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_waterfront'), ref('property_tag_sea_view'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_8" model="estate.property">
+            <field name="name">New Construction Duplex Chatswood</field>
+            <field name="description">Brand new duplex, never lived in, modern design</field>
+            <field name="postcode">2067</field>
+            <field name="expected_price">1750000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">240</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">120</field>
+            <field name="garden_orientation">east</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new_construction'), ref('property_tag_smart_home'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_9" model="estate.property">
+            <field name="name">Industrial Loft Chippendale</field>
+            <field name="description">Converted warehouse with exposed brick and high ceilings</field>
+            <field name="postcode">2008</field>
+            <field name="expected_price">980000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">160</field>
+            <field name="facades">3</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_city_center')])]"/>
+        </record>
+
+        <record id="property_10" model="estate.property">
+            <field name="name">Beachfront Bungalow Cronulla</field>
+            <field name="description">Charming beachfront bungalow, steps to the sand</field>
+            <field name="postcode">2230</field>
+            <field name="expected_price">1450000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">130</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">180</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_bungalow"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_waterfront'), ref('property_tag_sea_view')])]"/>
+        </record>
+
+        <!-- Properties with Offers Received -->
+        <record id="property_11" model="estate.property">
+            <field name="name">Modern Condo Barangaroo</field>
+            <field name="description">Contemporary condo in Sydneys newest precinct</field>
+            <field name="postcode">2000</field>
+            <field name="expected_price">1100000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">95</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_condo"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new_construction'), ref('property_tag_gym'), ref('property_tag_security')])]"/>
+        </record>
+
+        <record id="property_12" model="estate.property">
+            <field name="name">Elegant House Mosman</field>
+            <field name="description">Prestigious address, harbor glimpses, perfect family home</field>
+            <field name="postcode">2088</field>
+            <field name="expected_price">3200000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">380</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">250</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_pool'), ref('property_tag_prime_location')])]"/>
+        </record>
+
+        <record id="property_13" model="estate.property">
+            <field name="name">Renovated Apartment Darlinghurst</field>
+            <field name="description">Fully renovated with designer finishes</field>
+            <field name="postcode">2010</field>
+            <field name="expected_price">780000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">75</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_furnished')])]"/>
+        </record>
+
+        <record id="property_14" model="estate.property">
+            <field name="name">Mountain View Villa Katoomba</field>
+            <field name="description">Stunning Blue Mountains retreat with spectacular views</field>
+            <field name="postcode">2780</field>
+            <field name="expected_price">1850000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">280</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">500</field>
+            <field name="garden_orientation">west</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_mountain_view'), ref('property_tag_eco_friendly')])]"/>
+        </record>
+
+        <record id="property_15" model="estate.property">
+            <field name="name">Investment Apartment Strathfield</field>
+            <field name="description">Great rental yield, close to station</field>
+            <field name="postcode">2135</field>
+            <field name="expected_price">650000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">70</field>
+            <field name="facades">1</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_investment'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_16" model="estate.property">
+            <field name="name">Gated Estate House Castle Hill</field>
+            <field name="description">Security and privacy in exclusive gated community</field>
+            <field name="postcode">2154</field>
+            <field name="expected_price">2100000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">340</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">400</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_gated_community'), ref('property_tag_security'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_17" model="estate.property">
+            <field name="name">Smart Penthouse Pyrmont</field>
+            <field name="description">Fully automated smart home technology throughout</field>
+            <field name="postcode">2009</field>
+            <field name="expected_price">2600000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">200</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_smart_home'), ref('property_tag_luxury'), ref('property_tag_gym')])]"/>
+        </record>
+
+        <record id="property_18" model="estate.property">
+            <field name="name">Eco Townhouse Rozelle</field>
+            <field name="description">Sustainable living with solar panels and rainwater tanks</field>
+            <field name="postcode">2039</field>
+            <field name="expected_price">1350000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">165</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">80</field>
+            <field name="garden_orientation">south</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_eco_friendly'), ref('property_tag_renovated')])]"/>
+        </record>
+
+        <record id="property_19" model="estate.property">
+            <field name="name">Luxury Duplex Double Bay</field>
+            <field name="description">Exquisite finishes in prestigious Double Bay</field>
+            <field name="postcode">2028</field>
+            <field name="expected_price">4500000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">400</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">150</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_prime_location'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_20" model="estate.property">
+            <field name="name">Creative Loft Alexandria</field>
+            <field name="description">Perfect for artists, open plan with great natural light</field>
+            <field name="postcode">2015</field>
+            <field name="expected_price">890000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">140</field>
+            <field name="facades">2</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <!-- More New Properties for variety -->
+        <record id="property_21" model="estate.property">
+            <field name="name">Executive Apartment North Sydney</field>
+            <field name="description">Prime CBD location, walk to everything</field>
+            <field name="postcode">2060</field>
+            <field name="expected_price">950000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">88</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_furnished'), ref('property_tag_gym')])]"/>
+        </record>
+
+        <record id="property_22" model="estate.property">
+            <field name="name">Family Villa Hunters Hill</field>
+            <field name="description">Prestigious peninsula location, water views</field>
+            <field name="postcode">2110</field>
+            <field name="expected_price">3600000</field>
+            <field name="bedrooms">6</field>
+            <field name="living_area">450</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">600</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_pool'), ref('property_tag_security')])]"/>
+        </record>
+
+        <record id="property_23" model="estate.property">
+            <field name="name">Urban Studio Redfern</field>
+            <field name="description">Modern studio in trendy Redfern</field>
+            <field name="postcode">2016</field>
+            <field name="expected_price">480000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">38</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_studio"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_city_center'), ref('property_tag_investment')])]"/>
+        </record>
+
+        <record id="property_24" model="estate.property">
+            <field name="name">Heritage House Balmain</field>
+            <field name="description">Character-filled heritage home with period features</field>
+            <field name="postcode">2041</field>
+            <field name="expected_price">2250000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">200</field>
+            <field name="facades">3</field>
+            <field name="garage">False</field>
+            <field name="garden">True</field>
+            <field name="garden_area">120</field>
+            <field name="garden_orientation">east</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_prime_location'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <record id="property_25" model="estate.property">
+            <field name="name">Seaside Condo Coogee</field>
+            <field name="description">Minutes to Coogee Beach, resort-style living</field>
+            <field name="postcode">2034</field>
+            <field name="expected_price">1180000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">92</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_condo"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_sea_view'), ref('property_tag_pool'), ref('property_tag_gym')])]"/>
+        </record>
+
+        <record id="property_26" model="estate.property">
+            <field name="name">Contemporary Townhouse Glebe</field>
+            <field name="description">Designer townhouse in vibrant Glebe</field>
+            <field name="postcode">2037</field>
+            <field name="expected_price">1620000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">175</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">60</field>
+            <field name="garden_orientation">south</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_city_center')])]"/>
+        </record>
+
+        <record id="property_27" model="estate.property">
+            <field name="name">Harbour View Penthouse Kirribilli</field>
+            <field name="description">Unobstructed harbour views, absolute luxury</field>
+            <field name="postcode">2061</field>
+            <field name="expected_price">8500000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">380</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_smart_home'), ref('property_tag_security')])]"/>
+        </record>
+
+        <record id="property_28" model="estate.property">
+            <field name="name">Spacious Duplex Eastwood</field>
+            <field name="description">Perfect for growing families, close to schools</field>
+            <field name="postcode">2122</field>
+            <field name="expected_price">1580000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">235</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">140</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_pet_friendly'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_29" model="estate.property">
+            <field name="name">Artist Loft Waterloo</field>
+            <field name="description">Warehouse conversion with soaring ceilings</field>
+            <field name="postcode">2017</field>
+            <field name="expected_price">820000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">125</field>
+            <field name="facades">2</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_city_center'), ref('property_tag_renovated')])]"/>
+        </record>
+
+        <record id="property_30" model="estate.property">
+            <field name="name">Coastal Bungalow Avalon</field>
+            <field name="description">Relaxed coastal lifestyle, beach at your doorstep</field>
+            <field name="postcode">2107</field>
+            <field name="expected_price">1680000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">140</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">220</field>
+            <field name="garden_orientation">east</field>
+            <field name="property_type_id" ref="property_type_bungalow"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_waterfront'), ref('property_tag_sea_view'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <!-- Additional Properties (31-60) -->
+        <record id="property_31" model="estate.property">
+            <field name="name">Luxury House Vaucluse</field>
+            <field name="description">Absolute harbour frontage, private jetty</field>
+            <field name="postcode">2030</field>
+            <field name="expected_price">12000000</field>
+            <field name="bedrooms">6</field>
+            <field name="living_area">650</field>
+            <field name="facades">5</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">800</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_pool'), ref('property_tag_prime_location')])]"/>
+        </record>
+
+        <record id="property_32" model="estate.property">
+            <field name="name">Compact Apartment Ultimo</field>
+            <field name="description">Perfect for student or young professional</field>
+            <field name="postcode">2007</field>
+            <field name="expected_price">520000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">48</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_studio"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_investment'), ref('property_tag_furnished')])]"/>
+        </record>
+
+        <record id="property_33" model="estate.property">
+            <field name="name">Grand House Woollahra</field>
+            <field name="description">Historic mansion in exclusive Woollahra</field>
+            <field name="postcode">2025</field>
+            <field name="expected_price">7200000</field>
+            <field name="bedrooms">7</field>
+            <field name="living_area">550</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">450</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_prime_location'), ref('property_tag_pool'), ref('property_tag_security')])]"/>
+        </record>
+
+        <record id="property_34" model="estate.property">
+            <field name="name">New Condo Rhodes</field>
+            <field name="description">Brand new development with river views</field>
+            <field name="postcode">2138</field>
+            <field name="expected_price">730000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">78</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_condo"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new_construction'), ref('property_tag_gym'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_35" model="estate.property">
+            <field name="name">Victorian Townhouse Annandale</field>
+            <field name="description">Beautifully restored Victorian terrace</field>
+            <field name="postcode">2038</field>
+            <field name="expected_price">1420000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">155</field>
+            <field name="facades">2</field>
+            <field name="garage">False</field>
+            <field name="garden">True</field>
+            <field name="garden_area">40</field>
+            <field name="garden_orientation">south</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <record id="property_36" model="estate.property">
+            <field name="name">Sky Penthouse Darling Harbour</field>
+            <field name="description">60th floor, spectacular 360-degree views</field>
+            <field name="postcode">2000</field>
+            <field name="expected_price">9500000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">500</field>
+            <field name="facades">5</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_smart_home'), ref('property_tag_waterfront'), ref('property_tag_gym')])]"/>
+        </record>
+
+        <record id="property_37" model="estate.property">
+            <field name="name">Modern Duplex Ryde</field>
+            <field name="description">Contemporary design with quality finishes</field>
+            <field name="postcode">2112</field>
+            <field name="expected_price">1390000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">215</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">110</field>
+            <field name="garden_orientation">west</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_new_construction'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_38" model="estate.property">
+            <field name="name">Converted Loft Pyrmont</field>
+            <field name="description">Industrial chic meets modern luxury</field>
+            <field name="postcode">2009</field>
+            <field name="expected_price">1150000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">155</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_city_center'), ref('property_tag_smart_home')])]"/>
+        </record>
+
+        <record id="property_39" model="estate.property">
+            <field name="name">Beach Bungalow Mona Vale</field>
+            <field name="description">Classic beach house, renovators dream</field>
+            <field name="postcode">2103</field>
+            <field name="expected_price">1520000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">115</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">280</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_bungalow"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_sea_view'), ref('property_tag_investment')])]"/>
+        </record>
+
+        <record id="property_40" model="estate.property">
+            <field name="name">Premium Apartment Neutral Bay</field>
+            <field name="description">Spacious living with harbor views</field>
+            <field name="postcode">2089</field>
+            <field name="expected_price">1280000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">125</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_waterfront'), ref('property_tag_parking'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <!-- Properties 41-50 - Mix of states -->
+        <record id="property_41" model="estate.property">
+            <field name="name">Executive Villa Lane Cove</field>
+            <field name="description">Prestige location with leafy outlook</field>
+            <field name="postcode">2066</field>
+            <field name="expected_price">2950000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">365</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">320</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_pool'), ref('property_tag_security')])]"/>
+        </record>
+
+        <record id="property_42" model="estate.property">
+            <field name="name">City Studio Haymarket</field>
+            <field name="description">Central location, perfect investment</field>
+            <field name="postcode">2000</field>
+            <field name="expected_price">490000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">40</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_studio"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_city_center'), ref('property_tag_investment')])]"/>
+        </record>
+
+        <record id="property_43" model="estate.property">
+            <field name="name">Family Home Epping</field>
+            <field name="description">Quiet street, excellent schools nearby</field>
+            <field name="postcode">2121</field>
+            <field name="expected_price">1680000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">245</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">280</field>
+            <field name="garden_orientation">east</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_pet_friendly'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_44" model="estate.property">
+            <field name="name">Waterside Condo Wentworth Point</field>
+            <field name="description">Modern condo with marina views</field>
+            <field name="postcode">2127</field>
+            <field name="expected_price">880000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">82</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_condo"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_waterfront'), ref('property_tag_gym'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_45" model="estate.property">
+            <field name="name">Chic Townhouse Erskineville</field>
+            <field name="description">Low-maintenance inner city living</field>
+            <field name="postcode">2043</field>
+            <field name="expected_price">1240000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">148</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">35</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_city_center')])]"/>
+        </record>
+
+        <record id="property_46" model="estate.property">
+            <field name="name">Prestige Penthouse Potts Point</field>
+            <field name="description">Art deco building, completely renovated</field>
+            <field name="postcode">2011</field>
+            <field name="expected_price">3400000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">240</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_renovated'), ref('property_tag_prime_location')])]"/>
+        </record>
+
+        <record id="property_47" model="estate.property">
+            <field name="name">Quiet Duplex Concord</field>
+            <field name="description">Peaceful location, family-friendly</field>
+            <field name="postcode">2137</field>
+            <field name="expected_price">1480000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">220</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">160</field>
+            <field name="garden_orientation">south</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_pet_friendly'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_48" model="estate.property">
+            <field name="name">Warehouse Loft Zetland</field>
+            <field name="description">True warehouse conversion, authentic character</field>
+            <field name="postcode">2017</field>
+            <field name="expected_price">1050000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">170</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_city_center')])]"/>
+        </record>
+
+        <record id="property_49" model="estate.property">
+            <field name="name">Retro Bungalow Newport</field>
+            <field name="description">Original 1960s beach house charm</field>
+            <field name="postcode">2106</field>
+            <field name="expected_price">1750000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">150</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">350</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_bungalow"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_sea_view'), ref('property_tag_investment'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <record id="property_50" model="estate.property">
+            <field name="name">Luxury Apartment Milsons Point</field>
+            <field name="description">Opera House and Bridge views</field>
+            <field name="postcode">2061</field>
+            <field name="expected_price">1950000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">140</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_prime_location')])]"/>
+        </record>
+
+        <!-- Properties 51-60 - More variety -->
+        <record id="property_51" model="estate.property">
+            <field name="name">Beachfront Villa Palm Beach</field>
+            <field name="description">The ultimate beach house, absolute beachfront</field>
+            <field name="postcode">2108</field>
+            <field name="expected_price">8900000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">480</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">350</field>
+            <field name="garden_orientation">east</field>
+            <field name="property_type_id" ref="property_type_villa"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_sea_view'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_52" model="estate.property">
+            <field name="name">Budget Studio Ashfield</field>
+            <field name="description">Affordable entry to the market</field>
+            <field name="postcode">2131</field>
+            <field name="expected_price">420000</field>
+            <field name="bedrooms">1</field>
+            <field name="living_area">35</field>
+            <field name="facades">1</field>
+            <field name="garage">False</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_studio"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_investment'), ref('property_tag_furnished')])]"/>
+        </record>
+
+        <record id="property_53" model="estate.property">
+            <field name="name">Renovated House Strathfield</field>
+            <field name="description">Completely rebuilt, brand new everything</field>
+            <field name="postcode">2135</field>
+            <field name="expected_price">2350000</field>
+            <field name="bedrooms">5</field>
+            <field name="living_area">300</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">250</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_house"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_parking'), ref('property_tag_smart_home')])]"/>
+        </record>
+
+        <record id="property_54" model="estate.property">
+            <field name="name">Resort Condo Breakfast Point</field>
+            <field name="description">Golf course and marina, resort facilities</field>
+            <field name="postcode">2137</field>
+            <field name="expected_price">1050000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">110</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_condo"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_gated_community'), ref('property_tag_gym'), ref('property_tag_pool')])]"/>
+        </record>
+
+        <record id="property_55" model="estate.property">
+            <field name="name">Modern Townhouse Marrickville</field>
+            <field name="description">Contemporary design in sought-after location</field>
+            <field name="postcode">2204</field>
+            <field name="expected_price">1380000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">162</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">45</field>
+            <field name="garden_orientation">west</field>
+            <field name="property_type_id" ref="property_type_townhouse"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_renovated'), ref('property_tag_pet_friendly')])]"/>
+        </record>
+
+        <record id="property_56" model="estate.property">
+            <field name="name">Exclusive Penthouse Elizabeth Bay</field>
+            <field name="description">Harbour views, art deco elegance</field>
+            <field name="postcode">2011</field>
+            <field name="expected_price">4200000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">295</field>
+            <field name="facades">4</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_penthouse"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_waterfront'), ref('property_tag_prime_location')])]"/>
+        </record>
+
+        <record id="property_57" model="estate.property">
+            <field name="name">Large Duplex Homebush</field>
+            <field name="description">Spacious family living, Olympic Park nearby</field>
+            <field name="postcode">2140</field>
+            <field name="expected_price">1420000</field>
+            <field name="bedrooms">4</field>
+            <field name="living_area">225</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">135</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_duplex"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_pet_friendly'), ref('property_tag_parking')])]"/>
+        </record>
+
+        <record id="property_58" model="estate.property">
+            <field name="name">Designer Loft Rosebery</field>
+            <field name="description">Award-winning design, architectural masterpiece</field>
+            <field name="postcode">2018</field>
+            <field name="expected_price">1180000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">148</field>
+            <field name="facades">3</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_loft"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_luxury'), ref('property_tag_renovated'), ref('property_tag_smart_home')])]"/>
+        </record>
+
+        <record id="property_59" model="estate.property">
+            <field name="name">Charming Bungalow Collaroy</field>
+            <field name="description">Walking distance to beach, huge potential</field>
+            <field name="postcode">2097</field>
+            <field name="expected_price">1590000</field>
+            <field name="bedrooms">3</field>
+            <field name="living_area">125</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">True</field>
+            <field name="garden_area">300</field>
+            <field name="garden_orientation">north</field>
+            <field name="property_type_id" ref="property_type_bungalow"/>
+            <field name="state">new</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_sea_view'), ref('property_tag_investment')])]"/>
+        </record>
+
+        <record id="property_60" model="estate.property">
+            <field name="name">Premium Apartment St Leonards</field>
+            <field name="description">High floor, city views, excellent amenities</field>
+            <field name="postcode">2065</field>
+            <field name="expected_price">920000</field>
+            <field name="bedrooms">2</field>
+            <field name="living_area">85</field>
+            <field name="facades">2</field>
+            <field name="garage">True</field>
+            <field name="garden">False</field>
+            <field name="property_type_id" ref="property_type_apartment"/>
+            <field name="state">offer_received</field>
+            <field name="tag_ids" eval="[(6, 0, [ref('property_tag_gym'), ref('property_tag_pool'), ref('property_tag_security')])]"/>
+        </record>
+
+    </data>
+</odoo>

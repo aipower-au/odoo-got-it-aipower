@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Offers for property_11 (Modern Condo Barangaroo) -->
+        <record id="offer_11_1" model="estate.property.offer">
+            <field name="price">1050000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_11"/>
+        </record>
+
+        <record id="offer_11_2" model="estate.property.offer">
+            <field name="price">1080000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_11"/>
+        </record>
+
+        <record id="offer_11_3" model="estate.property.offer">
+            <field name="price">1120000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_11"/>
+        </record>
+
+        <!-- Offers for property_12 (Elegant House Mosman) -->
+        <record id="offer_12_1" model="estate.property.offer">
+            <field name="price">3100000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_12"/>
+        </record>
+
+        <record id="offer_12_2" model="estate.property.offer">
+            <field name="price">3150000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_12"/>
+        </record>
+
+        <record id="offer_12_3" model="estate.property.offer">
+            <field name="price">3250000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_12"/>
+        </record>
+
+        <record id="offer_12_4" model="estate.property.offer">
+            <field name="price">3180000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_12"/>
+        </record>
+
+        <!-- Offers for property_13 (Renovated Apartment Darlinghurst) -->
+        <record id="offer_13_1" model="estate.property.offer">
+            <field name="price">750000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_13"/>
+        </record>
+
+        <record id="offer_13_2" model="estate.property.offer">
+            <field name="price">770000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_13"/>
+        </record>
+
+        <!-- Offers for property_14 (Mountain View Villa Katoomba) -->
+        <record id="offer_14_1" model="estate.property.offer">
+            <field name="price">1750000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_14"/>
+        </record>
+
+        <record id="offer_14_2" model="estate.property.offer">
+            <field name="price">1800000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_14"/>
+        </record>
+
+        <record id="offer_14_3" model="estate.property.offer">
+            <field name="price">1880000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_14"/>
+        </record>
+
+        <!-- Offers for property_15 (Investment Apartment Strathfield) -->
+        <record id="offer_15_1" model="estate.property.offer">
+            <field name="price">630000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_15"/>
+        </record>
+
+        <record id="offer_15_2" model="estate.property.offer">
+            <field name="price">660000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_15"/>
+        </record>
+
+        <!-- Offers for property_16 (Gated Estate House Castle Hill) -->
+        <record id="offer_16_1" model="estate.property.offer">
+            <field name="price">2050000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_16"/>
+        </record>
+
+        <record id="offer_16_2" model="estate.property.offer">
+            <field name="price">2120000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_16"/>
+        </record>
+
+        <record id="offer_16_3" model="estate.property.offer">
+            <field name="price">2080000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_16"/>
+        </record>
+
+        <!-- Offers for property_17 (Smart Penthouse Pyrmont) -->
+        <record id="offer_17_1" model="estate.property.offer">
+            <field name="price">2500000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_17"/>
+        </record>
+
+        <record id="offer_17_2" model="estate.property.offer">
+            <field name="price">2580000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_17"/>
+        </record>
+
+        <record id="offer_17_3" model="estate.property.offer">
+            <field name="price">2650000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_17"/>
+        </record>
+
+        <!-- Offers for property_18 (Eco Townhouse Rozelle) -->
+        <record id="offer_18_1" model="estate.property.offer">
+            <field name="price">1300000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_18"/>
+        </record>
+
+        <record id="offer_18_2" model="estate.property.offer">
+            <field name="price">1340000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_18"/>
+        </record>
+
+        <!-- Offers for property_19 (Luxury Duplex Double Bay) -->
+        <record id="offer_19_1" model="estate.property.offer">
+            <field name="price">4350000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_19"/>
+        </record>
+
+        <record id="offer_19_2" model="estate.property.offer">
+            <field name="price">4450000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_19"/>
+        </record>
+
+        <record id="offer_19_3" model="estate.property.offer">
+            <field name="price">4550000</field>
+            <field name="validity">30</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_19"/>
+        </record>
+
+        <record id="offer_19_4" model="estate.property.offer">
+            <field name="price">4400000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_19"/>
+        </record>
+
+        <!-- Offers for property_20 (Creative Loft Alexandria) -->
+        <record id="offer_20_1" model="estate.property.offer">
+            <field name="price">860000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_20"/>
+        </record>
+
+        <record id="offer_20_2" model="estate.property.offer">
+            <field name="price">900000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_20"/>
+        </record>
+
+        <!-- Offers for property_32 (Compact Apartment Ultimo) -->
+        <record id="offer_32_1" model="estate.property.offer">
+            <field name="price">500000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_32"/>
+        </record>
+
+        <record id="offer_32_2" model="estate.property.offer">
+            <field name="price">530000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_32"/>
+        </record>
+
+        <!-- Offers for property_33 (Grand House Woollahra) -->
+        <record id="offer_33_1" model="estate.property.offer">
+            <field name="price">6950000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_33"/>
+        </record>
+
+        <record id="offer_33_2" model="estate.property.offer">
+            <field name="price">7150000</field>
+            <field name="validity">30</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_33"/>
+        </record>
+
+        <record id="offer_33_3" model="estate.property.offer">
+            <field name="price">7300000</field>
+            <field name="validity">45</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_33"/>
+        </record>
+
+        <!-- Offers for property_35 (Victorian Townhouse Annandale) -->
+        <record id="offer_35_1" model="estate.property.offer">
+            <field name="price">1380000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_35"/>
+        </record>
+
+        <record id="offer_35_2" model="estate.property.offer">
+            <field name="price">1430000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_35"/>
+        </record>
+
+        <!-- Offers for property_38 (Converted Loft Pyrmont) -->
+        <record id="offer_38_1" model="estate.property.offer">
+            <field name="price">1100000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_38"/>
+        </record>
+
+        <record id="offer_38_2" model="estate.property.offer">
+            <field name="price">1150000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_38"/>
+        </record>
+
+        <record id="offer_38_3" model="estate.property.offer">
+            <field name="price">1180000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_38"/>
+        </record>
+
+        <!-- Offers for property_40 (Premium Apartment Neutral Bay) -->
+        <record id="offer_40_1" model="estate.property.offer">
+            <field name="price">1250000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_40"/>
+        </record>
+
+        <record id="offer_40_2" model="estate.property.offer">
+            <field name="price">1290000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_40"/>
+        </record>
+
+        <!-- Offers for property_42 (City Studio Haymarket) -->
+        <record id="offer_42_1" model="estate.property.offer">
+            <field name="price">475000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_42"/>
+        </record>
+
+        <record id="offer_42_2" model="estate.property.offer">
+            <field name="price">500000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_42"/>
+        </record>
+
+        <!-- Offers for property_44 (Waterside Condo Wentworth Point) -->
+        <record id="offer_44_1" model="estate.property.offer">
+            <field name="price">850000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_44"/>
+        </record>
+
+        <record id="offer_44_2" model="estate.property.offer">
+            <field name="price">890000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_44"/>
+        </record>
+
+        <record id="offer_44_3" model="estate.property.offer">
+            <field name="price">900000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_44"/>
+        </record>
+
+        <!-- Offers for property_46 (Prestige Penthouse Potts Point) -->
+        <record id="offer_46_1" model="estate.property.offer">
+            <field name="price">3300000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_46"/>
+        </record>
+
+        <record id="offer_46_2" model="estate.property.offer">
+            <field name="price">3450000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_46"/>
+        </record>
+
+        <record id="offer_46_3" model="estate.property.offer">
+            <field name="price">3380000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_46"/>
+        </record>
+
+        <!-- Offers for property_49 (Retro Bungalow Newport) -->
+        <record id="offer_49_1" model="estate.property.offer">
+            <field name="price">1700000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_49"/>
+        </record>
+
+        <record id="offer_49_2" model="estate.property.offer">
+            <field name="price">1760000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_49"/>
+        </record>
+
+        <record id="offer_49_3" model="estate.property.offer">
+            <field name="price">1800000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_49"/>
+        </record>
+
+        <!-- Offers for property_52 (Budget Studio Ashfield) -->
+        <record id="offer_52_1" model="estate.property.offer">
+            <field name="price">405000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_52"/>
+        </record>
+
+        <record id="offer_52_2" model="estate.property.offer">
+            <field name="price">430000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_52"/>
+        </record>
+
+        <!-- Offers for property_53 (Renovated House Strathfield) -->
+        <record id="offer_53_1" model="estate.property.offer">
+            <field name="price">2280000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_53"/>
+        </record>
+
+        <record id="offer_53_2" model="estate.property.offer">
+            <field name="price">2350000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_53"/>
+        </record>
+
+        <record id="offer_53_3" model="estate.property.offer">
+            <field name="price">2400000</field>
+            <field name="validity">30</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_53"/>
+        </record>
+
+        <!-- Offers for property_55 (Modern Townhouse Marrickville) -->
+        <record id="offer_55_1" model="estate.property.offer">
+            <field name="price">1350000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_55"/>
+        </record>
+
+        <record id="offer_55_2" model="estate.property.offer">
+            <field name="price">1390000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_55"/>
+        </record>
+
+        <!-- Offers for property_58 (Designer Loft Rosebery) -->
+        <record id="offer_58_1" model="estate.property.offer">
+            <field name="price">1150000</field>
+            <field name="validity">7</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_58"/>
+        </record>
+
+        <record id="offer_58_2" model="estate.property.offer">
+            <field name="price">1180000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_58"/>
+        </record>
+
+        <record id="offer_58_3" model="estate.property.offer">
+            <field name="price">1200000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="property_id" ref="property_58"/>
+        </record>
+
+        <!-- Offers for property_60 (Premium Apartment St Leonards) -->
+        <record id="offer_60_1" model="estate.property.offer">
+            <field name="price">890000</field>
+            <field name="validity">10</field>
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="property_id" ref="property_60"/>
+        </record>
+
+        <record id="offer_60_2" model="estate.property.offer">
+            <field name="price">920000</field>
+            <field name="validity">14</field>
+            <field name="partner_id" ref="base.res_partner_3"/>
+            <field name="property_id" ref="property_60"/>
+        </record>
+
+        <record id="offer_60_3" model="estate.property.offer">
+            <field name="price">950000</field>
+            <field name="validity">21</field>
+            <field name="partner_id" ref="base.res_partner_4"/>
+            <field name="property_id" ref="property_60"/>
+        </record>
+
+    </data>
+</odoo>
