@@ -116,6 +116,7 @@ sessions/
 *~
 .DS_Store
 .mcp.json
+.playwright-mcp/
 
 # Database
 *.db
