@@ -115,6 +115,7 @@ sessions/
 *.swo
 *~
 .DS_Store
+.mcp.json
 
 # Database
 *.db
