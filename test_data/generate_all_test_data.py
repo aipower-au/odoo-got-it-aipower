@@ -102,20 +102,47 @@ ADDITIONAL_SALES = [
 
 PHONE_PREFIXES = ['091', '094', '088', '083', '084', '085', '081', '082', '090', '093']
 
+# Vietnamese to ASCII character mapping
+VIETNAMESE_TO_ASCII = {
+    'à': 'a', 'á': 'a', 'ả': 'a', 'ã': 'a', 'ạ': 'a',
+    'ă': 'a', 'ằ': 'a', 'ắ': 'a', 'ẳ': 'a', 'ẵ': 'a', 'ặ': 'a',
+    'â': 'a', 'ầ': 'a', 'ấ': 'a', 'ẩ': 'a', 'ẫ': 'a', 'ậ': 'a',
+    'đ': 'd',
+    'è': 'e', 'é': 'e', 'ẻ': 'e', 'ẽ': 'e', 'ẹ': 'e',
+    'ê': 'e', 'ề': 'e', 'ế': 'e', 'ể': 'e', 'ễ': 'e', 'ệ': 'e',
+    'ì': 'i', 'í': 'i', 'ỉ': 'i', 'ĩ': 'i', 'ị': 'i',
+    'ò': 'o', 'ó': 'o', 'ỏ': 'o', 'õ': 'o', 'ọ': 'o',
+    'ô': 'o', 'ồ': 'o', 'ố': 'o', 'ổ': 'o', 'ỗ': 'o', 'ộ': 'o',
+    'ơ': 'o', 'ờ': 'o', 'ớ': 'o', 'ở': 'o', 'ỡ': 'o', 'ợ': 'o',
+    'ù': 'u', 'ú': 'u', 'ủ': 'u', 'ũ': 'u', 'ụ': 'u',
+    'ư': 'u', 'ừ': 'u', 'ứ': 'u', 'ử': 'u', 'ữ': 'u', 'ự': 'u',
+    'ỳ': 'y', 'ý': 'y', 'ỷ': 'y', 'ỹ': 'y', 'ỵ': 'y',
+}
+
+def remove_vietnamese_accents(text):
+    """Convert Vietnamese characters to ASCII equivalents"""
+    result = []
+    for char in text:
+        # Convert to lowercase and check if it's a Vietnamese character
+        result.append(VIETNAMESE_TO_ASCII.get(char.lower(), char.lower()))
+    return ''.join(result)
+
 def generate_phone():
     """Generate Vietnamese phone number"""
     prefix = random.choice(PHONE_PREFIXES)
     return f"+84{prefix[1:]}{random.randint(1000000, 9999999)}"
 
 def generate_login(name):
-    """Generate login from name"""
-    parts = name.lower().split()
+    """Generate login from name (ASCII only)"""
+    # Remove Vietnamese accents first
+    ascii_name = remove_vietnamese_accents(name)
+    parts = ascii_name.lower().split()
     if len(parts) >= 2:
         return f"{parts[-1]}.{parts[0][0]}"
     return parts[0]
 
 def generate_email(name, domain='gotit.vn'):
-    """Generate email from name"""
+    """Generate email from name (ASCII only)"""
     login = generate_login(name)
     return f"{login}@{domain}"
 
@@ -428,9 +455,11 @@ def generate_parent_company(index):
     return ""
 
 def generate_customer_email(company_name, index):
-    """Generate email address"""
+    """Generate email address (ASCII only)"""
     domains = ['gmail.com', 'yahoo.com', 'company.vn', 'business.com.vn', 'outlook.com']
-    simple_name = company_name.lower().replace('công ty', '').replace('tnhh', '').replace('cổ phần', '').strip()
+    # Remove Vietnamese accents and convert to ASCII
+    ascii_name = remove_vietnamese_accents(company_name)
+    simple_name = ascii_name.lower().replace('cong ty', '').replace('tnhh', '').replace('co phan', '').strip()
     simple_name = simple_name.replace(' ', '')[:10]
     return f"contact{index}@{simple_name}.{random.choice(domains)}"
 
