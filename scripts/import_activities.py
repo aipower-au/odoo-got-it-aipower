@@ -46,6 +46,19 @@ def get_user_id(uid, models, user_name):
         return None
 
 
+def get_lead_id(uid, models, lead_name):
+    """Get lead ID by name"""
+    try:
+        lead_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'crm.lead', 'search',
+            [[['name', '=', lead_name], ['type', '=', 'lead']]]
+        )
+        return lead_ids[0] if lead_ids else None
+    except:
+        return None
+
+
 def get_opportunity_id(uid, models, opp_name):
     """Get opportunity ID by name"""
     try:
@@ -135,19 +148,36 @@ def import_activities_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                     # Prepare activity data
                     activity_data = {
                         'summary': row.get('summary', 'Activity'),
-                        'note': row.get('description', ''),
+                        'note': row.get('note') or row.get('description', ''),
                     }
 
-                    # Get opportunity - REQUIRED (res_model and res_id)
-                    if row.get('opportunity'):
-                        opp_id = get_opportunity_id(uid, models, row['opportunity'])
-                        if opp_id:
-                            activity_data['res_model_id'] = get_model_id(uid, models, 'crm.lead')
-                            activity_data['res_id'] = opp_id
-                        else:
-                            stats['opportunity_not_found'] += 1
-                            stats['errors'] += 1
-                            continue
+                    # Get lead or opportunity - REQUIRED (res_model and res_id)
+                    res_ref = row.get('res_id')  # e.g., "LEAD1183" or "OPP1472"
+                    res_type = row.get('res_type', 'opportunity')  # lead or opportunity
+
+                    if res_ref:
+                        # Look up by name
+                        if res_type == 'lead':
+                            lead_id = get_lead_id(uid, models, res_ref)
+                            if lead_id:
+                                activity_data['res_model_id'] = get_model_id(uid, models, 'crm.lead')
+                                activity_data['res_id'] = lead_id
+                            else:
+                                stats['opportunity_not_found'] += 1
+                                stats['errors'] += 1
+                                continue
+                        else:  # opportunity
+                            opp_id = get_opportunity_id(uid, models, res_ref)
+                            if opp_id:
+                                activity_data['res_model_id'] = get_model_id(uid, models, 'crm.lead')
+                                activity_data['res_id'] = opp_id
+                            else:
+                                stats['opportunity_not_found'] += 1
+                                stats['errors'] += 1
+                                continue
+                    else:
+                        stats['errors'] += 1
+                        continue
 
                     # Get user (assigned to)
                     if row.get('assigned_to'):
@@ -158,17 +188,19 @@ def import_activities_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                             stats['user_not_found'] += 1
 
                     # Get activity type
-                    if row.get('activity_type'):
-                        type_id = get_activity_type_id(uid, models, row['activity_type'])
+                    activity_type = row.get('activity_type_name') or row.get('activity_type')
+                    if activity_type:
+                        type_id = get_activity_type_id(uid, models, activity_type)
                         if type_id:
                             activity_data['activity_type_id'] = type_id
                         else:
                             stats['activity_type_not_found'] += 1
 
                     # Due date - REQUIRED
-                    if row.get('due_date'):
+                    due_date = row.get('date_deadline') or row.get('due_date')
+                    if due_date:
                         try:
-                            activity_data['date_deadline'] = row['due_date']
+                            activity_data['date_deadline'] = due_date
                         except:
                             pass
 

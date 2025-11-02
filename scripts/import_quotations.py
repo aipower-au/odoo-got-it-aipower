@@ -160,8 +160,9 @@ def import_quotations_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                     }
 
                     # Get partner (customer) - REQUIRED
-                    if row.get('customer'):
-                        partner_id = get_partner_id(uid, models, row['customer'])
+                    partner_name = row.get('partner_name') or row.get('customer')
+                    if partner_name:
+                        partner_id = get_partner_id(uid, models, partner_name)
                         if partner_id:
                             order_data['partner_id'] = partner_id
                         else:
@@ -170,8 +171,9 @@ def import_quotations_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                             continue  # Skip if no customer
 
                     # Get user (salesperson)
-                    if row.get('salesperson'):
-                        user_id = get_user_id(uid, models, row['salesperson'])
+                    user_name = row.get('assigned_to') or row.get('salesperson')
+                    if user_name:
+                        user_id = get_user_id(uid, models, user_name)
                         if user_id:
                             order_data['user_id'] = user_id
                         else:
@@ -186,8 +188,9 @@ def import_quotations_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                             stats['team_not_found'] += 1
 
                     # Get opportunity
-                    if row.get('opportunity'):
-                        opp_id = get_opportunity_id(uid, models, row['opportunity'])
+                    opp_name = row.get('opportunity_id') or row.get('opportunity')
+                    if opp_name:
+                        opp_id = get_opportunity_id(uid, models, opp_name)
                         if opp_id:
                             order_data['opportunity_id'] = opp_id
                         else:
