@@ -469,12 +469,12 @@ def generate_activities(leads, opportunities, count=TARGET_ACTIVITIES):
     print(f"Generating {count} activities...")
     activities = []
 
-    # Combine all lead/opportunity IDs
+    # Combine all lead/opportunity names (use actual names instead of IDs)
     all_records = []
     for lead in leads:
-        all_records.append(('lead', lead['lead_id'], lead['assigned_to']))
+        all_records.append(('lead', lead['name'], lead['assigned_to']))
     for opp in opportunities:
-        all_records.append(('opportunity', opp['opportunity_id'], opp['assigned_to']))
+        all_records.append(('opportunity', opp['name'], opp['assigned_to']))
 
     if not all_records:
         print("  ⚠️  No leads or opportunities to link activities to!")
@@ -701,7 +701,7 @@ def generate_quotations(opportunities, products, count=TARGET_QUOTATIONS):
 
             quote_lines.append({
                 'line_id': f'QL{i:04d}_{j:02d}',
-                'product_id': product['product_id'],
+                'product_id': product['name'],  # Use actual product name instead of ID
                 'product_name': product['name'],
                 'quantity': quantity,
                 'unit_price': unit_price,
@@ -712,7 +712,7 @@ def generate_quotations(opportunities, products, count=TARGET_QUOTATIONS):
         quotation = {
             'quotation_id': f'QUOT{i:04d}',
             'name': f'Q-{quote_date.strftime("%Y%m")}-{i:04d}',
-            'opportunity_id': opp['opportunity_id'],
+            'opportunity_id': opp['name'],  # Use actual opportunity name instead of ID
             'partner_name': opp['partner_name'],
             'assigned_to': opp['assigned_to'],
             'team': opp['team'],
