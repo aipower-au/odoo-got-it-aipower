@@ -58,6 +58,19 @@ def get_group_id(uid, models, module, group_name):
         return None
 
 
+def get_team_id(uid, models, team_name):
+    """Get sales team ID by name"""
+    try:
+        team_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'crm.team', 'search',
+            [[['name', '=', team_name]]]
+        )
+        return team_ids[0] if team_ids else None
+    except Exception as e:
+        return None
+
+
 def import_staff_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
     """Import staff from CSV as users with batch processing"""
     print("=" * 80)
@@ -84,8 +97,12 @@ def import_staff_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
         'created': 0,
         'updated': 0,
         'skipped': 0,
-        'errors': 0
+        'errors': 0,
+        'teams_assigned': 0
     }
+
+    # Cache for team IDs
+    team_cache = {}
 
     try:
         # Read all staff first
@@ -136,12 +153,14 @@ def import_staff_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                         'groups_id': [(6, 0, user_groups)]
                     }
 
+                    user_id = None
                     if existing_ids:
                         # Update existing user
+                        user_id = existing_ids[0]
                         models.execute_kw(
                             ODOO_DB, uid, ODOO_PASSWORD,
                             'res.users', 'write',
-                            [[existing_ids[0]], user_data]
+                            [[user_id], user_data]
                         )
                         stats['updated'] += 1
                         print(f"  ✓ Updated: {row['login']:20} ({row['name']})")
@@ -155,6 +174,30 @@ def import_staff_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
                         )
                         stats['created'] += 1
                         print(f"  + Created: {row['login']:20} ({row['name']})")
+
+                    # Assign user to sales team if specified
+                    team_name = row.get('sales_team', '').strip()
+                    if team_name and user_id:
+                        # Get team ID (use cache)
+                        if team_name not in team_cache:
+                            team_id = get_team_id(uid, models, team_name)
+                            team_cache[team_name] = team_id
+                        else:
+                            team_id = team_cache[team_name]
+
+                        if team_id:
+                            try:
+                                # Add user to team's member_ids
+                                models.execute_kw(
+                                    ODOO_DB, uid, ODOO_PASSWORD,
+                                    'crm.team', 'write',
+                                    [[team_id], {
+                                        'member_ids': [(4, user_id)]
+                                    }]
+                                )
+                                stats['teams_assigned'] += 1
+                            except Exception as e:
+                                print(f"    ⚠️  Could not assign to team '{team_name}': {e}")
 
                 except Exception as e:
                     stats['errors'] += 1
@@ -177,12 +220,15 @@ def import_staff_batch(uid, models, csv_file, batch_size=BATCH_SIZE):
     print("=" * 80)
     print(f"\n✓ Created:  {stats['created']} users")
     print(f"✓ Updated:  {stats['updated']} users")
+    print(f"✓ Teams Assigned: {stats['teams_assigned']} users")
     print(f"⊘ Skipped:  {stats['skipped']} users")
     print(f"❌ Errors:   {stats['errors']} users")
     print(f"\nTotal processed: {stats['created'] + stats['updated'] + stats['errors']}/{total}")
 
     if stats['errors'] == 0 and (stats['created'] + stats['updated']) == total:
         print("\n✅ All staff imported successfully!")
+        if stats['teams_assigned'] > 0:
+            print(f"✅ {stats['teams_assigned']} users assigned to their sales teams!")
     elif stats['errors'] > 0:
         print(f"\n⚠️  Completed with {stats['errors']} errors")
 
