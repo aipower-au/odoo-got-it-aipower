@@ -277,9 +277,17 @@ def generate_staff_enterprise():
     directors.append(director)
     emp_id += 1
 
-    # 2. Sales Managers / Regional Directors (15)
-    regions_for_managers = ['North'] * 5 + ['Central'] * 4 + ['South'] * 6
-    manager_titles = ['Sales Manager'] * 12 + ['Regional Director'] * 3
+    # 2. Sales Managers / Regional Directors (based on STAFF_DISTRIBUTION)
+    manager_count = STAFF_DISTRIBUTION['manager']
+    # Distribute managers across regions proportionally
+    north_count = (manager_count + 2) // 3
+    central_count = manager_count // 3
+    south_count = manager_count - north_count - central_count
+
+    regions_for_managers = (['North'] * north_count +
+                           ['Central'] * central_count +
+                           ['South'] * south_count)
+    manager_titles = ['Sales Manager'] * (manager_count - 1) + ['Regional Director']
 
     for i, region in enumerate(regions_for_managers):
         manager_name = generate_person_name('random', used_names)
@@ -363,9 +371,16 @@ def generate_staff_enterprise():
         sales_execs.append(exec_member)
         emp_id += 1
 
-    # 4. Telesales / SDR (25)
-    # Split across regions
-    tele_regions = ['North'] * 8 + ['Central'] * 6 + ['South'] * 11
+    # 4. Telesales / SDR (based on STAFF_DISTRIBUTION)
+    tele_count = STAFF_DISTRIBUTION['telesales']
+    # Split across regions proportionally
+    tele_north = (tele_count + 2) // 3
+    tele_central = tele_count // 3
+    tele_south = tele_count - tele_north - tele_central
+
+    tele_regions = (['North'] * tele_north +
+                    ['Central'] * tele_central +
+                    ['South'] * tele_south)
 
     for region in tele_regions:
         tele_name = generate_person_name('random', used_names)
@@ -405,8 +420,9 @@ def generate_staff_enterprise():
         telesales.append(tele_member)
         emp_id += 1
 
-    # 5. Support Staff (9)
-    support_roles = [
+    # 5. Support Staff (based on STAFF_DISTRIBUTION)
+    support_count = STAFF_DISTRIBUTION['support']
+    all_support_roles = [
         ('Sales Operations Manager', 'Sales Ops', 'All Vietnam'),
         ('Sales Coordinator', 'Sales Ops', 'North'),
         ('Sales Coordinator', 'Sales Ops', 'South'),
@@ -417,6 +433,8 @@ def generate_staff_enterprise():
         ('Channel Partner Manager', 'Partner Channel', 'All Vietnam'),
         ('Customer Success Manager', 'Customer Success', 'All Vietnam')
     ]
+    # Take only the first N support roles based on configuration
+    support_roles = all_support_roles[:support_count]
 
     for title, dept, region in support_roles:
         support_name = generate_person_name('random', used_names)
