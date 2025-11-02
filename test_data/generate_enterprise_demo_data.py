@@ -4,36 +4,78 @@
 Enterprise-Scale Demo Data Generator for Odoo CRM
 Generates: staff (150), customers (3000), and sales teams (35)
 
-Usage: python3 generate_enterprise_demo_data.py
+Usage:
+  python3 generate_enterprise_demo_data.py                    # Full enterprise scale
+  python3 generate_enterprise_demo_data.py --test              # Small test (10/50/5)
+  python3 generate_enterprise_demo_data.py --staff 20 --customers 100 --teams 5
 """
 
 import csv
 import random
+import argparse
 from datetime import datetime, timedelta
 from collections import defaultdict
+
+# ============================================================================
+# PARSE COMMAND LINE ARGUMENTS
+# ============================================================================
+
+parser = argparse.ArgumentParser(description='Generate enterprise demo data for Odoo CRM')
+parser.add_argument('--test', action='store_true', help='Generate small test dataset (10 staff, 50 customers, 5 teams)')
+parser.add_argument('--staff', type=int, help='Number of staff members (default: 150)')
+parser.add_argument('--customers', type=int, help='Number of customers (default: 3000)')
+parser.add_argument('--teams', type=int, help='Number of sales teams (default: 35)')
+args = parser.parse_args()
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+# Target volumes
+if args.test:
+    TARGET_STAFF = 10
+    TARGET_CUSTOMERS = 50
+    TARGET_TEAMS = 5
+else:
+    TARGET_STAFF = args.staff or 150
+    TARGET_CUSTOMERS = args.customers or 3000
+    TARGET_TEAMS = args.teams or 35
 
 print("=" * 80)
 print("ENTERPRISE CRM DEMO DATA GENERATOR")
 print("=" * 80)
+print(f"Configuration: {TARGET_STAFF} staff, {TARGET_CUSTOMERS} customers, {TARGET_TEAMS} teams")
+print("=" * 80)
 print()
 
-# ============================================================================
-# CONFIGURATION - ENTERPRISE SCALE
-# ============================================================================
-
-# Target volumes
-TARGET_STAFF = 150
-TARGET_CUSTOMERS = 3000
-TARGET_TEAMS = 35
-
-# Staff distribution
-STAFF_DISTRIBUTION = {
-    'director': 1,          # 1 Sales Director
-    'manager': 15,          # 15 Sales Managers/Regional Directors
-    'sales': 100,           # 100 Sales Executives
-    'telesales': 25,        # 25 Telesales/SDR
-    'support': 9            # 9 Support roles
-}
+# Staff distribution (scales with TARGET_STAFF)
+if TARGET_STAFF <= 10:
+    # Small test dataset
+    STAFF_DISTRIBUTION = {
+        'director': 1,      # 1 Sales Director
+        'manager': 1,       # 1 Manager
+        'sales': 5,         # 5 Sales Executives
+        'telesales': 2,     # 2 Telesales
+        'support': 1        # 1 Support
+    }
+elif TARGET_STAFF <= 50:
+    # Medium dataset
+    STAFF_DISTRIBUTION = {
+        'director': 1,      # 1 Sales Director
+        'manager': 5,       # 5 Managers
+        'sales': 30,        # 30 Sales Executives
+        'telesales': 10,    # 10 Telesales
+        'support': 4        # 4 Support
+    }
+else:
+    # Enterprise scale
+    STAFF_DISTRIBUTION = {
+        'director': 1,          # 1 Sales Director
+        'manager': 15,          # 15 Sales Managers/Regional Directors
+        'sales': 100,           # 100 Sales Executives
+        'telesales': 25,        # 25 Telesales/SDR
+        'support': 9            # 9 Support roles
+    }
 
 # ============================================================================
 # VIETNAMESE NAME POOLS (EXPANDED)
