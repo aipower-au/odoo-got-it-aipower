@@ -23,7 +23,7 @@ services:
 
   # Odoo Application
   odoo:
-    image: odoo:19
+    image: odoo:18
     container_name: odoo_web
     depends_on:
       db:
