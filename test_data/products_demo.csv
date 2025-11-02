@@ -1,51 +1,16 @@
 product_id,name,category,list_price,cost_price,type,can_be_sold,can_be_purchased,description
-PROD001,CRM System,Software,93177901,62286659,Service,True,False,Software - CRM System. Enterprise-grade solution.
-PROD002,ERP Solution,Software,53874263,21890999,Service,True,False,Software - ERP Solution. Enterprise-grade solution.
-PROD003,Project Management Tool,Software,85232189,48572467,Service,True,False,Software - Project Management Tool. Enterprise-grade solution.
-PROD004,Accounting Software,Software,77299968,49392647,Product,True,False,Software - Accounting Software. Enterprise-grade solution.
-PROD005,HR Management System,Software,55780822,32863745,Product,True,False,Software - HR Management System. Enterprise-grade solution.
-PROD006,Consulting Services,Services,25928689,14813657,Service,True,False,Services - Consulting Services. Enterprise-grade solution.
-PROD007,Implementation Services,Services,25164691,15960804,Product,True,False,Services - Implementation Services. Enterprise-grade solution.
-PROD008,Training Services,Services,20369279,11854047,Service,True,False,Services - Training Services. Enterprise-grade solution.
-PROD009,Support Package,Services,37454542,16309282,Product,True,False,Services - Support Package. Enterprise-grade solution.
-PROD010,Custom Development,Services,29347823,18930312,Product,True,False,Services - Custom Development. Enterprise-grade solution.
-PROD011,Server Hardware,Hardware,49238841,22282584,Product,True,True,Hardware - Server Hardware. Enterprise-grade solution.
-PROD012,Network Equipment,Hardware,47592179,30328262,Product,True,True,Hardware - Network Equipment. Enterprise-grade solution.
-PROD013,Workstation,Hardware,62823773,32787503,Product,True,True,Hardware - Workstation. Enterprise-grade solution.
-PROD014,Storage Device,Hardware,33384908,22849912,Service,True,True,Hardware - Storage Device. Enterprise-grade solution.
-PROD015,Security Appliance,Hardware,45692555,18462811,Service,True,True,Hardware - Security Appliance. Enterprise-grade solution.
-PROD016,Cloud Storage,Subscription,5995857,2897894,Product,True,False,Subscription - Cloud Storage. Enterprise-grade solution.
-PROD017,SaaS License,Subscription,1173973,494903,Product,True,False,Subscription - SaaS License. Enterprise-grade solution.
-PROD018,API Access,Subscription,4607452,2280403,Service,True,False,Subscription - API Access. Enterprise-grade solution.
-PROD019,Premium Support,Subscription,13736394,6638315,Service,True,False,Subscription - Premium Support. Enterprise-grade solution.
-PROD020,Enterprise Plan,Subscription,12744554,5460983,Service,True,False,Subscription - Enterprise Plan. Enterprise-grade solution.
-PROD021,Software Solution 21,Software,17394958,10436974,Product,True,False,Software product offering
-PROD022,Hardware Solution 22,Hardware,27486442,16491865,Product,True,False,Hardware product offering
-PROD023,Services Solution 23,Services,29928325,17956995,Product,True,False,Services product offering
-PROD024,Hardware Solution 24,Hardware,36979916,22187949,Product,True,False,Hardware product offering
-PROD025,Subscription Solution 25,Subscription,46837931,28102758,Product,True,False,Subscription product offering
-PROD026,Software Solution 26,Software,41560714,24936428,Product,True,False,Software product offering
-PROD027,Hardware Solution 27,Hardware,31173067,18703840,Product,True,False,Hardware product offering
-PROD028,Subscription Solution 28,Subscription,19574313,11744587,Product,True,False,Subscription product offering
-PROD029,Hardware Solution 29,Hardware,13752716,8251629,Product,True,False,Hardware product offering
-PROD030,Hardware Solution 30,Hardware,23731359,14238815,Product,True,False,Hardware product offering
-PROD031,Services Solution 31,Services,21551075,12930645,Product,True,False,Services product offering
-PROD032,Services Solution 32,Services,23602344,14161406,Product,True,False,Services product offering
-PROD033,Hardware Solution 33,Hardware,40612937,24367762,Product,True,False,Hardware product offering
-PROD034,Hardware Solution 34,Hardware,34254042,20552425,Product,True,False,Hardware product offering
-PROD035,Services Solution 35,Services,15739887,9443932,Product,True,False,Services product offering
-PROD036,Software Solution 36,Software,41071008,24642604,Product,True,False,Software product offering
-PROD037,Subscription Solution 37,Subscription,14266527,8559916,Product,True,False,Subscription product offering
-PROD038,Subscription Solution 38,Subscription,37704641,22622784,Product,True,False,Subscription product offering
-PROD039,Software Solution 39,Software,42329277,25397566,Product,True,False,Software product offering
-PROD040,Services Solution 40,Services,17888706,10733223,Product,True,False,Services product offering
-PROD041,Services Solution 41,Services,6481377,3888826,Product,True,False,Services product offering
-PROD042,Software Solution 42,Software,27544467,16526680,Product,True,False,Software product offering
-PROD043,Subscription Solution 43,Subscription,10634456,6380673,Product,True,False,Subscription product offering
-PROD044,Software Solution 44,Software,15556098,9333658,Product,True,False,Software product offering
-PROD045,Subscription Solution 45,Subscription,9515926,5709555,Product,True,False,Subscription product offering
-PROD046,Hardware Solution 46,Hardware,35146145,21087687,Product,True,False,Hardware product offering
-PROD047,Services Solution 47,Services,15158237,9094942,Product,True,False,Services product offering
-PROD048,Hardware Solution 48,Hardware,9318622,5591173,Product,True,False,Hardware product offering
-PROD049,Services Solution 49,Services,8099879,4859927,Product,True,False,Services product offering
-PROD050,Software Solution 50,Software,25342356,15205413,Product,True,False,Software product offering
+PROD001,CRM System,Software,21713866,8920838,Service,True,False,Software - CRM System. Enterprise-grade solution.
+PROD002,ERP Solution,Software,23840200,9709208,Product,True,False,Software - ERP Solution. Enterprise-grade solution.
+PROD003,Project Management Tool,Software,93777870,47386895,Product,True,False,Software - Project Management Tool. Enterprise-grade solution.
+PROD004,Accounting Software,Software,69617410,38376480,Product,True,False,Software - Accounting Software. Enterprise-grade solution.
+PROD005,HR Management System,Software,64935163,40717761,Service,True,False,Software - HR Management System. Enterprise-grade solution.
+PROD006,Consulting Services,Services,8686660,5338212,Service,True,False,Services - Consulting Services. Enterprise-grade solution.
+PROD007,Implementation Services,Services,29408598,17947591,Service,True,False,Services - Implementation Services. Enterprise-grade solution.
+PROD008,Training Services,Services,14012023,7107680,Product,True,False,Services - Training Services. Enterprise-grade solution.
+PROD009,Support Package,Services,24842356,10382602,Product,True,False,Services - Support Package. Enterprise-grade solution.
+PROD010,Custom Development,Services,39832843,27207330,Service,True,False,Services - Custom Development. Enterprise-grade solution.
+PROD011,Server Hardware,Hardware,52616031,28714582,Service,True,True,Hardware - Server Hardware. Enterprise-grade solution.
+PROD012,Network Equipment,Hardware,22010838,13795362,Product,True,True,Hardware - Network Equipment. Enterprise-grade solution.
+PROD013,Workstation,Hardware,41773643,23736934,Product,True,True,Hardware - Workstation. Enterprise-grade solution.
+PROD014,Storage Device,Hardware,29274823,15680426,Service,True,True,Hardware - Storage Device. Enterprise-grade solution.
+PROD015,Security Appliance,Hardware,74364046,36987500,Service,True,True,Hardware - Security Appliance. Enterprise-grade solution.

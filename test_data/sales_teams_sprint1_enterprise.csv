@@ -1,33 +1,11 @@
 team_id,team_name,team_leader,member_count,revenue_target,team_type,focus_area
-TEAM001,Leadership,Hoàng Hùng Minh,16,14055021597,Management,Strategic Planning
-TEAM002,North Regional Team,Ngô Đức Đức,37,9908963956,Regional,North
-TEAM003,South Regional Team,Võ Thành Kiên,47,13070755328,Regional,South
-TEAM004,Central Regional Team,Chu Bảo Mai,31,8558979287,Regional,Central
-TEAM005,North Telesales Team,Ngô Đức Đức,8,0,Telesales,North
-TEAM006,South Telesales Team,Võ Thành Kiên,11,0,Telesales,South
-TEAM007,Central Telesales Team,Chu Bảo Mai,6,0,Telesales,Central
-TEAM008,Technology Team,Bùi Hoàng Phúc,15,3121598168,Industry,Technology
-TEAM009,F&B Team,Bùi Hoàng Phúc,15,2724941746,Industry,F&B
-TEAM010,Manufacturing Team,Bùi Hoàng Phúc,15,3079363453,Industry,Manufacturing
-TEAM011,Retail Team,Bùi Hoàng Phúc,13,2550694688,Industry,Retail
-TEAM012,Healthcare Team,Ngô Đức Đức,15,2919897108,Industry,Healthcare
-TEAM013,Education Team,Ngô Đức Đức,14,2888667261,Industry,Education
-TEAM014,Construction Team,Bùi Hoàng Phúc,15,2961627559,Industry,Construction
-TEAM015,Logistics Team,Bùi Hoàng Phúc,12,2676671566,Industry,Logistics
-TEAM016,Finance Team,Bùi Hoàng Phúc,9,1621602385,Industry,Finance
-TEAM017,Hospitality Team,Bùi Hoàng Phúc,15,3127095388,Industry,Hospitality
-TEAM018,Enterprise Team,Bùi Hoàng Phúc,20,4241433802,Customer Type,Enterprise
-TEAM019,SME Team,Ngô Đức Đức,20,3884985885,Customer Type,SME
-TEAM020,Startup Team,Bùi Hoàng Phúc,20,4103235465,Customer Type,Startup
-TEAM021,Software Licenses,Võ Thành Kiên,10,2001104118,Product,Software Licenses
-TEAM022,Professional Services,Ngô Đức Đức,6,1289187879,Product,Professional Services
-TEAM023,Support & Maintenance,Chu Xuân Hải,12,2406598839,Product,Support & Maintenance
-TEAM024,Training & Education,Ngô Đức Đức,9,1805412763,Product,Training & Education
-TEAM025,Hardware & Equipment,Lưu Minh Hiếu,9,1622760275,Product,Hardware & Equipment
-TEAM026,Cloud Solutions,Chu My Quỳnh,9,1882657720,Product,Cloud Solutions
-TEAM027,Custom Development,Võ Thành Kiên,9,1594860016,Product,Custom Development
-TEAM028,Inside Sales Team,Lưu Minh Hiếu,15,3214703553,Support,Inside Sales
-TEAM029,Key Accounts Team,Ngô Diệu Vy,10,2266834398,Support,Key Accounts
-TEAM030,Partner Channel Team,Đặng Thanh Thành,8,1644176357,Support,Channel
-TEAM031,Renewals Team,Hồ Thu My,12,2480775752,Support,Renewals
-TEAM032,Sales Operations,Hoàng Hùng Minh,9,244448896,Support,Operations
+TEAM001,Leadership,Hoàng Văn Tâm,4,4969168956,Management,Strategic Planning
+TEAM002,North Regional Team,Huỳnh Ngọc Thu,5,1391684890,Regional,North
+TEAM003,South Regional Team,Bùi Linh Khánh,9,2168604041,Regional,South
+TEAM004,Central Regional Team,Lê Đình Tuấn,9,2211118994,Regional,Central
+TEAM005,North Telesales Team,Huỳnh Ngọc Thu,3,0,Telesales,North
+TEAM006,South Telesales Team,Bùi Linh Khánh,3,0,Telesales,South
+TEAM007,Central Telesales Team,Lê Đình Tuấn,2,0,Telesales,Central
+TEAM008,Technology Team,Huỳnh Ngọc Thu,3,664237449,Industry,Technology
+TEAM009,F&B Team,Huỳnh Ngọc Thu,2,514636646,Industry,F&B
+TEAM010,Manufacturing Team,Bùi Linh Khánh,4,737892615,Industry,Manufacturing

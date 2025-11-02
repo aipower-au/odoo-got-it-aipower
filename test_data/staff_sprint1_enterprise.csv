@@ -1,151 +1,36 @@
 employee_code,name,login,email,phone,job_title,department,manager,region_territory,industry_specialization,customer_type_focus,active,hire_date,monthly_sales_target,user_type,sales_team
-EMP0001,Hoàng Hùng Minh,minh.h,minh.h@gotit.vn,+84973838155,Sales Director,Sales,,All Vietnam,All,All,True,2019-08-04,2916428572,Director,Leadership
-EMP0002,Ngô Đức Đức,duc.n,duc.n@gotit.vn,+84849110941,Sales Manager,Sales,Hoàng Hùng Minh,North,"Healthcare,Education",SME,True,2022-03-08,602633068,Manager,North Regional Team
-EMP0003,Bùi Hoàng Phúc,phuc.b,phuc.b@gotit.vn,+84946905823,Sales Manager,Sales,Hoàng Hùng Minh,North,All,All,True,2021-07-18,804286561,Manager,North Regional Team
-EMP0004,Phạm Ngọc Quân,quan.p,quan.p@gotit.vn,+84762980305,Sales Manager,Sales,Hoàng Hùng Minh,North,"Healthcare,Education",Enterprise,True,2020-11-23,896979968,Manager,North Regional Team
-EMP0005,Đặng Thanh Thành,thanh.d,thanh.d@gotit.vn,+84865184774,Sales Manager,Sales,Hoàng Hùng Minh,North,"Technology,F&B",SME,True,2021-11-11,638412398,Manager,North Regional Team
-EMP0006,Đặng Đình Hùng,hung.d,hung.d@gotit.vn,+84965969461,Sales Manager,Sales,Hoàng Hùng Minh,North,All,SME,True,2022-03-14,520687543,Manager,North Regional Team
-EMP0007,Chu Bảo Mai,mai.c,mai.c@gotit.vn,+84893558750,Sales Manager,Sales,Hoàng Hùng Minh,Central,All,Enterprise,True,2020-12-03,676451805,Manager,Central Regional Team
-EMP0008,Hồ Thu My,my.h,my.h@gotit.vn,+84793598576,Sales Manager,Sales,Hoàng Hùng Minh,Central,"Manufacturing,Retail",Enterprise,True,2021-09-08,553964470,Manager,Central Regional Team
-EMP0009,Đỗ Thị Bích,bich.d,bich.d@gotit.vn,+84825549228,Sales Manager,Sales,Hoàng Hùng Minh,Central,"Manufacturing,Retail",All,True,2022-10-09,887332803,Manager,Central Regional Team
-EMP0010,Ngô Diệu Vy,vy.n,vy.n@gotit.vn,+84708223220,Sales Manager,Sales,Hoàng Hùng Minh,Central,"Technology,F&B",SME,True,2022-09-01,780824364,Manager,Central Regional Team
-EMP0011,Võ Thành Kiên,kien.v,kien.v@gotit.vn,+84789283728,Sales Manager,Sales,Hoàng Hùng Minh,South,"Technology,F&B",Enterprise,True,2021-05-20,561556736,Manager,South Regional Team
-EMP0012,Chu My Quỳnh,quynh.c,quynh.c@gotit.vn,+84906881734,Sales Manager,Sales,Hoàng Hùng Minh,South,"Construction,Logistics",SME,True,2022-10-04,653657939,Manager,South Regional Team
-EMP0013,Tạ Hạ Bích,bich.t,bich.t@gotit.vn,+84828095573,Sales Manager,Sales,Hoàng Hùng Minh,South,"Technology,F&B",Enterprise,True,2021-05-21,846906039,Manager,South Regional Team
-EMP0014,Chu Xuân Hải,hai.c,hai.c@gotit.vn,+84829895895,Regional Director,Sales,Hoàng Hùng Minh,South,"Healthcare,Education",All,True,2020-11-14,690109513,Manager,South Regional Team
-EMP0015,Hà Hoàng Xuân,xuan.h,xuan.h@gotit.vn,+84905186434,Regional Director,Sales,Hoàng Hùng Minh,South,All,All,True,2022-08-16,1199520584,Manager,South Regional Team
-EMP0016,Lưu Minh Hiếu,hieu.l,hieu.l@gotit.vn,+84972138250,Regional Director,Sales,Hoàng Hùng Minh,South,"Technology,F&B",Enterprise,True,2022-05-17,825269234,Manager,South Regional Team
-EMP0017,Phạm Hữu Sơn,son.p,son.p@gotit.vn,+84943610657,Sales Executive,Sales,Đặng Thanh Thành,North,Fashion,Startup,True,2024-05-14,132262101,Sales,North Regional Team
-EMP0018,Trần Phương Tài,tai.t,tai.t@gotit.vn,+84976957024,Sales Executive,Sales,Chu Xuân Hải,South,"Technology,Finance",Startup,True,2023-10-02,112743573,Sales,South Regional Team
-EMP0019,Chu Thành Khoa,khoa.c,khoa.c@gotit.vn,+84983483014,Sales Executive,Sales,Đỗ Thị Bích,Central,"Telecommunications,Retail,Manufacturing",Startup,True,2023-06-27,222177529,Sales,Central Regional Team
-EMP0020,Hoàng Anh Cường,cuong.h,cuong.h@gotit.vn,+84934382259,Sales Executive,Sales,Ngô Diệu Vy,Central,"Fashion,Agriculture,Technology",Startup,True,2023-09-21,241911444,Sales,Central Regional Team
-EMP0021,Trịnh Gia Cường,cuong.t,cuong.t@gotit.vn,+84828498049,Sales Executive,Sales,Bùi Hoàng Phúc,North,"Real Estate,Hospitality,Construction",Enterprise,True,2022-12-02,279970268,Sales,North Regional Team
-EMP0022,La Thị Dung,dung.l,dung.l@gotit.vn,+84914000258,Sales Executive,Sales,Chu My Quỳnh,South,"Healthcare,Retail",Enterprise,True,2023-08-23,198598426,Sales,South Regional Team
-EMP0023,Lê Thị Hương,huong.l,huong.l@gotit.vn,+84856494938,Sales Executive,Sales,Lưu Minh Hiếu,South,Fashion,Enterprise,True,2023-07-10,269892209,Sales,South Regional Team
-EMP0024,Cao Minh Tùng,tung.c,tung.c@gotit.vn,+84882831109,Sales Executive,Sales,Ngô Đức Đức,North,Logistics,SME,True,2022-12-13,166777424,Sales,North Regional Team
-EMP0025,Quách Phương Đạt,dat.q,dat.q@gotit.vn,+84919397414,Sales Executive,Sales,Chu My Quỳnh,South,F&B,SME,True,2024-10-30,116921047,Sales,South Regional Team
-EMP0026,Trương Hoàng Hoa,hoa.t,hoa.t@gotit.vn,+84863984240,Sales Executive,Sales,Võ Thành Kiên,South,Technology,Enterprise,True,2022-12-15,184522166,Sales,South Regional Team
-EMP0027,Dương Kim Anh,anh.d,anh.d@gotit.vn,+84818052616,Sales Executive,Sales,Hồ Thu My,Central,"Education,Technology",Startup,True,2023-03-16,254974360,Sales,Central Regional Team
-EMP0028,Mai Minh Dũng,dung.m,dung.m@gotit.vn,+84843254104,Sales Executive,Sales,Đặng Đình Hùng,North,"F&B,Agriculture",Enterprise,True,2024-01-27,259656398,Sales,North Regional Team
-EMP0029,Tạ Hoàng Linh,linh.t,linh.t@gotit.vn,+84978958946,Sales Executive,Sales,Chu My Quỳnh,South,"Construction,Hospitality,Finance",Enterprise,True,2023-12-14,153705701,Sales,South Regional Team
-EMP0030,Đinh Gia Kiên,kien.d,kien.d@gotit.vn,+84863658370,Sales Executive,Sales,Chu My Quỳnh,South,"Hospitality,Education,Agriculture",Startup,True,2024-08-25,284995562,Sales,South Regional Team
-EMP0031,Mai Minh Khánh,khanh.m,khanh.m@gotit.vn,+84829471903,Sales Executive,Sales,Tạ Hạ Bích,South,"Fashion,Real Estate",Startup,True,2024-10-01,242355531,Sales,South Regional Team
-EMP0032,Nguyễn Thị Mai,mai.n,mai.n@gotit.vn,+84703794261,Sales Executive,Sales,Đặng Thanh Thành,North,Healthcare,Enterprise,True,2024-08-04,110870959,Sales,North Regional Team
-EMP0033,Đào Ngọc Bích,bich.d1,bich.d@gotit.vn,+84948185458,Sales Executive,Sales,Đỗ Thị Bích,Central,"Manufacturing,Education,Agriculture",Enterprise,True,2024-05-22,159064095,Sales,Central Regional Team
-EMP0034,Phạm Thanh Mai,mai.p,mai.p@gotit.vn,+84918841394,Sales Executive,Sales,Chu Bảo Mai,Central,F&B,SME,True,2023-12-01,174716770,Sales,Central Regional Team
-EMP0035,Huỳnh Đức Dũng,dung.h,dung.h@gotit.vn,+84884268156,Sales Executive,Sales,Ngô Diệu Vy,Central,"Retail,Construction",Enterprise,True,2023-06-18,240801377,Sales,Central Regional Team
-EMP0036,Mai Diệu Mai,mai.m,mai.m@gotit.vn,+84794187937,Sales Executive,Sales,Ngô Diệu Vy,Central,"Fashion,F&B",SME,True,2024-01-24,258938675,Sales,Central Regional Team
-EMP0037,Ngô Bảo Hương,huong.n,huong.n@gotit.vn,+84905371087,Sales Executive,Sales,Đặng Thanh Thành,North,Logistics,SME,True,2024-01-25,237893111,Sales,North Regional Team
-EMP0038,Viễn Quỳnh Hiền,hien.v,hien.v@gotit.vn,+84939178686,Sales Executive,Sales,Hà Hoàng Xuân,South,"Real Estate,Construction,Technology",Startup,True,2023-01-29,122294142,Sales,South Regional Team
-EMP0039,Viễn Bảo Hưng,hung.v,hung.v@gotit.vn,+84985401762,Sales Executive,Sales,Ngô Diệu Vy,Central,"Finance,Healthcare,Automotive",Enterprise,True,2023-02-06,141166869,Sales,Central Regional Team
-EMP0040,Đinh Lan Hằng,hang.d,hang.d@gotit.vn,+84931943760,Sales Executive,Sales,Tạ Hạ Bích,South,Logistics,SME,True,2024-08-01,260194663,Sales,South Regional Team
-EMP0041,Lê Thanh Tùng,tung.l,tung.l@gotit.vn,+84771906577,Sales Executive,Sales,Tạ Hạ Bích,South,"Fashion,Education",SME,True,2023-03-21,295540056,Sales,South Regional Team
-EMP0042,Lý Mai Lan,lan.l,lan.l@gotit.vn,+84943597971,Sales Executive,Sales,Chu Xuân Hải,South,F&B,Enterprise,True,2023-09-29,124593444,Sales,South Regional Team
-EMP0043,Lý Thu Vy,vy.l,vy.l@gotit.vn,+84768066611,Sales Executive,Sales,Lưu Minh Hiếu,South,"Technology,Healthcare,Manufacturing",Startup,True,2022-11-09,262226095,Sales,South Regional Team
-EMP0044,Tạ Phương Huy,huy.t,huy.t@gotit.vn,+84777017001,Sales Executive,Sales,Bùi Hoàng Phúc,North,"Construction,Finance",SME,True,2023-06-11,141563179,Sales,North Regional Team
-EMP0045,Hoàng Thành Quỳnh,quynh.h,quynh.h@gotit.vn,+84833788506,Sales Executive,Sales,Ngô Diệu Vy,Central,"Healthcare,Telecommunications",Startup,True,2023-09-23,234851687,Sales,Central Regional Team
-EMP0046,Quách Ngọc Xuân,xuan.q,xuan.q@gotit.vn,+84983319924,Sales Executive,Sales,Bùi Hoàng Phúc,North,"Automotive,Education,Finance",Enterprise,True,2024-06-12,104918789,Sales,North Regional Team
-EMP0047,Hà Tuấn Quỳnh,quynh.h1,quynh.h@gotit.vn,+84908798865,Sales Executive,Sales,Đặng Đình Hùng,North,Agriculture,Enterprise,True,2023-12-24,179066625,Sales,North Regional Team
-EMP0048,Đỗ Bảo Như,nhu.d,nhu.d@gotit.vn,+84829191616,Sales Executive,Sales,Hà Hoàng Xuân,South,"Healthcare,Real Estate,Technology",Startup,True,2023-12-01,149751319,Sales,South Regional Team
-EMP0049,Hoàng Minh Thành,thanh.h,thanh.h@gotit.vn,+84868782032,Sales Executive,Sales,Ngô Diệu Vy,Central,"Healthcare,Retail,F&B",SME,True,2023-05-28,112169344,Sales,Central Regional Team
-EMP0050,Đinh Lan My,my.d,my.d@gotit.vn,+84765527710,Sales Executive,Sales,Chu My Quỳnh,South,F&B,Startup,True,2024-09-19,198992884,Sales,South Regional Team
-EMP0051,Đặng Diệu Nga,nga.d,nga.d@gotit.vn,+84941839903,Sales Executive,Sales,Đặng Thanh Thành,North,"Manufacturing,F&B,Finance",Startup,True,2024-03-25,155958139,Sales,North Regional Team
-EMP0052,Đào Anh Mai,mai.d,mai.d@gotit.vn,+84941798036,Sales Executive,Sales,Tạ Hạ Bích,South,Technology,SME,True,2023-04-19,192672948,Sales,South Regional Team
-EMP0053,Huỳnh Thúy Hà,ha.h,ha.h@gotit.vn,+84835084907,Sales Executive,Sales,Bùi Hoàng Phúc,North,F&B,SME,True,2022-11-27,234027861,Sales,North Regional Team
-EMP0054,Hà My Hà,ha.h1,ha.h@gotit.vn,+84918451148,Sales Executive,Sales,Lưu Minh Hiếu,South,"F&B,Agriculture,Hospitality",Startup,True,2024-04-07,105016374,Sales,South Regional Team
-EMP0055,Đặng Mai Phương,phuong.d,phuong.d@gotit.vn,+84964494963,Sales Executive,Sales,Đặng Đình Hùng,North,Telecommunications,Enterprise,True,2023-06-27,146578621,Sales,North Regional Team
-EMP0056,Cao Ngọc Thảo,thao.c,thao.c@gotit.vn,+84794225388,Sales Executive,Sales,Ngô Diệu Vy,Central,"Logistics,Education",Enterprise,True,2023-09-04,284955033,Sales,Central Regional Team
-EMP0057,Lý Anh Hùng,hung.l,hung.l@gotit.vn,+84773253590,Sales Executive,Sales,Hà Hoàng Xuân,South,Technology,Enterprise,True,2024-06-09,202356405,Sales,South Regional Team
-EMP0058,Chu Gia Vinh,vinh.c,vinh.c@gotit.vn,+84786900147,Sales Executive,Sales,Chu Xuân Hải,South,"Fashion,Technology,Manufacturing",Startup,True,2023-05-16,282501274,Sales,South Regional Team
-EMP0059,Hồ Bảo Yến,yen.h,yen.h@gotit.vn,+84823694155,Sales Executive,Sales,Đặng Đình Hùng,North,"Healthcare,Manufacturing,F&B",Enterprise,True,2023-12-31,194838726,Sales,North Regional Team
-EMP0060,Dương Tuấn Long,long.d,long.d@gotit.vn,+84972650103,Sales Executive,Sales,Lưu Minh Hiếu,South,"Healthcare,Telecommunications",SME,True,2023-02-16,166123700,Sales,South Regional Team
-EMP0061,Vũ Thanh Hằng,hang.v,hang.v@gotit.vn,+84823816623,Sales Executive,Sales,Đặng Đình Hùng,North,Construction,Startup,True,2024-03-24,124377119,Sales,North Regional Team
-EMP0062,Lý Phương Hải,hai.l,hai.l@gotit.vn,+84898373573,Sales Executive,Sales,Chu Xuân Hải,South,Fashion,SME,True,2023-02-13,259311651,Sales,South Regional Team
-EMP0063,Bùi Thành Khoa,khoa.b,khoa.b@gotit.vn,+84888657632,Sales Executive,Sales,Phạm Ngọc Quân,North,"Technology,Agriculture,Manufacturing",SME,True,2024-02-25,156163297,Sales,North Regional Team
-EMP0064,Hoàng Hồng Hiền,hien.h,hien.h@gotit.vn,+84985330177,Sales Executive,Sales,Hồ Thu My,Central,"Construction,Finance,Real Estate",Startup,True,2024-04-11,241365429,Sales,Central Regional Team
-EMP0065,Lưu Hoàng Tuyết,tuyet.l,tuyet.l@gotit.vn,+84852141341,Sales Executive,Sales,Đặng Thanh Thành,North,"Manufacturing,Real Estate,Logistics",SME,True,2024-04-15,207602360,Sales,North Regional Team
-EMP0066,Lưu Văn Quỳnh,quynh.l,quynh.l@gotit.vn,+84937369045,Sales Executive,Sales,Đỗ Thị Bích,Central,"Technology,Healthcare",Startup,True,2023-05-24,184456411,Sales,Central Regional Team
-EMP0067,Hồ Hữu Tài,tai.h,tai.h@gotit.vn,+84827205524,Sales Executive,Sales,Ngô Diệu Vy,Central,Technology,Enterprise,True,2023-05-15,284632282,Sales,Central Regional Team
-EMP0068,La Đình Phúc,phuc.l,phuc.l@gotit.vn,+84853533155,Sales Executive,Sales,Hồ Thu My,Central,Hospitality,Startup,True,2024-09-05,175009417,Sales,Central Regional Team
-EMP0069,Vũ Hương Hằng,hang.v1,hang.v@gotit.vn,+84819782954,Sales Executive,Sales,Chu My Quỳnh,South,"Automotive,Real Estate",Enterprise,True,2022-11-22,243286954,Sales,South Regional Team
-EMP0070,Mai Thúy Vy,vy.m,vy.m@gotit.vn,+84867690012,Sales Executive,Sales,Phạm Ngọc Quân,North,Construction,SME,True,2023-02-11,217848196,Sales,North Regional Team
-EMP0071,Dương Ngọc Linh,linh.d,linh.d@gotit.vn,+84987263816,Sales Executive,Sales,Bùi Hoàng Phúc,North,Agriculture,SME,True,2024-06-12,295020528,Sales,North Regional Team
-EMP0072,Đào Đức Anh,anh.d1,anh.d@gotit.vn,+84784806488,Sales Executive,Sales,Phạm Ngọc Quân,North,"Education,Hospitality,Real Estate",Enterprise,True,2023-02-07,149591301,Sales,North Regional Team
-EMP0073,Lý Thị Xuân,xuan.l,xuan.l@gotit.vn,+84976928498,Sales Executive,Sales,Chu Xuân Hải,South,"Healthcare,Agriculture,Logistics",Startup,True,2024-06-25,244090694,Sales,South Regional Team
-EMP0074,Ngô Kim Hằng,hang.n,hang.n@gotit.vn,+84894503953,Sales Executive,Sales,Võ Thành Kiên,South,Agriculture,Enterprise,True,2022-12-12,243330650,Sales,South Regional Team
-EMP0075,Vũ Gia Nam,nam.v,nam.v@gotit.vn,+84908460834,Sales Executive,Sales,Chu Bảo Mai,Central,Education,SME,True,2024-10-13,190591980,Sales,Central Regional Team
-EMP0076,Tạ Phương Thảo,thao.t,thao.t@gotit.vn,+84816733990,Sales Executive,Sales,Đặng Thanh Thành,North,Finance,Startup,True,2024-08-28,282469035,Sales,North Regional Team
-EMP0077,Đặng Mạnh Tài,tai.d,tai.d@gotit.vn,+84844594862,Sales Executive,Sales,Chu My Quỳnh,South,"Technology,Manufacturing,Telecommunications",SME,True,2024-01-30,140996536,Sales,South Regional Team
-EMP0078,Chu Tuấn Hiếu,hieu.c,hieu.c@gotit.vn,+84898526906,Sales Executive,Sales,Ngô Diệu Vy,Central,"Logistics,Hospitality",SME,True,2023-11-17,220290827,Sales,Central Regional Team
-EMP0079,Nguyễn Ngọc Hoa,hoa.n,hoa.n@gotit.vn,+84948938909,Sales Executive,Sales,Chu Xuân Hải,South,"Agriculture,Education,Automotive",Startup,True,2024-01-03,233961790,Sales,South Regional Team
-EMP0080,Huỳnh Hữu Mạnh,manh.h,manh.h@gotit.vn,+84974435629,Sales Executive,Sales,Tạ Hạ Bích,South,"Retail,Manufacturing,Telecommunications",SME,True,2024-08-02,139134664,Sales,South Regional Team
-EMP0081,Bùi My Bích,bich.b,bich.b@gotit.vn,+84911770787,Sales Executive,Sales,Chu My Quỳnh,South,"Retail,Agriculture,Real Estate",Startup,True,2023-10-20,222551248,Sales,South Regional Team
-EMP0082,Đào Phương Anh,anh.d2,anh.d@gotit.vn,+84891715215,Sales Executive,Sales,Chu Bảo Mai,Central,"Manufacturing,Retail",Enterprise,True,2022-12-23,135882907,Sales,Central Regional Team
-EMP0083,La Hoàng Khánh,khanh.l,khanh.l@gotit.vn,+84973116930,Sales Executive,Sales,Đỗ Thị Bích,Central,"Finance,Logistics,Manufacturing",Enterprise,True,2023-09-27,287711671,Sales,Central Regional Team
-EMP0084,Đào Đức Long,long.d1,long.d@gotit.vn,+84764777888,Sales Executive,Sales,Ngô Diệu Vy,Central,"Education,Telecommunications",Startup,True,2023-08-05,150842501,Sales,Central Regional Team
-EMP0085,Quách Kim Ngọc,ngoc.q,ngoc.q@gotit.vn,+84768121140,Sales Executive,Sales,Ngô Đức Đức,North,"Agriculture,Retail,Education",SME,True,2023-02-12,182883726,Sales,North Regional Team
-EMP0086,Đào Quang Cường,cuong.d,cuong.d@gotit.vn,+84838787709,Sales Executive,Sales,Ngô Diệu Vy,Central,Agriculture,Startup,True,2023-10-24,133212434,Sales,Central Regional Team
-EMP0087,Lê Hữu Đức,duc.l,duc.l@gotit.vn,+84829294953,Sales Executive,Sales,Chu Xuân Hải,South,"Education,Hospitality",SME,True,2024-02-03,232709268,Sales,South Regional Team
-EMP0088,Chu Tuấn Hưng,hung.c,hung.c@gotit.vn,+84797484415,Sales Executive,Sales,Hồ Thu My,Central,"Automotive,Fashion",Enterprise,True,2023-05-25,246315406,Sales,Central Regional Team
-EMP0089,Trương Hương Hoa,hoa.t1,hoa.t@gotit.vn,+84791653536,Sales Executive,Sales,Ngô Diệu Vy,Central,"Real Estate,Construction,Healthcare",SME,True,2024-10-07,109002005,Sales,Central Regional Team
-EMP0090,Đào Minh Linh,linh.d1,linh.d@gotit.vn,+84858517280,Sales Executive,Sales,Võ Thành Kiên,South,"Fashion,Hospitality",Enterprise,True,2024-04-03,198028934,Sales,South Regional Team
-EMP0091,Đào Lan Linh,linh.d2,linh.d@gotit.vn,+84887039765,Sales Executive,Sales,Ngô Đức Đức,North,"Retail,Technology",Enterprise,True,2024-08-25,161057978,Sales,North Regional Team
-EMP0092,Đào Hạ Linh,linh.d3,linh.d@gotit.vn,+84817565073,Sales Executive,Sales,Hồ Thu My,Central,Retail,Startup,True,2023-12-21,251595104,Sales,Central Regional Team
-EMP0093,Hoàng Tuấn Hiếu,hieu.h,hieu.h@gotit.vn,+84703232387,Sales Executive,Sales,Chu My Quỳnh,South,Retail,Startup,True,2024-05-12,154407035,Sales,South Regional Team
-EMP0094,Quách Hữu Dũng,dung.q,dung.q@gotit.vn,+84969822256,Sales Executive,Sales,Hồ Thu My,Central,F&B,SME,True,2024-10-26,238788199,Sales,Central Regional Team
-EMP0095,Tô Anh Trí,tri.t,tri.t@gotit.vn,+84869264957,Sales Executive,Sales,Ngô Đức Đức,North,"Technology,Healthcare",SME,True,2024-06-30,226990192,Sales,North Regional Team
-EMP0096,Trịnh Quốc Khoa,khoa.t,khoa.t@gotit.vn,+84833215661,Sales Executive,Sales,Bùi Hoàng Phúc,North,Agriculture,Startup,True,2024-09-15,244660323,Sales,North Regional Team
-EMP0097,Bùi Kim Hoa,hoa.b,hoa.b@gotit.vn,+84902989488,Sales Executive,Sales,Ngô Đức Đức,North,"Hospitality,Construction",Startup,True,2023-07-09,273411288,Sales,North Regional Team
-EMP0098,Hà My Tuyết,tuyet.h,tuyet.h@gotit.vn,+84988857167,Sales Executive,Sales,Võ Thành Kiên,South,"Manufacturing,Construction,Healthcare",SME,True,2023-08-27,293936054,Sales,South Regional Team
-EMP0099,Phan Xuân Bình,binh.p,binh.p@gotit.vn,+84852339801,Sales Executive,Sales,Đặng Đình Hùng,North,"Retail,Construction,Technology",Startup,True,2023-11-21,299107234,Sales,North Regional Team
-EMP0100,Lê Linh Diệp,diep.l,diep.l@gotit.vn,+84815417726,Sales Executive,Sales,Đỗ Thị Bích,Central,"Healthcare,Technology,Hospitality",Startup,True,2024-07-10,199047848,Sales,Central Regional Team
-EMP0101,Đào Quốc Tài,tai.d1,tai.d@gotit.vn,+84834271011,Sales Executive,Sales,Đỗ Thị Bích,Central,Construction,Startup,True,2024-05-03,285934241,Sales,Central Regional Team
-EMP0102,Đỗ Công Long,long.d2,long.d@gotit.vn,+84845722739,Sales Executive,Sales,Chu My Quỳnh,South,F&B,Startup,True,2024-08-09,197629423,Sales,South Regional Team
-EMP0103,Viễn Kim Như,nhu.v,nhu.v@gotit.vn,+84707463682,Sales Executive,Sales,Tạ Hạ Bích,South,"Real Estate,F&B",Enterprise,True,2023-10-05,122366346,Sales,South Regional Team
-EMP0104,Hồ Kim Khánh,khanh.h,khanh.h@gotit.vn,+84968266574,Sales Executive,Sales,Tạ Hạ Bích,South,"Construction,F&B,Telecommunications",Startup,True,2023-05-08,173551201,Sales,South Regional Team
-EMP0105,Lý Tuấn Trí,tri.l,tri.l@gotit.vn,+84886472329,Sales Executive,Sales,Võ Thành Kiên,South,"Automotive,Technology,Education",SME,True,2023-08-31,172203304,Sales,South Regional Team
-EMP0106,Ngô Thanh Quân,quan.n,quan.n@gotit.vn,+84852221925,Sales Executive,Sales,Võ Thành Kiên,South,"Technology,Manufacturing",SME,True,2023-03-16,190667920,Sales,South Regional Team
-EMP0107,Đặng Văn Quỳnh,quynh.d,quynh.d@gotit.vn,+84972464382,Sales Executive,Sales,Ngô Đức Đức,North,"Agriculture,Telecommunications,Healthcare",SME,True,2024-09-02,241528098,Sales,North Regional Team
-EMP0108,Đỗ Mạnh Phúc,phuc.d,phuc.d@gotit.vn,+84905078414,Sales Executive,Sales,Phạm Ngọc Quân,North,Telecommunications,Startup,True,2023-12-23,291889829,Sales,North Regional Team
-EMP0109,Nguyễn Hữu Trí,tri.n,tri.n@gotit.vn,+84963294296,Sales Executive,Sales,Phạm Ngọc Quân,North,"Hospitality,Logistics,Fashion",Enterprise,True,2024-03-21,269258672,Sales,North Regional Team
-EMP0110,Chu Linh Hoa,hoa.c,hoa.c@gotit.vn,+84881233348,Sales Executive,Sales,Võ Thành Kiên,South,"Construction,Hospitality",Startup,True,2023-11-18,228825885,Sales,South Regional Team
-EMP0111,Bùi Hữu Anh,anh.b,anh.b@gotit.vn,+84892122874,Sales Executive,Sales,Đặng Đình Hùng,North,"Real Estate,Logistics,Hospitality",Enterprise,True,2024-09-17,122423518,Sales,North Regional Team
-EMP0112,Hồ Minh Quân,quan.h,quan.h@gotit.vn,+84782903057,Sales Executive,Sales,Phạm Ngọc Quân,North,"Construction,Logistics",Startup,True,2024-01-09,124971407,Sales,North Regional Team
-EMP0113,Đỗ Đình Quỳnh,quynh.d1,quynh.d@gotit.vn,+84816588591,Sales Executive,Sales,Tạ Hạ Bích,South,"Construction,Education",Startup,True,2024-08-13,191435496,Sales,South Regional Team
-EMP0114,Vũ Thu Quỳnh,quynh.v,quynh.v@gotit.vn,+84918306872,Sales Executive,Sales,Tạ Hạ Bích,South,"Logistics,Manufacturing,Construction",Enterprise,True,2023-04-28,250502186,Sales,South Regional Team
-EMP0115,Phạm Hùng Minh,minh.p,minh.p@gotit.vn,+84765744279,Sales Executive,Sales,Lưu Minh Hiếu,South,"Agriculture,Hospitality",Startup,True,2022-11-11,234810525,Sales,South Regional Team
-EMP0116,Võ Anh Phúc,phuc.v,phuc.v@gotit.vn,+84822619853,Sales Executive,Sales,Bùi Hoàng Phúc,North,"Retail,F&B",Enterprise,True,2024-10-05,230328116,Sales,North Regional Team
-EMP0117,Phan Quốc Huy,huy.p,huy.p@gotit.vn,+84949278397,Telesales Executive,Telesales,Đặng Thanh Thành,North,All,Lead Qualification,True,2024-03-06,0,Telesales,North Telesales Team
-EMP0118,Dương Ngọc Hiền,hien.d,hien.d@gotit.vn,+84986967209,Telesales Executive,Telesales,Đặng Đình Hùng,North,All,Lead Qualification,True,2025-01-06,0,Telesales,North Telesales Team
-EMP0119,Quách Thanh Hương,huong.q,huong.q@gotit.vn,+84968752547,Telesales Executive,Telesales,Đặng Thanh Thành,North,All,Lead Qualification,True,2024-11-25,0,Telesales,North Telesales Team
-EMP0120,Viễn Văn Kiên,kien.v1,kien.v@gotit.vn,+84813841287,Telesales Executive,Telesales,Đặng Thanh Thành,North,All,Lead Qualification,True,2023-11-09,0,Telesales,North Telesales Team
-EMP0121,Võ Xuân Kiên,kien.v2,kien.v@gotit.vn,+84899426760,Telesales Executive,Telesales,Ngô Đức Đức,North,All,Lead Qualification,True,2025-04-01,0,Telesales,North Telesales Team
-EMP0122,Hồ Gia Quân,quan.h1,quan.h@gotit.vn,+84847918958,Telesales Executive,Telesales,Đặng Đình Hùng,North,All,Lead Qualification,True,2024-03-09,0,Telesales,North Telesales Team
-EMP0123,Phan Quỳnh Hiền,hien.p,hien.p@gotit.vn,+84986408345,Telesales Executive,Telesales,Đặng Đình Hùng,North,All,Lead Qualification,True,2024-03-11,0,Telesales,North Telesales Team
-EMP0124,Tô Đình Bình,binh.t,binh.t@gotit.vn,+84839751241,Telesales Executive,Telesales,Đặng Thanh Thành,North,All,Lead Qualification,True,2023-12-12,0,Telesales,North Telesales Team
-EMP0125,Đỗ Hùng Quân,quan.d,quan.d@gotit.vn,+84774497821,Telesales Executive,Telesales,Chu Bảo Mai,Central,All,Lead Qualification,True,2025-02-13,0,Telesales,Central Telesales Team
-EMP0126,Đinh Thị Anh,anh.d3,anh.d@gotit.vn,+84762235299,Telesales Executive,Telesales,Đỗ Thị Bích,Central,All,Lead Qualification,True,2025-05-12,0,Telesales,Central Telesales Team
-EMP0127,Đào Phương Hà,ha.d,ha.d@gotit.vn,+84911515893,Telesales Executive,Telesales,Hồ Thu My,Central,All,Lead Qualification,True,2025-05-22,0,Telesales,Central Telesales Team
-EMP0128,Huỳnh Diệu Huyền,huyen.h,huyen.h@gotit.vn,+84887304166,Telesales Executive,Telesales,Ngô Diệu Vy,Central,All,Lead Qualification,True,2024-01-04,0,Telesales,Central Telesales Team
-EMP0129,Dương Anh Tâm,tam.d,tam.d@gotit.vn,+84704675480,Telesales Executive,Telesales,Ngô Diệu Vy,Central,All,Lead Qualification,True,2024-05-21,0,Telesales,Central Telesales Team
-EMP0130,Hoàng Hương Dung,dung.h1,dung.h@gotit.vn,+84832426870,Telesales Executive,Telesales,Hồ Thu My,Central,All,Lead Qualification,True,2024-07-02,0,Telesales,Central Telesales Team
-EMP0131,Mai Linh My,my.m,my.m@gotit.vn,+84848317753,Telesales Executive,Telesales,Võ Thành Kiên,South,All,Lead Qualification,True,2024-06-11,0,Telesales,South Telesales Team
-EMP0132,Tô Hùng Quân,quan.t,quan.t@gotit.vn,+84832822833,Telesales Executive,Telesales,Chu Xuân Hải,South,All,Lead Qualification,True,2024-10-21,0,Telesales,South Telesales Team
-EMP0133,Cao Phương Yến,yen.c,yen.c@gotit.vn,+84944368053,Telesales Executive,Telesales,Chu Xuân Hải,South,All,Lead Qualification,True,2024-07-14,0,Telesales,South Telesales Team
-EMP0134,La Linh Thảo,thao.l,thao.l@gotit.vn,+84868959885,Telesales Executive,Telesales,Võ Thành Kiên,South,All,Lead Qualification,True,2024-12-03,0,Telesales,South Telesales Team
-EMP0135,Ngô My Quỳnh,quynh.n,quynh.n@gotit.vn,+84906346295,Telesales Executive,Telesales,Tạ Hạ Bích,South,All,Lead Qualification,True,2024-08-27,0,Telesales,South Telesales Team
-EMP0136,Trịnh Quốc Anh,anh.t,anh.t@gotit.vn,+84869905026,Telesales Executive,Telesales,Chu My Quỳnh,South,All,Lead Qualification,True,2025-05-13,0,Telesales,South Telesales Team
-EMP0137,Hà Gia Hiếu,hieu.h1,hieu.h@gotit.vn,+84707798823,Telesales Executive,Telesales,Hà Hoàng Xuân,South,All,Lead Qualification,True,2024-11-03,0,Telesales,South Telesales Team
-EMP0138,Vũ Lan Hương,huong.v,huong.v@gotit.vn,+84946462271,Telesales Executive,Telesales,Hà Hoàng Xuân,South,All,Lead Qualification,True,2024-07-02,0,Telesales,South Telesales Team
-EMP0139,Mai Phương Mạnh,manh.m,manh.m@gotit.vn,+84935883181,Telesales Executive,Telesales,Chu Xuân Hải,South,All,Lead Qualification,True,2023-11-20,0,Telesales,South Telesales Team
-EMP0140,Đào Anh Khánh,khanh.d,khanh.d@gotit.vn,+84792685173,Telesales Executive,Telesales,Võ Thành Kiên,South,All,Lead Qualification,True,2024-08-21,0,Telesales,South Telesales Team
-EMP0141,Ngô Đình Vinh,vinh.n,vinh.n@gotit.vn,+84708762324,Telesales Executive,Telesales,Tạ Hạ Bích,South,All,Lead Qualification,True,2025-04-26,0,Telesales,South Telesales Team
-EMP0142,Trần Thanh Linh,linh.t1,linh.t@gotit.vn,+84817052134,Sales Operations Manager,Sales Ops,Hoàng Hùng Minh,All Vietnam,All,All,True,2024-02-09,0,Support,Sales Ops
-EMP0143,Đinh Thanh Anh,anh.d4,anh.d@gotit.vn,+84844054904,Sales Coordinator,Sales Ops,Hoàng Hùng Minh,North,All,All,True,2024-05-21,0,Support,Sales Ops
-EMP0144,La Mai Quỳnh,quynh.l1,quynh.l@gotit.vn,+84896441667,Sales Coordinator,Sales Ops,Hoàng Hùng Minh,South,All,All,True,2022-12-19,0,Support,Sales Ops
-EMP0145,Lê Đức Quân,quan.l,quan.l@gotit.vn,+84908624458,Sales Coordinator,Sales Ops,Hoàng Hùng Minh,Central,All,All,True,2024-12-14,0,Support,Sales Ops
-EMP0146,La Bảo Cường,cuong.l,cuong.l@gotit.vn,+84987558532,Sales Analyst,Sales Analytics,Hoàng Hùng Minh,All Vietnam,All,All,True,2025-01-05,0,Support,Sales Analytics
-EMP0147,Quách My Anh,anh.q,anh.q@gotit.vn,+84788389883,Sales Analyst,Sales Analytics,Hoàng Hùng Minh,All Vietnam,All,All,True,2023-08-30,0,Support,Sales Analytics
-EMP0148,Hoàng Quốc Anh,anh.h,anh.h@gotit.vn,+84987414846,Sales Enablement Manager,Sales Enablement,Hoàng Hùng Minh,All Vietnam,All,All,True,2023-09-12,87568139,Support,Sales Enablement
-EMP0149,Hoàng Thanh Thu,thu.h,thu.h@gotit.vn,+84882591429,Channel Partner Manager,Partner Channel,Hoàng Hùng Minh,All Vietnam,All,All,True,2023-02-06,82781185,Support,Partner Channel
-EMP0150,Lưu Bảo Hùng,hung.l1,hung.l@gotit.vn,+84769325447,Customer Success Manager,Customer Success,Hoàng Hùng Minh,All Vietnam,All,All,True,2022-11-18,74099572,Support,Customer Success
+EMP0001,Hoàng Văn Tâm,tam.h,tam.h@gotit.vn,+84946025376,Sales Director,Sales,,All Vietnam,All,All,True,2019-04-22,2941922876,Director,Leadership
+EMP0002,Huỳnh Ngọc Thu,thu.h,thu.h@gotit.vn,+84936582056,Sales Manager,Sales,Hoàng Văn Tâm,North,"Technology,F&B",All,True,2021-06-16,615776080,Manager,North Regional Team
+EMP0003,Lê Đình Tuấn,tuan.l,tuan.l@gotit.vn,+84853578953,Sales Manager,Sales,Hoàng Văn Tâm,Central,"Technology,F&B",Enterprise,True,2022-10-29,681125748,Manager,Central Regional Team
+EMP0004,Bùi Linh Khánh,khanh.b,khanh.b@gotit.vn,+84881784407,Regional Director,Sales,Hoàng Văn Tâm,South,All,Enterprise,True,2022-02-14,730344252,Manager,South Regional Team
+EMP0005,Quách Đức Tùng,tung.q,tung.q@gotit.vn,+84846869607,Sales Executive,Sales,Huỳnh Ngọc Thu,North,"Technology,F&B",SME,True,2023-08-09,231071904,Sales,North Regional Team
+EMP0006,Chu Quang Quỳnh,quynh.c,quynh.c@gotit.vn,+84798194898,Sales Executive,Sales,Bùi Linh Khánh,South,"Telecommunications,Healthcare",SME,True,2024-07-01,153743463,Sales,South Regional Team
+EMP0007,Nguyễn Thanh Hoa,hoa.n,hoa.n@gotit.vn,+84962139312,Sales Executive,Sales,Lê Đình Tuấn,Central,"Construction,Retail",Startup,True,2023-09-29,250870073,Sales,Central Regional Team
+EMP0008,Trịnh Mai Hồng,hong.t,hong.t@gotit.vn,+84849943598,Sales Executive,Sales,Lê Đình Tuấn,Central,"Construction,Telecommunications,Real Estate",Startup,True,2023-07-24,157202233,Sales,Central Regional Team
+EMP0009,Hoàng Anh Huy,huy.h,huy.h@gotit.vn,+84847425102,Sales Executive,Sales,Bùi Linh Khánh,South,Retail,Startup,True,2024-03-12,104382567,Sales,South Regional Team
+EMP0010,Bùi Thúy Quỳnh,quynh.b,quynh.b@gotit.vn,+84787039710,Sales Executive,Sales,Bùi Linh Khánh,South,Manufacturing,Enterprise,True,2022-12-24,165923331,Sales,South Regional Team
+EMP0011,Ngô Phương Tuấn,tuan.n,tuan.n@gotit.vn,+84766423547,Sales Executive,Sales,Huỳnh Ngọc Thu,North,"Technology,Manufacturing",Enterprise,True,2022-11-23,259091169,Sales,North Regional Team
+EMP0012,Cao Gia Hải,hai.c,hai.c@gotit.vn,+84906306318,Sales Executive,Sales,Lê Đình Tuấn,Central,Real Estate,SME,True,2024-09-30,245307058,Sales,Central Regional Team
+EMP0013,Trịnh Minh Tài,tai.t,tai.t@gotit.vn,+84976579377,Sales Executive,Sales,Lê Đình Tuấn,Central,Technology,Enterprise,True,2024-04-14,174074376,Sales,Central Regional Team
+EMP0014,Lý Thu Phương,phuong.l,phuong.l@gotit.vn,+84934940804,Sales Executive,Sales,Lê Đình Tuấn,Central,"F&B,Agriculture,Logistics",Startup,True,2023-03-29,283564742,Sales,Central Regional Team
+EMP0015,La Lan Tuyết,tuyet.l,tuyet.l@gotit.vn,+84833793064,Sales Executive,Sales,Huỳnh Ngọc Thu,North,"Manufacturing,Retail",Startup,True,2023-04-04,144828081,Sales,North Regional Team
+EMP0016,Dương Thành Thành,thanh.d,thanh.d@gotit.vn,+84893225606,Sales Executive,Sales,Bùi Linh Khánh,South,"Telecommunications,Education,Manufacturing",Startup,True,2024-01-31,168050034,Sales,South Regional Team
+EMP0017,Trương Hữu Quỳnh,quynh.t,quynh.t@gotit.vn,+84836336540,Sales Executive,Sales,Huỳnh Ngọc Thu,North,"Agriculture,Telecommunications",Enterprise,True,2023-07-27,140917656,Sales,North Regional Team
+EMP0018,Mai Anh Tuấn,tuan.m,tuan.m@gotit.vn,+84885937623,Sales Executive,Sales,Bùi Linh Khánh,South,"Retail,Finance",Enterprise,True,2024-03-21,261768179,Sales,South Regional Team
+EMP0019,Bùi Ngọc Linh,linh.b,linh.b@gotit.vn,+84783226480,Sales Executive,Sales,Lê Đình Tuấn,Central,Agriculture,Startup,True,2024-09-28,168618141,Sales,Central Regional Team
+EMP0020,Đặng Tuấn Vinh,vinh.d,vinh.d@gotit.vn,+84886854984,Sales Executive,Sales,Lê Đình Tuấn,Central,Retail,Startup,True,2023-06-27,146400689,Sales,Central Regional Team
+EMP0021,Bùi Thị Nga,nga.b,nga.b@gotit.vn,+84778404934,Sales Executive,Sales,Bùi Linh Khánh,South,Healthcare,SME,True,2024-08-28,138238571,Sales,South Regional Team
+EMP0022,Đào Văn Khánh,khanh.d,khanh.d@gotit.vn,+84813916458,Sales Executive,Sales,Bùi Linh Khánh,South,"Healthcare,Agriculture",SME,True,2024-08-29,146496261,Sales,South Regional Team
+EMP0023,Chu Quỳnh Thu,thu.c,thu.c@gotit.vn,+84939448181,Sales Executive,Sales,Bùi Linh Khánh,South,"Agriculture,Telecommunications",Enterprise,True,2024-02-09,299657383,Sales,South Regional Team
+EMP0024,Đỗ Hoàng Xuân,xuan.d,xuan.d@gotit.vn,+84892741251,Sales Executive,Sales,Lê Đình Tuấn,Central,Retail,Enterprise,True,2023-08-12,103955934,Sales,Central Regional Team
+EMP0025,Lý Lan Phương,phuong.l1,phuong.l@gotit.vn,+84821239816,Telesales Executive,Telesales,Huỳnh Ngọc Thu,North,All,Lead Qualification,True,2023-11-13,0,Telesales,North Telesales Team
+EMP0026,Chu My Hiền,hien.c,hien.c@gotit.vn,+84777763213,Telesales Executive,Telesales,Huỳnh Ngọc Thu,North,All,Lead Qualification,True,2024-07-07,0,Telesales,North Telesales Team
+EMP0027,Huỳnh Thành Trí,tri.h,tri.h@gotit.vn,+84786373283,Telesales Executive,Telesales,Huỳnh Ngọc Thu,North,All,Lead Qualification,True,2025-03-17,0,Telesales,North Telesales Team
+EMP0028,Phạm Hạ Hiền,hien.p,hien.p@gotit.vn,+84777753711,Telesales Executive,Telesales,Lê Đình Tuấn,Central,All,Lead Qualification,True,2024-12-31,0,Telesales,Central Telesales Team
+EMP0029,Lý Hoàng Vy,vy.l,vy.l@gotit.vn,+84762372674,Telesales Executive,Telesales,Lê Đình Tuấn,Central,All,Lead Qualification,True,2024-08-14,0,Telesales,Central Telesales Team
+EMP0030,Bùi Quốc Anh,anh.b,anh.b@gotit.vn,+84854802683,Telesales Executive,Telesales,Bùi Linh Khánh,South,All,Lead Qualification,True,2024-03-02,0,Telesales,South Telesales Team
+EMP0031,Dương Quốc Kiên,kien.d,kien.d@gotit.vn,+84786695468,Telesales Executive,Telesales,Bùi Linh Khánh,South,All,Lead Qualification,True,2025-04-29,0,Telesales,South Telesales Team
+EMP0032,Trần Đức Hùng,hung.t,hung.t@gotit.vn,+84985709622,Telesales Executive,Telesales,Bùi Linh Khánh,South,All,Lead Qualification,True,2024-05-11,0,Telesales,South Telesales Team
+EMP0033,Hoàng Hoàng Ngọc,ngoc.h,ngoc.h@gotit.vn,+84867365438,Sales Operations Manager,Sales Ops,Hoàng Văn Tâm,All Vietnam,All,All,True,2024-11-09,0,Support,Sales Ops
+EMP0034,Viễn Thị Thảo,thao.v,thao.v@gotit.vn,+84851796795,Sales Coordinator,Sales Ops,Hoàng Văn Tâm,North,All,All,True,2024-12-21,0,Support,Sales Ops
+EMP0035,Hà Mai Mai,mai.h,mai.h@gotit.vn,+84866948625,Sales Coordinator,Sales Ops,Hoàng Văn Tâm,South,All,All,True,2024-01-30,0,Support,Sales Ops
