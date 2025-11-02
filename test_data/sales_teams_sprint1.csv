@@ -1,0 +1,8 @@
+team_code,team_name,team_leader,team_members,region_coverage,industry_focus,customer_type_target,monthly_revenue_target,team_type,description
+TEAM001,North Regional Team,Lê Quốc Bảo,"Trần Thị Hồng, Lê Minh Tuấn, Bùi Văn Tài, Ngô Văn Hùng","Hà Nội, Hải Phòng, Huế",All,All,800000000,Regional,Covers all sales activities in Northern Vietnam
+TEAM002,South Regional Team,Nguyễn Thị Mai,"Nguyễn Văn Thành, Phạm Thu Hà, Hoàng Đức Long, Đỗ Thị Phương, Huỳnh Thị Lan","Hồ Chí Minh, Biên Hòa, Vũng Tàu",All,All,1200000000,Regional,Covers all sales activities in Southern Vietnam
+TEAM003,Central Regional Team,Trần Văn Hải,"Võ Thị Lan, Phan Quốc Anh, Đặng Minh Phương, Phan Thị Tuyết","Đà Nẵng, Nha Trang, Quy Nhơn, Cần Thơ",All,All,700000000,Regional,Covers all sales activities in Central Vietnam
+TEAM004,Technology & Digital Team,Phạm Thu Hà,"Phạm Thu Hà, Hoàng Đức Long, Bùi Văn Tài",All Vietnam,"Technology, Education","Enterprise, SME",500000000,Industry-based,Specialized team for technology and digital transformation clients
+TEAM005,F&B & Retail Team,Nguyễn Văn Thành,"Nguyễn Văn Thành, Trần Thị Hồng, Võ Thị Lan, Đỗ Thị Phương",All Vietnam,"F&B, Retail, Fashion",All,600000000,Industry-based,Specialized team for food & beverage and retail sectors
+TEAM006,Enterprise Sales Team,Nguyễn Thị Mai,"Nguyễn Văn Thành, Trần Thị Hồng, Phan Quốc Anh",All Vietnam,All,Enterprise,1000000000,Customer-type based,High-value enterprise accounts with order value > 100M VND
+TEAM007,Telesales Team,Lê Quốc Bảo,"Nguyễn Thu Hằng, Trần Văn Đạt, Lê Thị Hương, Hoàng Minh Khoa, Võ Thị Ngọc",All Vietnam,All,Lead Qualification,0,Support,Handles initial lead qualification and customer identification
