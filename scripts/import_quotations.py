@@ -342,14 +342,20 @@ def import_quotation_lines_batch(uid, models, csv_file, quotation_id_map, batch_
                     }
 
                     # Get product - REQUIRED
-                    if row.get('product'):
-                        product_id = get_product_id(uid, models, row['product'])
+                    # Support both 'product' and 'product_id'/'product_name' column names
+                    product_name = row.get('product') or row.get('product_id') or row.get('product_name')
+                    if product_name:
+                        product_id = get_product_id(uid, models, product_name)
                         if product_id:
                             line_data['product_id'] = product_id
                         else:
                             stats['product_not_found'] += 1
                             stats['errors'] += 1
                             continue
+                    else:
+                        stats['product_not_found'] += 1
+                        stats['errors'] += 1
+                        continue
 
                     # Quantity
                     if row.get('quantity'):
@@ -358,10 +364,11 @@ def import_quotation_lines_batch(uid, models, csv_file, quotation_id_map, batch_
                         except:
                             line_data['product_uom_qty'] = 1.0
 
-                    # Price unit
-                    if row.get('price_unit'):
+                    # Price unit - support both 'price_unit' and 'unit_price'
+                    price = row.get('price_unit') or row.get('unit_price')
+                    if price:
                         try:
-                            line_data['price_unit'] = float(row['price_unit'])
+                            line_data['price_unit'] = float(price)
                         except:
                             pass
 
