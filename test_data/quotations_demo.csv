@@ -1,0 +1,601 @@
+quotation_id,name,opportunity_id,partner_name,assigned_to,team,date_order,validity_date,amount_total,state,num_lines,notes
+QUOT0001,Q-202508-0001,OPP0007,Công ty TNHH Vật liệu xây dựng Đại Phát 1257,son.p,North Regional Team,2025-08-19,2025-09-09,177532757,sale,2,Quotation for Công ty TNHH Vật liệu xây dựng Đại Phát 1257
+QUOT0002,Q-202510-0002,OPP0009,Công ty Cổ phần Đào tạo FPT 1825,huong.l,South Regional Team,2025-10-18,2025-11-09,755169637,sale,5,Quotation for Công ty Cổ phần Đào tạo FPT 1825
+QUOT0003,Q-202512-0003,OPP0011,Công ty TNHH Thép Việt Ý,xuan.q,North Regional Team,2025-12-01,2025-12-29,154493949,sent,2,Quotation for Công ty TNHH Thép Việt Ý
+QUOT0004,Q-202508-0004,OPP0013,Trung tâm Bán lẻ Vinmart 2805,mai.n,North Regional Team,2025-08-31,2025-09-16,284355792,sent,4,Quotation for Trung tâm Bán lẻ Vinmart 2805
+QUOT0005,Q-202508-0005,OPP0017,Công ty TNHH Khách hàng Tiềm năng 17,hoa.t1,Central Regional Team,2025-08-29,2025-09-13,185824143,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 17
+QUOT0006,Q-202508-0006,OPP0018,Xí nghiệp Xây dựng Coteccons 1391,hien.h,Central Regional Team,2025-08-13,2025-09-04,114119059,sent,2,Quotation for Xí nghiệp Xây dựng Coteccons 1391
+QUOT0007,Q-202508-0007,OPP0020,Công ty TNHH Truyền thông Sáng Tạo,hieu.c,Central Regional Team,2025-08-31,2025-09-28,166944188,sale,1,Quotation for Công ty TNHH Truyền thông Sáng Tạo
+QUOT0008,Q-202509-0008,OPP0023,Công ty TNHH May mặc Hoa Sen 2985,kien.d,South Regional Team,2025-09-04,2025-09-18,235334845,sent,2,Quotation for Công ty TNHH May mặc Hoa Sen 2985
+QUOT0009,Q-202509-0009,OPP0025,Xí nghiệp Vận tải Phương Trang 712,quynh.h,Central Regional Team,2025-09-05,2025-10-01,551609239,draft,2,Quotation for Xí nghiệp Vận tải Phương Trang 712
+QUOT0010,Q-202510-0010,OPP0028,Chi nhánh Logistics Hải Vân 2960,kien.d,South Regional Team,2025-10-20,2025-11-08,89726753,sent,2,Quotation for Chi nhánh Logistics Hải Vân 2960
+QUOT0011,Q-202508-0011,OPP0034,Tập đoàn Anh ngữ ILA 966,long.d1,Central Regional Team,2025-08-16,2025-09-09,467909178,sent,5,Quotation for Tập đoàn Anh ngữ ILA 966
+QUOT0012,Q-202510-0012,OPP0036,Công ty Xây dựng Hoàng Long,dung.m,North Regional Team,2025-10-28,2025-11-23,850225215,sent,3,Quotation for Công ty Xây dựng Hoàng Long
+QUOT0013,Q-202510-0013,OPP0037,Trung tâm Tư vấn Ernst & Young 2933,quan.n,South Regional Team,2025-10-20,2025-11-05,156594504,draft,1,Quotation for Trung tâm Tư vấn Ernst & Young 2933
+QUOT0014,Q-202511-0014,OPP0041,Tập đoàn Giải pháp số FPT 2069,quynh.l,Central Regional Team,2025-11-13,2025-12-04,636812894,sent,4,Quotation for Tập đoàn Giải pháp số FPT 2069
+QUOT0015,Q-202509-0015,OPP0042,Công ty Cổ phần Điện thoại Thế Giới Di Động 1716,bich.d1,Central Regional Team,2025-09-26,2025-10-24,121643308,draft,1,Quotation for Công ty Cổ phần Điện thoại Thế Giới Di Động 1716
+QUOT0016,Q-202511-0016,OPP0046,Doanh nghiệp Vật liệu xây dựng Đại Phát 2409,tai.d,South Regional Team,2025-11-21,2025-12-14,328568064,sent,1,Quotation for Doanh nghiệp Vật liệu xây dựng Đại Phát 2409
+QUOT0017,Q-202509-0017,OPP0048,Tập đoàn Anh ngữ ILA 1152,anh.d,Central Regional Team,2025-09-12,2025-10-10,814925942,sent,5,Quotation for Tập đoàn Anh ngữ ILA 1152
+QUOT0018,Q-202510-0018,OPP0049,Chi nhánh Chế biến thực phẩm Vissan,quynh.h1,North Regional Team,2025-10-27,2025-11-11,234181490,draft,3,Quotation for Chi nhánh Chế biến thực phẩm Vissan
+QUOT0019,Q-202510-0019,OPP0051,Công ty Ô tô Toyota,tai.d1,Central Regional Team,2025-10-07,2025-10-22,996762021,draft,5,Quotation for Công ty Ô tô Toyota
+QUOT0020,Q-202510-0020,OPP0056,Chi nhánh Xe máy Honda 2738,tai.t,South Regional Team,2025-10-10,2025-11-01,324839550,draft,3,Quotation for Chi nhánh Xe máy Honda 2738
+QUOT0021,Q-202508-0021,OPP0059,Doanh nghiệp Công nghệ Việt Nam 975,binh.p,North Regional Team,2025-08-16,2025-09-04,406577295,sent,2,Quotation for Doanh nghiệp Công nghệ Việt Nam 975
+QUOT0022,Q-202511-0022,OPP0060,Chi nhánh Đầu tư Bảo Việt 2653,xuan.l,South Regional Team,2025-11-02,2025-11-16,598750081,sale,5,Quotation for Chi nhánh Đầu tư Bảo Việt 2653
+QUOT0023,Q-202512-0023,OPP0061,Công ty Cổ phần Khách hàng Tiềm năng 61,quynh.l,Central Regional Team,2025-12-02,2025-12-29,278521436,sent,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 61
+QUOT0024,Q-202507-0024,OPP0064,Công ty TNHH Khách hàng Tiềm năng 64,tri.n,North Regional Team,2025-07-28,2025-08-15,1357007744,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 64
+QUOT0025,Q-202509-0025,OPP0065,Công ty Trà Phúc Long,hoa.b,North Regional Team,2025-09-17,2025-10-13,874746069,draft,4,Quotation for Công ty Trà Phúc Long
+QUOT0026,Q-202511-0026,OPP0068,Tập đoàn Vật liệu xây dựng Đại Phát 2561,phuc.d,North Regional Team,2025-11-08,2025-11-22,480008835,sent,5,Quotation for Tập đoàn Vật liệu xây dựng Đại Phát 2561
+QUOT0027,Q-202509-0027,OPP0069,Trung tâm Gỗ Minh Phương 996,anh.d2,Central Regional Team,2025-09-06,2025-09-21,127747510,draft,2,Quotation for Trung tâm Gỗ Minh Phương 996
+QUOT0028,Q-202509-0028,OPP0074,Trung tâm Thực phẩm Á Châu 1238,linh.d1,South Regional Team,2025-09-07,2025-09-30,1197714343,sent,4,Quotation for Trung tâm Thực phẩm Á Châu 1238
+QUOT0029,Q-202510-0029,OPP0076,Xí nghiệp Thép Việt Ý,dung.l,South Regional Team,2025-10-09,2025-10-28,821521119,draft,5,Quotation for Xí nghiệp Thép Việt Ý
+QUOT0030,Q-202509-0030,OPP0077,Công ty TNHH Khách hàng Tiềm năng 77,tri.t,North Regional Team,2025-09-07,2025-10-04,419881014,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 77
+QUOT0031,Q-202510-0031,OPP0079,Công ty TNHH Phần mềm Trí Tuệ 1316,thanh.h,Central Regional Team,2025-10-03,2025-10-26,462873445,draft,3,Quotation for Công ty TNHH Phần mềm Trí Tuệ 1316
+QUOT0032,Q-202511-0032,OPP0080,Công ty Thời trang Nam Phong 1369,mai.n,North Regional Team,2025-11-06,2025-11-24,186686560,sent,1,Quotation for Công ty Thời trang Nam Phong 1369
+QUOT0033,Q-202507-0033,OPP0090,Chi nhánh Đầu tư Bảo Việt 2653,quynh.v,South Regional Team,2025-07-30,2025-08-16,20740406,sent,1,Quotation for Chi nhánh Đầu tư Bảo Việt 2653
+QUOT0034,Q-202509-0034,OPP0092,Chi nhánh Giải pháp số FPT 1392,hoa.c,South Regional Team,2025-09-10,2025-10-04,684854754,sent,3,Quotation for Chi nhánh Giải pháp số FPT 1392
+QUOT0035,Q-202509-0035,OPP0093,Xí nghiệp Ô tô Toyota 774,anh.b,North Regional Team,2025-09-04,2025-09-25,797453335,sale,4,Quotation for Xí nghiệp Ô tô Toyota 774
+QUOT0036,Q-202508-0036,OPP0096,Công ty TNHH May mặc Hoa Sen,quynh.l,Central Regional Team,2025-08-22,2025-09-12,116375805,draft,1,Quotation for Công ty TNHH May mặc Hoa Sen
+QUOT0037,Q-202511-0037,OPP0097,Doanh nghiệp Phần mềm Trí Tuệ 1728,anh.d1,North Regional Team,2025-11-02,2025-11-16,1322030656,sent,5,Quotation for Doanh nghiệp Phần mềm Trí Tuệ 1728
+QUOT0038,Q-202508-0038,OPP0099,Chi nhánh Chế biến thực phẩm Vissan 2239,xuan.q,North Regional Team,2025-08-18,2025-09-13,966059191,sent,5,Quotation for Chi nhánh Chế biến thực phẩm Vissan 2239
+QUOT0039,Q-202510-0039,OPP0103,Chi nhánh Trang sức Bảo Tín 488,quynh.h1,North Regional Team,2025-10-07,2025-10-29,481510509,draft,3,Quotation for Chi nhánh Trang sức Bảo Tín 488
+QUOT0040,Q-202508-0040,OPP0106,Công ty TNHH Logistics Hải Vân,quynh.l,Central Regional Team,2025-08-11,2025-09-02,327617798,sale,5,Quotation for Công ty TNHH Logistics Hải Vân
+QUOT0041,Q-202510-0041,OPP0108,Xí nghiệp Vật liệu xây dựng Đại Phát 733,linh.t,South Regional Team,2025-10-28,2025-11-13,680006157,sent,5,Quotation for Xí nghiệp Vật liệu xây dựng Đại Phát 733
+QUOT0042,Q-202510-0042,OPP0111,Công ty TNHH Cơ khí Đông Á 2317,minh.p,South Regional Team,2025-10-15,2025-11-06,388082351,draft,2,Quotation for Công ty TNHH Cơ khí Đông Á 2317
+QUOT0043,Q-202510-0043,OPP0113,Công ty Thương mại Hùng Vương 916,hang.n,South Regional Team,2025-10-11,2025-11-07,1168651467,sent,4,Quotation for Công ty Thương mại Hùng Vương 916
+QUOT0044,Q-202508-0044,OPP0114,Công ty Cổ phần Khách sạn Mường Thanh,lan.l,South Regional Team,2025-08-13,2025-09-05,762366365,draft,4,Quotation for Công ty Cổ phần Khách sạn Mường Thanh
+QUOT0045,Q-202509-0045,OPP0119,Công ty Cơ khí Đông Á 1734,son.p,North Regional Team,2025-09-25,2025-10-20,372711604,draft,1,Quotation for Công ty Cơ khí Đông Á 1734
+QUOT0046,Q-202508-0046,OPP0123,Công ty TNHH Khách hàng Tiềm năng 123,anh.b,North Regional Team,2025-08-16,2025-09-01,123627546,sent,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 123
+QUOT0047,Q-202510-0047,OPP0125,Công ty Cổ phần Khách hàng Tiềm năng 125,phuc.l,Central Regional Team,2025-10-10,2025-10-27,199259323,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 125
+QUOT0048,Q-202507-0048,OPP0129,Công ty Cổ phần Khách sạn Mường Thanh 1181,son.p,North Regional Team,2025-07-26,2025-08-09,296761403,sale,3,Quotation for Công ty Cổ phần Khách sạn Mường Thanh 1181
+QUOT0049,Q-202511-0049,OPP0130,Xí nghiệp Marketing Đỉnh Cao 1070,vy.m,North Regional Team,2025-11-15,2025-12-05,316256826,sale,4,Quotation for Xí nghiệp Marketing Đỉnh Cao 1070
+QUOT0050,Q-202511-0050,OPP0136,Công ty TNHH Viễn thông Viettel 1655,hung.c,Central Regional Team,2025-11-18,2025-12-02,44496034,draft,1,Quotation for Công ty TNHH Viễn thông Viettel 1655
+QUOT0051,Q-202509-0051,OPP0142,Tập đoàn Chế biến thực phẩm Vissan 521,linh.d1,South Regional Team,2025-09-24,2025-10-15,465553659,sent,4,Quotation for Tập đoàn Chế biến thực phẩm Vissan 521
+QUOT0052,Q-202510-0052,OPP0143,Chi nhánh Nhà hàng Ngọc Mai 895,tuyet.l,North Regional Team,2025-10-23,2025-11-16,311662190,draft,3,Quotation for Chi nhánh Nhà hàng Ngọc Mai 895
+QUOT0053,Q-202508-0053,OPP0144,Doanh nghiệp Đầu tư Bảo Việt 2505,ngoc.q,North Regional Team,2025-08-20,2025-09-14,978997398,sale,5,Quotation for Doanh nghiệp Đầu tư Bảo Việt 2505
+QUOT0054,Q-202510-0054,OPP0151,Chi nhánh Đồng hồ Đăng Quang 1769,hoa.n,South Regional Team,2025-10-30,2025-11-25,150280884,draft,2,Quotation for Chi nhánh Đồng hồ Đăng Quang 1769
+QUOT0055,Q-202509-0055,OPP0152,Công ty Chế biến thực phẩm Vissan 718,tung.l,South Regional Team,2025-09-25,2025-10-10,477590552,draft,5,Quotation for Công ty Chế biến thực phẩm Vissan 718
+QUOT0056,Q-202510-0056,OPP0155,Tập đoàn Thủy sản Minh Hải 2883,anh.d,Central Regional Team,2025-10-15,2025-10-30,299992950,sent,5,Quotation for Tập đoàn Thủy sản Minh Hải 2883
+QUOT0057,Q-202509-0057,OPP0156,Công ty Cổ phần Khách hàng Tiềm năng 156,tai.d,South Regional Team,2025-09-07,2025-09-27,325523772,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 156
+QUOT0058,Q-202508-0058,OPP0157,Công ty TNHH Kính Việt Nhật,hang.d,South Regional Team,2025-08-01,2025-08-18,568420506,sale,3,Quotation for Công ty TNHH Kính Việt Nhật
+QUOT0059,Q-202510-0059,OPP0159,Chi nhánh Phần mềm Trí Tuệ 2499,anh.b,North Regional Team,2025-10-26,2025-11-20,357012955,draft,3,Quotation for Chi nhánh Phần mềm Trí Tuệ 2499
+QUOT0060,Q-202510-0060,OPP0162,Tập đoàn Cơ khí Đông Á 2115,quynh.h,Central Regional Team,2025-10-07,2025-10-30,453709000,sent,2,Quotation for Tập đoàn Cơ khí Đông Á 2115
+QUOT0061,Q-202508-0061,OPP0165,Công ty Cổ phần Thương mại Hùng Vương 2293,hang.d,South Regional Team,2025-08-19,2025-09-06,733041908,sent,4,Quotation for Công ty Cổ phần Thương mại Hùng Vương 2293
+QUOT0062,Q-202511-0062,OPP0166,Công ty Vật liệu xây dựng Đại Phát,cuong.h,Central Regional Team,2025-11-21,2025-12-13,215510750,sent,1,Quotation for Công ty Vật liệu xây dựng Đại Phát
+QUOT0063,Q-202509-0063,OPP0170,Doanh nghiệp Logistics Hải Vân,dung.h,Central Regional Team,2025-09-02,2025-09-18,235349852,sent,5,Quotation for Doanh nghiệp Logistics Hải Vân
+QUOT0064,Q-202509-0064,OPP0173,Công ty TNHH Dệt may Việt Tiến 2202,hang.d,South Regional Team,2025-09-29,2025-10-26,117585721,sent,1,Quotation for Công ty TNHH Dệt may Việt Tiến 2202
+QUOT0065,Q-202508-0065,OPP0174,Công ty TNHH Khách hàng Tiềm năng 174,tuyet.l,North Regional Team,2025-08-21,2025-09-14,212243177,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 174
+QUOT0066,Q-202509-0066,OPP0175,Công ty TNHH Khách hàng Tiềm năng 175,mai.d,South Regional Team,2025-09-27,2025-10-18,938143734,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 175
+QUOT0067,Q-202509-0067,OPP0176,Tập đoàn Truyền thông Sáng Tạo 2608,cuong.t,North Regional Team,2025-09-18,2025-10-04,62865857,draft,1,Quotation for Tập đoàn Truyền thông Sáng Tạo 2608
+QUOT0068,Q-202511-0068,OPP0177,Doanh nghiệp Xây dựng Hoàng Long 2264,phuc.v,North Regional Team,2025-11-25,2025-12-17,1090698135,sent,5,Quotation for Doanh nghiệp Xây dựng Hoàng Long 2264
+QUOT0069,Q-202508-0069,OPP0185,Chi nhánh Giải pháp số FPT 1168,tri.t,North Regional Team,2025-08-10,2025-09-06,25925508,sent,1,Quotation for Chi nhánh Giải pháp số FPT 1168
+QUOT0070,Q-202510-0070,OPP0188,Chi nhánh Thương mại Hùng Vương 2058,tung.l,South Regional Team,2025-10-19,2025-11-13,807285893,sale,4,Quotation for Chi nhánh Thương mại Hùng Vương 2058
+QUOT0071,Q-202509-0071,OPP0189,Doanh nghiệp Nhà xuất bản Trẻ 1410,quan.n,South Regional Team,2025-09-07,2025-09-22,860631703,draft,4,Quotation for Doanh nghiệp Nhà xuất bản Trẻ 1410
+QUOT0072,Q-202510-0072,OPP0190,Trung tâm Café Highlands,hung.v,Central Regional Team,2025-10-25,2025-11-09,364074980,draft,2,Quotation for Trung tâm Café Highlands
+QUOT0073,Q-202511-0073,OPP0193,Công ty Cổ phần Khách hàng Tiềm năng 193,huong.l,South Regional Team,2025-11-20,2025-12-10,680846216,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 193
+QUOT0074,Q-202512-0074,OPP0194,Xí nghiệp Cơ khí Đông Á,khanh.l,Central Regional Team,2025-12-01,2025-12-18,38888262,sent,1,Quotation for Xí nghiệp Cơ khí Đông Á
+QUOT0075,Q-202509-0075,OPP0196,Doanh nghiệp May mặc Hoa Sen 2722,hang.v1,South Regional Team,2025-09-01,2025-09-26,250203206,sent,2,Quotation for Doanh nghiệp May mặc Hoa Sen 2722
+QUOT0076,Q-202508-0076,OPP0199,Trung tâm Café Highlands 1749,mai.m,Central Regional Team,2025-08-11,2025-08-29,144121108,draft,2,Quotation for Trung tâm Café Highlands 1749
+QUOT0077,Q-202511-0077,OPP0201,Công ty TNHH Khách hàng Tiềm năng 201,anh.d,Central Regional Team,2025-11-12,2025-12-04,365540440,draft,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 201
+QUOT0078,Q-202508-0078,OPP0204,Công ty TNHH Khách hàng Tiềm năng 204,tung.c,North Regional Team,2025-08-24,2025-09-20,823953364,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 204
+QUOT0079,Q-202508-0079,OPP0206,Chi nhánh Giáo dục Nguyễn Hoàng 1701,linh.d2,North Regional Team,2025-08-13,2025-09-08,710106926,sent,5,Quotation for Chi nhánh Giáo dục Nguyễn Hoàng 1701
+QUOT0080,Q-202508-0080,OPP0209,Công ty TNHH Khách hàng Tiềm năng 209,linh.t,South Regional Team,2025-08-25,2025-09-10,1105965683,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 209
+QUOT0081,Q-202510-0081,OPP0211,Công ty Cổ phần Công nghệ Việt Nam 2647,quynh.d,North Regional Team,2025-10-14,2025-11-11,571536471,sent,3,Quotation for Công ty Cổ phần Công nghệ Việt Nam 2647
+QUOT0082,Q-202511-0082,OPP0212,Công ty Cổ phần Xây dựng Coteccons 927,cuong.h,Central Regional Team,2025-11-02,2025-11-30,250735862,draft,1,Quotation for Công ty Cổ phần Xây dựng Coteccons 927
+QUOT0083,Q-202509-0083,OPP0213,Xí nghiệp Bệnh viện Quốc tế,khanh.l,Central Regional Team,2025-09-01,2025-09-27,790578289,draft,5,Quotation for Xí nghiệp Bệnh viện Quốc tế
+QUOT0084,Q-202509-0084,OPP0216,Doanh nghiệp Xe máy Honda 1166,hieu.h,South Regional Team,2025-09-13,2025-10-02,1440147702,draft,5,Quotation for Doanh nghiệp Xe máy Honda 1166
+QUOT0085,Q-202511-0085,OPP0220,Trung tâm Du lịch Saigon Tourist 2534,quynh.d1,South Regional Team,2025-11-28,2025-12-24,822627889,draft,4,Quotation for Trung tâm Du lịch Saigon Tourist 2534
+QUOT0086,Q-202509-0086,OPP0224,Công ty Cổ phần Khách hàng Tiềm năng 224,nga.d,North Regional Team,2025-09-19,2025-10-07,63348768,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 224
+QUOT0087,Q-202508-0087,OPP0227,Trung tâm Nội thất Hoàng Gia,huong.l,South Regional Team,2025-08-26,2025-09-14,281195431,draft,3,Quotation for Trung tâm Nội thất Hoàng Gia
+QUOT0088,Q-202508-0088,OPP0238,Công ty TNHH Bánh kẹo Kinh Đô 2034,quynh.h1,North Regional Team,2025-08-03,2025-08-25,294780302,sent,2,Quotation for Công ty TNHH Bánh kẹo Kinh Đô 2034
+QUOT0089,Q-202510-0089,OPP0239,Công ty Cổ phần Thời trang Nam Phong 912,hang.d,South Regional Team,2025-10-14,2025-11-01,584396323,draft,4,Quotation for Công ty Cổ phần Thời trang Nam Phong 912
+QUOT0090,Q-202508-0090,OPP0240,Doanh nghiệp Bệnh viện Quốc tế 2739,duc.l,South Regional Team,2025-08-04,2025-08-23,891165304,sent,5,Quotation for Doanh nghiệp Bệnh viện Quốc tế 2739
+QUOT0091,Q-202507-0091,OPP0247,Trung tâm Nông sản sạch Đà Lạt,tai.d1,Central Regional Team,2025-07-25,2025-08-11,310599276,sale,2,Quotation for Trung tâm Nông sản sạch Đà Lạt
+QUOT0092,Q-202508-0092,OPP0249,Công ty Cổ phần Khách hàng Tiềm năng 249,quynh.d1,South Regional Team,2025-08-17,2025-09-10,354000300,sent,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 249
+QUOT0093,Q-202511-0093,OPP0250,Doanh nghiệp Tư vấn McKinsey,mai.d,South Regional Team,2025-11-05,2025-11-21,239243025,sale,2,Quotation for Doanh nghiệp Tư vấn McKinsey
+QUOT0094,Q-202511-0094,OPP0252,Tập đoàn Tư vấn Ernst & Young 1373,nga.d,North Regional Team,2025-11-12,2025-12-06,885420845,sent,4,Quotation for Tập đoàn Tư vấn Ernst & Young 1373
+QUOT0095,Q-202511-0095,OPP0256,Doanh nghiệp Café Highlands 2384,hang.v1,South Regional Team,2025-11-13,2025-12-07,375309463,sent,4,Quotation for Doanh nghiệp Café Highlands 2384
+QUOT0096,Q-202508-0096,OPP0257,Công ty TNHH Nước giải khát Tân Hiệp Phát 875,cuong.t,North Regional Team,2025-08-07,2025-08-21,450161831,sent,4,Quotation for Công ty TNHH Nước giải khát Tân Hiệp Phát 875
+QUOT0097,Q-202510-0097,OPP0264,Công ty Cổ phần May mặc Hoa Sen 1419,tai.d,South Regional Team,2025-10-02,2025-10-17,210163105,draft,3,Quotation for Công ty Cổ phần May mặc Hoa Sen 1419
+QUOT0098,Q-202510-0098,OPP0267,Tập đoàn In ấn Thành Công 2057,vinh.c,South Regional Team,2025-10-16,2025-11-01,90321811,draft,2,Quotation for Tập đoàn In ấn Thành Công 2057
+QUOT0099,Q-202509-0099,OPP0268,Tập đoàn Marketing Đỉnh Cao 2233,tung.c,North Regional Team,2025-09-15,2025-10-07,831501635,sent,4,Quotation for Tập đoàn Marketing Đỉnh Cao 2233
+QUOT0100,Q-202509-0100,OPP0277,Xí nghiệp Phần mềm Trí Tuệ 2424,tuyet.h,South Regional Team,2025-09-19,2025-10-07,399909077,sale,4,Quotation for Xí nghiệp Phần mềm Trí Tuệ 2424
+QUOT0101,Q-202511-0101,OPP0278,Công ty TNHH Dược phẩm Hà Nội 1690,cuong.t,North Regional Team,2025-11-11,2025-11-28,193307126,draft,3,Quotation for Công ty TNHH Dược phẩm Hà Nội 1690
+QUOT0102,Q-202510-0102,OPP0280,Xí nghiệp Thương mại Hùng Vương 2039,hung.l,South Regional Team,2025-10-13,2025-10-27,842570591,sent,5,Quotation for Xí nghiệp Thương mại Hùng Vương 2039
+QUOT0103,Q-202510-0103,OPP0288,Trung tâm Marketing Đỉnh Cao 474,duc.l,South Regional Team,2025-10-07,2025-10-27,457205286,draft,4,Quotation for Trung tâm Marketing Đỉnh Cao 474
+QUOT0104,Q-202507-0104,OPP0291,Tập đoàn Nhà xuất bản Trẻ 2388,cuong.h,Central Regional Team,2025-07-31,2025-08-15,568218506,draft,2,Quotation for Tập đoàn Nhà xuất bản Trẻ 2388
+QUOT0105,Q-202511-0105,OPP0295,Tập đoàn Điện lạnh Bách Khoa,tai.h,Central Regional Team,2025-11-08,2025-11-25,1165822914,sent,5,Quotation for Tập đoàn Điện lạnh Bách Khoa
+QUOT0106,Q-202510-0106,OPP0304,Công ty Đầu tư Bảo Việt 1072,huy.t,North Regional Team,2025-10-03,2025-10-17,1074898053,draft,5,Quotation for Công ty Đầu tư Bảo Việt 1072
+QUOT0107,Q-202508-0107,OPP0305,Công ty Cổ phần Café Highlands 561,mai.m,Central Regional Team,2025-08-02,2025-08-21,632601535,sent,4,Quotation for Công ty Cổ phần Café Highlands 561
+QUOT0108,Q-202511-0108,OPP0306,Chi nhánh Bánh kẹo Kinh Đô 1887,minh.p,South Regional Team,2025-11-01,2025-11-17,1047823369,sent,5,Quotation for Chi nhánh Bánh kẹo Kinh Đô 1887
+QUOT0109,Q-202508-0109,OPP0308,Doanh nghiệp Khách sạn Mường Thanh 1075,dat.q,South Regional Team,2025-08-26,2025-09-20,538744680,sent,5,Quotation for Doanh nghiệp Khách sạn Mường Thanh 1075
+QUOT0110,Q-202511-0110,OPP0312,Công ty Vật liệu xây dựng Đại Phát 432,hien.v,South Regional Team,2025-11-21,2025-12-05,898647364,draft,5,Quotation for Công ty Vật liệu xây dựng Đại Phát 432
+QUOT0111,Q-202507-0111,OPP0314,Tập đoàn Giáo dục Nguyễn Hoàng,hung.v,Central Regional Team,2025-07-22,2025-08-15,829198363,draft,5,Quotation for Tập đoàn Giáo dục Nguyễn Hoàng
+QUOT0112,Q-202510-0112,OPP0316,Công ty Cổ phần Quảng cáo Việt Nam,hieu.c,Central Regional Team,2025-10-06,2025-11-03,609634303,sent,5,Quotation for Công ty Cổ phần Quảng cáo Việt Nam
+QUOT0113,Q-202511-0113,OPP0318,Tập đoàn Thực phẩm Á Châu,tai.h,Central Regional Team,2025-11-12,2025-12-09,794174644,draft,4,Quotation for Tập đoàn Thực phẩm Á Châu
+QUOT0114,Q-202508-0114,OPP0321,Công ty Cổ phần Khách hàng Tiềm năng 321,my.d,South Regional Team,2025-08-23,2025-09-15,423078144,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 321
+QUOT0115,Q-202509-0115,OPP0322,Chi nhánh Quảng cáo Việt Nam 2860,hien.h,Central Regional Team,2025-09-28,2025-10-21,477071614,sale,3,Quotation for Chi nhánh Quảng cáo Việt Nam 2860
+QUOT0116,Q-202507-0116,OPP0323,Doanh nghiệp Quảng cáo Việt Nam 441,cuong.d,Central Regional Team,2025-07-29,2025-08-20,109654929,draft,1,Quotation for Doanh nghiệp Quảng cáo Việt Nam 441
+QUOT0117,Q-202509-0117,OPP0324,Công ty Cổ phần Khách hàng Tiềm năng 324,khanh.h,South Regional Team,2025-09-20,2025-10-08,45692555,draft,1,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 324
+QUOT0118,Q-202509-0118,OPP0327,Chi nhánh In ấn Thành Công 1857,long.d,South Regional Team,2025-09-13,2025-09-27,573766369,draft,4,Quotation for Chi nhánh In ấn Thành Công 1857
+QUOT0119,Q-202511-0119,OPP0329,Chi nhánh Kính Việt Nhật 1714,thanh.h,Central Regional Team,2025-11-16,2025-12-04,537536373,sale,5,Quotation for Chi nhánh Kính Việt Nhật 1714
+QUOT0120,Q-202509-0120,OPP0332,Doanh nghiệp Đào tạo FPT 2899,hoa.t1,Central Regional Team,2025-09-08,2025-09-30,338635555,draft,2,Quotation for Doanh nghiệp Đào tạo FPT 2899
+QUOT0121,Q-202508-0121,OPP0337,Xí nghiệp Đào tạo FPT 1971,linh.d,North Regional Team,2025-08-19,2025-09-06,72447360,draft,1,Quotation for Xí nghiệp Đào tạo FPT 1971
+QUOT0122,Q-202509-0122,OPP0342,Xí nghiệp May mặc Hoa Sen,tai.d,South Regional Team,2025-09-06,2025-09-23,279422180,sent,5,Quotation for Xí nghiệp May mặc Hoa Sen
+QUOT0123,Q-202510-0123,OPP0344,Công ty Nhà xuất bản Trẻ 1204,duc.l,South Regional Team,2025-10-17,2025-11-13,640286148,draft,3,Quotation for Công ty Nhà xuất bản Trẻ 1204
+QUOT0124,Q-202510-0124,OPP0346,Công ty Cổ phần Tư vấn McKinsey 1143,vy.m,North Regional Team,2025-10-01,2025-10-22,489968187,draft,4,Quotation for Công ty Cổ phần Tư vấn McKinsey 1143
+QUOT0125,Q-202511-0125,OPP0351,Công ty TNHH Tư vấn Ernst & Young 2963,hoa.t,South Regional Team,2025-11-24,2025-12-22,437966261,draft,3,Quotation for Công ty TNHH Tư vấn Ernst & Young 2963
+QUOT0126,Q-202510-0126,OPP0353,Trung tâm Dệt may Việt Tiến 2869,hung.v,Central Regional Team,2025-10-27,2025-11-20,792012158,draft,1,Quotation for Trung tâm Dệt may Việt Tiến 2869
+QUOT0127,Q-202509-0127,OPP0355,Công ty Cổ phần Khách hàng Tiềm năng 355,hang.d,South Regional Team,2025-09-19,2025-10-05,441477798,sale,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 355
+QUOT0128,Q-202510-0128,OPP0356,Doanh nghiệp Anh ngữ ILA 2498,lan.l,South Regional Team,2025-10-20,2025-11-13,296461326,sent,2,Quotation for Doanh nghiệp Anh ngữ ILA 2498
+QUOT0129,Q-202511-0129,OPP0357,Công ty TNHH Nhà xuất bản Trẻ,long.d,South Regional Team,2025-11-09,2025-11-27,9214904,sent,1,Quotation for Công ty TNHH Nhà xuất bản Trẻ
+QUOT0130,Q-202509-0130,OPP0364,Trung tâm Tư vấn Ernst & Young 1063,nam.v,Central Regional Team,2025-09-03,2025-09-20,29928325,draft,1,Quotation for Trung tâm Tư vấn Ernst & Young 1063
+QUOT0131,Q-202508-0131,OPP0366,Tập đoàn Vật liệu xây dựng Đại Phát 2303,ha.h,North Regional Team,2025-08-08,2025-09-03,442278573,draft,4,Quotation for Tập đoàn Vật liệu xây dựng Đại Phát 2303
+QUOT0132,Q-202507-0132,OPP0368,Công ty Phần mềm Trí Tuệ 1772,tuyet.h,South Regional Team,2025-07-28,2025-08-17,210080042,draft,3,Quotation for Công ty Phần mềm Trí Tuệ 1772
+QUOT0133,Q-202508-0133,OPP0373,Xí nghiệp Thực phẩm Á Châu 889,thao.t,North Regional Team,2025-08-13,2025-09-10,761291601,draft,4,Quotation for Xí nghiệp Thực phẩm Á Châu 889
+QUOT0134,Q-202509-0134,OPP0375,Chi nhánh Kính Việt Nhật 1908,ngoc.q,North Regional Team,2025-09-08,2025-10-01,270709607,draft,2,Quotation for Chi nhánh Kính Việt Nhật 1908
+QUOT0135,Q-202510-0135,OPP0380,Xí nghiệp Xây dựng Hoàng Long 1616,cuong.d,Central Regional Team,2025-10-17,2025-11-10,60092834,sent,1,Quotation for Xí nghiệp Xây dựng Hoàng Long 1616
+QUOT0136,Q-202511-0136,OPP0381,Công ty Cổ phần Khách hàng Tiềm năng 381,kien.d,South Regional Team,2025-11-06,2025-11-26,301179108,sent,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 381
+QUOT0137,Q-202509-0137,OPP0382,Doanh nghiệp Siêu thị BigC,hung.l,South Regional Team,2025-09-25,2025-10-18,730950782,sale,5,Quotation for Doanh nghiệp Siêu thị BigC
+QUOT0138,Q-202508-0138,OPP0386,Công ty TNHH Thực phẩm Á Châu 2187,khanh.h,South Regional Team,2025-08-13,2025-08-31,263275172,draft,3,Quotation for Công ty TNHH Thực phẩm Á Châu 2187
+QUOT0139,Q-202507-0139,OPP0390,Công ty TNHH Dược phẩm Hà Nội 642,hang.v,North Regional Team,2025-07-19,2025-08-14,123679948,sent,1,Quotation for Công ty TNHH Dược phẩm Hà Nội 642
+QUOT0140,Q-202511-0140,OPP0391,Trung tâm Nội thất Hoàng Gia 944,bich.d1,Central Regional Team,2025-11-15,2025-12-12,907422270,sent,5,Quotation for Trung tâm Nội thất Hoàng Gia 944
+QUOT0141,Q-202511-0141,OPP0392,Công ty Chế biến thực phẩm Vissan 2964,quynh.h1,North Regional Team,2025-11-16,2025-12-08,1233494230,draft,3,Quotation for Công ty Chế biến thực phẩm Vissan 2964
+QUOT0142,Q-202509-0142,OPP0398,Trung tâm Nước giải khát Tân Hiệp Phát,hang.n,South Regional Team,2025-09-02,2025-09-21,412012834,sent,3,Quotation for Trung tâm Nước giải khát Tân Hiệp Phát
+QUOT0143,Q-202507-0143,OPP0399,Công ty TNHH Marketing Đỉnh Cao 2446,hoa.c,South Regional Team,2025-07-31,2025-08-26,1278689382,sale,4,Quotation for Công ty TNHH Marketing Đỉnh Cao 2446
+QUOT0144,Q-202510-0144,OPP0404,Xí nghiệp Nông sản sạch Đà Lạt 555,quynh.h1,North Regional Team,2025-10-10,2025-10-29,113291251,draft,1,Quotation for Xí nghiệp Nông sản sạch Đà Lạt 555
+QUOT0145,Q-202510-0145,OPP0408,Doanh nghiệp Nội thất Hoàng Gia 2218,dung.m,North Regional Team,2025-10-11,2025-10-31,15665336,draft,1,Quotation for Doanh nghiệp Nội thất Hoàng Gia 2218
+QUOT0146,Q-202508-0146,OPP0414,Xí nghiệp Thương mại Hùng Vương 1537,mai.m,Central Regional Team,2025-08-27,2025-09-18,882151317,sent,5,Quotation for Xí nghiệp Thương mại Hùng Vương 1537
+QUOT0147,Q-202509-0147,OPP0418,Trung tâm Dược phẩm Hà Nội 1952,phuc.v,North Regional Team,2025-09-26,2025-10-22,476308867,sent,5,Quotation for Trung tâm Dược phẩm Hà Nội 1952
+QUOT0148,Q-202511-0148,OPP0421,Xí nghiệp Thép Việt Ý 1781,bich.d1,Central Regional Team,2025-11-08,2025-11-29,17394958,sale,1,Quotation for Xí nghiệp Thép Việt Ý 1781
+QUOT0149,Q-202508-0149,OPP0424,Tập đoàn Bán lẻ Vinmart 518,tri.l,South Regional Team,2025-08-18,2025-09-14,210806083,sent,2,Quotation for Tập đoàn Bán lẻ Vinmart 518
+QUOT0150,Q-202508-0150,OPP0425,Công ty Đào tạo FPT 499,hien.v,South Regional Team,2025-08-01,2025-08-17,428329611,sale,1,Quotation for Công ty Đào tạo FPT 499
+QUOT0151,Q-202511-0151,OPP0429,Chi nhánh Nội thất Hoàng Gia 2978,phuc.v,North Regional Team,2025-11-18,2025-12-10,137926880,sale,1,Quotation for Chi nhánh Nội thất Hoàng Gia 2978
+QUOT0152,Q-202510-0152,OPP0431,Tập đoàn Trang sức Bảo Tín,nhu.v,South Regional Team,2025-10-20,2025-11-10,101846395,draft,1,Quotation for Tập đoàn Trang sức Bảo Tín
+QUOT0153,Q-202509-0153,OPP0432,Xí nghiệp Café Highlands 2974,hang.d,South Regional Team,2025-09-14,2025-10-03,184233182,sent,2,Quotation for Xí nghiệp Café Highlands 2974
+QUOT0154,Q-202510-0154,OPP0439,Công ty Cổ phần Phần mềm Trí Tuệ 1796,tai.t,South Regional Team,2025-10-16,2025-11-02,665211692,sent,4,Quotation for Công ty Cổ phần Phần mềm Trí Tuệ 1796
+QUOT0155,Q-202508-0155,OPP0440,Xí nghiệp Kính Việt Nhật 1186,hang.v1,South Regional Team,2025-08-18,2025-09-06,731151754,sent,5,Quotation for Xí nghiệp Kính Việt Nhật 1186
+QUOT0156,Q-202508-0156,OPP0443,Tập đoàn Tư vấn McKinsey 1068,long.d1,Central Regional Team,2025-08-13,2025-09-05,1382157934,sent,3,Quotation for Tập đoàn Tư vấn McKinsey 1068
+QUOT0157,Q-202511-0157,OPP0444,Công ty TNHH Khách hàng Tiềm năng 444,dung.q,Central Regional Team,2025-11-15,2025-12-06,46593110,sent,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 444
+QUOT0158,Q-202509-0158,OPP0446,Công ty Marketing Đỉnh Cao 1024,binh.p,North Regional Team,2025-09-20,2025-10-18,440717518,draft,2,Quotation for Công ty Marketing Đỉnh Cao 1024
+QUOT0159,Q-202511-0159,OPP0447,Tập đoàn Khách sạn Mường Thanh,phuong.d,North Regional Team,2025-11-19,2025-12-11,652078705,sent,4,Quotation for Tập đoàn Khách sạn Mường Thanh
+QUOT0160,Q-202509-0160,OPP0448,Công ty Nông sản sạch Đà Lạt 1803,vy.m,North Regional Team,2025-09-04,2025-09-29,524990836,sent,5,Quotation for Công ty Nông sản sạch Đà Lạt 1803
+QUOT0161,Q-202510-0161,OPP0449,Công ty TNHH Khách hàng Tiềm năng 449,dung.h,Central Regional Team,2025-10-26,2025-11-21,389669636,sent,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 449
+QUOT0162,Q-202511-0162,OPP0450,Công ty TNHH Thực phẩm Á Châu 933,hoa.b,North Regional Team,2025-11-12,2025-12-08,40499395,sent,1,Quotation for Công ty TNHH Thực phẩm Á Châu 933
+QUOT0163,Q-202510-0163,OPP0451,Công ty TNHH Anh ngữ ILA 1111,duc.l,South Regional Team,2025-10-15,2025-11-01,836372630,draft,2,Quotation for Công ty TNHH Anh ngữ ILA 1111
+QUOT0164,Q-202510-0164,OPP0454,Xí nghiệp Đầu tư Bảo Việt 2173,kien.d,South Regional Team,2025-10-14,2025-11-02,237913707,sent,2,Quotation for Xí nghiệp Đầu tư Bảo Việt 2173
+QUOT0165,Q-202511-0165,OPP0469,Chi nhánh Máy tính Phương Nam 892,thanh.h,Central Regional Team,2025-11-20,2025-12-11,373040848,sent,3,Quotation for Chi nhánh Máy tính Phương Nam 892
+QUOT0166,Q-202508-0166,OPP0478,Tập đoàn Xây dựng Hoàng Long,dung.m,North Regional Team,2025-08-25,2025-09-19,23498005,sent,1,Quotation for Tập đoàn Xây dựng Hoàng Long
+QUOT0167,Q-202511-0167,OPP0483,Công ty TNHH Café Highlands 1002,tai.h,Central Regional Team,2025-11-08,2025-12-06,243154756,draft,2,Quotation for Công ty TNHH Café Highlands 1002
+QUOT0168,Q-202509-0168,OPP0484,Tập đoàn Thời trang Nam Phong 1107,tuyet.h,South Regional Team,2025-09-27,2025-10-23,859117339,draft,2,Quotation for Tập đoàn Thời trang Nam Phong 1107
+QUOT0169,Q-202509-0169,OPP0490,Công ty Đào tạo FPT 2967,mai.m,Central Regional Team,2025-09-08,2025-10-03,166612356,sale,2,Quotation for Công ty Đào tạo FPT 2967
+QUOT0170,Q-202511-0170,OPP0491,Công ty Cổ phần Nội thất Hoàng Gia 636,mai.n,North Regional Team,2025-11-19,2025-12-11,13736394,draft,1,Quotation for Công ty Cổ phần Nội thất Hoàng Gia 636
+QUOT0171,Q-202509-0171,OPP0492,Doanh nghiệp Trang sức Bảo Tín 2276,phuc.v,North Regional Team,2025-09-23,2025-10-13,318497930,sent,1,Quotation for Doanh nghiệp Trang sức Bảo Tín 2276
+QUOT0172,Q-202508-0172,OPP0493,Công ty Trang sức Bảo Tín 1353,hung.v,Central Regional Team,2025-08-24,2025-09-13,1187231368,sent,5,Quotation for Công ty Trang sức Bảo Tín 1353
+QUOT0173,Q-202510-0173,OPP0494,Doanh nghiệp Cơ khí Đông Á,ha.h1,South Regional Team,2025-10-16,2025-11-06,510406616,sale,3,Quotation for Doanh nghiệp Cơ khí Đông Á
+QUOT0174,Q-202510-0174,OPP0499,Xí nghiệp Marketing Đỉnh Cao 2220,nam.v,Central Regional Team,2025-10-05,2025-10-21,720305262,sent,2,Quotation for Xí nghiệp Marketing Đỉnh Cao 2220
+QUOT0175,Q-202510-0175,OPP0500,Công ty TNHH Khách hàng Tiềm năng 500,linh.d,North Regional Team,2025-10-04,2025-10-26,886329593,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 500
+QUOT0176,Q-202509-0176,OPP0501,Trung tâm Công nghệ Việt Nam 1457,anh.d2,Central Regional Team,2025-09-28,2025-10-20,149982945,sent,2,Quotation for Trung tâm Công nghệ Việt Nam 1457
+QUOT0177,Q-202510-0177,OPP0504,Xí nghiệp Cơ khí Đông Á 2848,vy.l,South Regional Team,2025-10-06,2025-10-29,539698134,draft,2,Quotation for Xí nghiệp Cơ khí Đông Á 2848
+QUOT0178,Q-202508-0178,OPP0505,Xí nghiệp Phần mềm Trí Tuệ 761,phuc.l,Central Regional Team,2025-08-27,2025-09-18,96978798,draft,2,Quotation for Xí nghiệp Phần mềm Trí Tuệ 761
+QUOT0179,Q-202509-0179,OPP0506,Tập đoàn Bất động sản Vinhomes 1462,mai.d,South Regional Team,2025-09-18,2025-10-05,714239220,draft,3,Quotation for Tập đoàn Bất động sản Vinhomes 1462
+QUOT0180,Q-202510-0180,OPP0509,Tập đoàn Công nghệ Việt Nam 2619,tri.t,North Regional Team,2025-10-27,2025-11-17,928815476,sent,5,Quotation for Tập đoàn Công nghệ Việt Nam 2619
+QUOT0181,Q-202508-0181,OPP0510,Công ty Cổ phần Khách hàng Tiềm năng 510,tuyet.h,South Regional Team,2025-08-31,2025-09-27,1387333288,sent,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 510
+QUOT0182,Q-202511-0182,OPP0514,Trung tâm Nông sản sạch Đà Lạt 1097,long.d,South Regional Team,2025-11-17,2025-12-13,93519201,sale,1,Quotation for Trung tâm Nông sản sạch Đà Lạt 1097
+QUOT0183,Q-202510-0183,OPP0517,Doanh nghiệp Du lịch Saigon Tourist 894,khoa.c,Central Regional Team,2025-10-12,2025-11-05,83991614,draft,2,Quotation for Doanh nghiệp Du lịch Saigon Tourist 894
+QUOT0184,Q-202511-0184,OPP0519,Chi nhánh Điện lạnh Bách Khoa 1269,mai.p,Central Regional Team,2025-11-09,2025-12-03,187502932,sale,3,Quotation for Chi nhánh Điện lạnh Bách Khoa 1269
+QUOT0185,Q-202507-0185,OPP0521,Công ty May mặc Hoa Sen 1733,mai.n,North Regional Team,2025-07-28,2025-08-23,668422702,draft,3,Quotation for Công ty May mặc Hoa Sen 1733
+QUOT0186,Q-202509-0186,OPP0523,Xí nghiệp Du lịch Saigon Tourist 2770,bich.b,South Regional Team,2025-09-19,2025-10-16,1161078100,sent,4,Quotation for Xí nghiệp Du lịch Saigon Tourist 2770
+QUOT0187,Q-202507-0187,OPP0524,Xí nghiệp Đồng hồ Đăng Quang 2844,thao.t,North Regional Team,2025-07-15,2025-08-11,432994405,sent,2,Quotation for Xí nghiệp Đồng hồ Đăng Quang 2844
+QUOT0188,Q-202507-0188,OPP0525,Tập đoàn Bánh kẹo Kinh Đô 697,quynh.h,Central Regional Team,2025-07-21,2025-08-04,278904110,sent,1,Quotation for Tập đoàn Bánh kẹo Kinh Đô 697
+QUOT0189,Q-202511-0189,OPP0526,Công ty TNHH Khách hàng Tiềm năng 526,mai.m,Central Regional Team,2025-11-20,2025-12-07,467030174,sent,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 526
+QUOT0190,Q-202510-0190,OPP0529,Doanh nghiệp Bất động sản Vinhomes 1790,hoa.n,South Regional Team,2025-10-07,2025-10-27,1197864746,sent,5,Quotation for Doanh nghiệp Bất động sản Vinhomes 1790
+QUOT0191,Q-202508-0191,OPP0531,Công ty Cổ phần Khách hàng Tiềm năng 531,long.d,South Regional Team,2025-08-22,2025-09-06,29347823,sent,1,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 531
+QUOT0192,Q-202508-0192,OPP0537,Xí nghiệp Logistics Hải Vân 2919,phuc.v,North Regional Team,2025-08-16,2025-08-30,346419845,sale,4,Quotation for Xí nghiệp Logistics Hải Vân 2919
+QUOT0193,Q-202507-0193,OPP0541,Công ty TNHH Khách hàng Tiềm năng 541,anh.d,Central Regional Team,2025-07-26,2025-08-12,140513793,sent,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 541
+QUOT0194,Q-202509-0194,OPP0542,Doanh nghiệp Máy tính Phương Nam 2027,linh.d1,South Regional Team,2025-09-27,2025-10-19,162931410,sent,2,Quotation for Doanh nghiệp Máy tính Phương Nam 2027
+QUOT0195,Q-202508-0195,OPP0543,Xí nghiệp Du lịch Saigon Tourist,tung.l,South Regional Team,2025-08-14,2025-09-01,188471319,draft,1,Quotation for Xí nghiệp Du lịch Saigon Tourist
+QUOT0196,Q-202509-0196,OPP0547,Công ty Cổ phần Khách hàng Tiềm năng 547,phuc.v,North Regional Team,2025-09-16,2025-10-10,1051810790,sent,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 547
+QUOT0197,Q-202511-0197,OPP0550,Công ty Cổ phần Điện lạnh Bách Khoa 2594,hung.c,Central Regional Team,2025-11-03,2025-12-01,195651468,sale,3,Quotation for Công ty Cổ phần Điện lạnh Bách Khoa 2594
+QUOT0198,Q-202507-0198,OPP0551,Công ty Điện lạnh Bách Khoa 1683,huong.n,North Regional Team,2025-07-24,2025-08-21,557675048,draft,3,Quotation for Công ty Điện lạnh Bách Khoa 1683
+QUOT0199,Q-202508-0199,OPP0555,Chi nhánh Nội thất Hoàng Gia 2286,tai.h,Central Regional Team,2025-08-11,2025-09-06,141658983,draft,1,Quotation for Chi nhánh Nội thất Hoàng Gia 2286
+QUOT0200,Q-202508-0200,OPP0558,Công ty Cổ phần Tư vấn McKinsey 2439,linh.d3,Central Regional Team,2025-08-23,2025-09-10,490642714,draft,4,Quotation for Công ty Cổ phần Tư vấn McKinsey 2439
+QUOT0201,Q-202508-0201,OPP0560,Doanh nghiệp Xây dựng Hoàng Long 974,khanh.m,South Regional Team,2025-08-28,2025-09-24,145177610,sale,2,Quotation for Doanh nghiệp Xây dựng Hoàng Long 974
+QUOT0202,Q-202508-0202,OPP0561,Công ty Đồng hồ Đăng Quang 421,manh.h,South Regional Team,2025-08-23,2025-09-13,606320684,sent,5,Quotation for Công ty Đồng hồ Đăng Quang 421
+QUOT0203,Q-202510-0203,OPP0562,Chi nhánh Chế biến thực phẩm Vissan 2239,dat.q,South Regional Team,2025-10-10,2025-10-29,362696655,sent,4,Quotation for Chi nhánh Chế biến thực phẩm Vissan 2239
+QUOT0204,Q-202510-0204,OPP0563,Trung tâm Marketing Đỉnh Cao 1447,xuan.q,North Regional Team,2025-10-05,2025-11-01,242720112,draft,1,Quotation for Trung tâm Marketing Đỉnh Cao 1447
+QUOT0205,Q-202508-0205,OPP0564,Công ty Cổ phần Dệt may Việt Tiến,mai.n,North Regional Team,2025-08-19,2025-09-16,488189749,sent,4,Quotation for Công ty Cổ phần Dệt may Việt Tiến
+QUOT0206,Q-202509-0206,OPP0567,Tập đoàn Siêu thị BigC 2022,vy.l,South Regional Team,2025-09-13,2025-09-27,559804058,sent,3,Quotation for Tập đoàn Siêu thị BigC 2022
+QUOT0207,Q-202510-0207,OPP0568,Công ty Cổ phần Khách hàng Tiềm năng 568,khanh.h,South Regional Team,2025-10-30,2025-11-15,1671046511,sent,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 568
+QUOT0208,Q-202510-0208,OPP0569,Trung tâm Ô tô Toyota 2344,anh.d,Central Regional Team,2025-10-05,2025-11-01,501544904,draft,5,Quotation for Trung tâm Ô tô Toyota 2344
+QUOT0209,Q-202511-0209,OPP0575,Doanh nghiệp Thương mại Hùng Vương 1459,linh.d1,South Regional Team,2025-11-13,2025-12-11,426677214,sent,4,Quotation for Doanh nghiệp Thương mại Hùng Vương 1459
+QUOT0210,Q-202510-0210,OPP0576,Xí nghiệp Du lịch Saigon Tourist 2110,hieu.h,South Regional Team,2025-10-31,2025-11-16,262394346,draft,4,Quotation for Xí nghiệp Du lịch Saigon Tourist 2110
+QUOT0211,Q-202511-0211,OPP0580,Tập đoàn Nhà hàng Ngọc Mai 1495,hang.v1,South Regional Team,2025-11-07,2025-11-28,716538802,sale,4,Quotation for Tập đoàn Nhà hàng Ngọc Mai 1495
+QUOT0212,Q-202512-0212,OPP0582,Công ty TNHH Khách hàng Tiềm năng 582,quan.h,North Regional Team,2025-12-16,2025-12-30,380168099,sale,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 582
+QUOT0213,Q-202509-0213,OPP0586,Xí nghiệp Du lịch Saigon Tourist 2281,mai.m,Central Regional Team,2025-09-05,2025-09-30,649263371,sent,5,Quotation for Xí nghiệp Du lịch Saigon Tourist 2281
+QUOT0214,Q-202508-0214,OPP0587,Công ty Cổ phần Khách hàng Tiềm năng 587,quan.n,South Regional Team,2025-08-13,2025-09-06,759744356,sent,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 587
+QUOT0215,Q-202511-0215,OPP0592,Chi nhánh Giải pháp số FPT 1628,nhu.d,South Regional Team,2025-11-27,2025-12-17,435289813,sale,3,Quotation for Chi nhánh Giải pháp số FPT 1628
+QUOT0216,Q-202510-0216,OPP0595,Công ty TNHH Khách hàng Tiềm năng 595,linh.d,North Regional Team,2025-10-20,2025-11-16,149336840,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 595
+QUOT0217,Q-202511-0217,OPP0600,Công ty Cổ phần Trang sức Bảo Tín 1377,mai.m,Central Regional Team,2025-11-27,2025-12-20,953260563,sent,5,Quotation for Công ty Cổ phần Trang sức Bảo Tín 1377
+QUOT0218,Q-202509-0218,OPP0603,Công ty TNHH Bán lẻ Vinmart 2948,dung.l,South Regional Team,2025-09-25,2025-10-16,92595182,sent,2,Quotation for Công ty TNHH Bán lẻ Vinmart 2948
+QUOT0219,Q-202512-0219,OPP0611,Công ty Trà Phúc Long 2799,tai.t,South Regional Team,2025-12-01,2025-12-26,314193211,draft,1,Quotation for Công ty Trà Phúc Long 2799
+QUOT0220,Q-202509-0220,OPP0614,Trung tâm Thực phẩm Á Châu 645,khoa.b,North Regional Team,2025-09-07,2025-09-22,257408779,sent,2,Quotation for Trung tâm Thực phẩm Á Châu 645
+QUOT0221,Q-202509-0221,OPP0615,Công ty TNHH Khách hàng Tiềm năng 615,linh.d1,South Regional Team,2025-09-21,2025-10-12,284290559,draft,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 615
+QUOT0222,Q-202509-0222,OPP0617,Xí nghiệp Bệnh viện Quốc tế 1961,long.d2,South Regional Team,2025-09-29,2025-10-18,550120302,sent,3,Quotation for Xí nghiệp Bệnh viện Quốc tế 1961
+QUOT0223,Q-202510-0223,OPP0618,Tập đoàn Tư vấn Ernst & Young,hang.v1,South Regional Team,2025-10-05,2025-11-02,118850239,sent,2,Quotation for Tập đoàn Tư vấn Ernst & Young
+QUOT0224,Q-202509-0224,OPP0630,Công ty Logistics Hải Vân 1623,dung.q,Central Regional Team,2025-09-02,2025-09-30,608333155,draft,4,Quotation for Công ty Logistics Hải Vân 1623
+QUOT0225,Q-202510-0225,OPP0632,Công ty Cổ phần Vận tải Phương Trang 2723,long.d,South Regional Team,2025-10-17,2025-11-05,106107659,sent,1,Quotation for Công ty Cổ phần Vận tải Phương Trang 2723
+QUOT0226,Q-202510-0226,OPP0634,Trung tâm Thực phẩm Á Châu 645,huong.n,North Regional Team,2025-10-27,2025-11-21,471249461,sale,3,Quotation for Trung tâm Thực phẩm Á Châu 645
+QUOT0227,Q-202507-0227,OPP0635,Công ty TNHH Khách hàng Tiềm năng 635,my.d,South Regional Team,2025-07-27,2025-08-22,389242099,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 635
+QUOT0228,Q-202508-0228,OPP0637,Doanh nghiệp Giải pháp số FPT 2430,tai.d,South Regional Team,2025-08-17,2025-09-14,516816679,sent,3,Quotation for Doanh nghiệp Giải pháp số FPT 2430
+QUOT0229,Q-202508-0229,OPP0638,Công ty TNHH Khách hàng Tiềm năng 638,hien.h,Central Regional Team,2025-08-30,2025-09-15,272746549,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 638
+QUOT0230,Q-202509-0230,OPP0643,Công ty TNHH Marketing Đỉnh Cao,khoa.t,North Regional Team,2025-09-13,2025-10-04,124728247,sent,1,Quotation for Công ty TNHH Marketing Đỉnh Cao
+QUOT0231,Q-202510-0231,OPP0644,Doanh nghiệp Đầu tư Bảo Việt,nhu.v,South Regional Team,2025-10-02,2025-10-29,1058101723,sent,3,Quotation for Doanh nghiệp Đầu tư Bảo Việt
+QUOT0232,Q-202508-0232,OPP0647,Công ty Cổ phần Khách hàng Tiềm năng 647,thao.c,Central Regional Team,2025-08-09,2025-09-04,397895564,sent,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 647
+QUOT0233,Q-202511-0233,OPP0649,Công ty TNHH Café Highlands 2579,nhu.v,South Regional Team,2025-11-18,2025-12-04,497938498,draft,5,Quotation for Công ty TNHH Café Highlands 2579
+QUOT0234,Q-202509-0234,OPP0651,Chi nhánh Điện thoại Thế Giới Di Động,cuong.t,North Regional Team,2025-09-27,2025-10-20,660914726,draft,1,Quotation for Chi nhánh Điện thoại Thế Giới Di Động
+QUOT0235,Q-202510-0235,OPP0657,Công ty TNHH Khách hàng Tiềm năng 657,tai.d1,Central Regional Team,2025-10-18,2025-11-11,272153638,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 657
+QUOT0236,Q-202507-0236,OPP0664,Công ty Cổ phần Khách hàng Tiềm năng 664,duc.l,South Regional Team,2025-07-20,2025-08-15,489981992,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 664
+QUOT0237,Q-202510-0237,OPP0665,Công ty Đồng hồ Đăng Quang 655,anh.d2,Central Regional Team,2025-10-16,2025-11-08,1349884912,draft,4,Quotation for Công ty Đồng hồ Đăng Quang 655
+QUOT0238,Q-202510-0238,OPP0666,Công ty Cổ phần Truyền thông Sáng Tạo 2318,quynh.d,North Regional Team,2025-10-18,2025-11-15,544023089,sent,3,Quotation for Công ty Cổ phần Truyền thông Sáng Tạo 2318
+QUOT0239,Q-202512-0239,OPP0667,Công ty Cổ phần Cơ khí Đông Á 2589,hai.l,South Regional Team,2025-12-02,2025-12-21,141143921,sent,2,Quotation for Công ty Cổ phần Cơ khí Đông Á 2589
+QUOT0240,Q-202511-0240,OPP0671,Trung tâm Du lịch Saigon Tourist 1424,quan.h,North Regional Team,2025-11-24,2025-12-14,245363274,sent,2,Quotation for Trung tâm Du lịch Saigon Tourist 1424
+QUOT0241,Q-202508-0241,OPP0672,Công ty TNHH Khách hàng Tiềm năng 672,hang.v,North Regional Team,2025-08-18,2025-09-10,613953954,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 672
+QUOT0242,Q-202510-0242,OPP0674,Tập đoàn Thép Việt Ý 1306,son.p,North Regional Team,2025-10-01,2025-10-18,504843580,draft,5,Quotation for Tập đoàn Thép Việt Ý 1306
+QUOT0243,Q-202512-0243,OPP0677,Công ty Anh ngữ ILA 612,anh.b,North Regional Team,2025-12-02,2025-12-17,538622417,sent,3,Quotation for Công ty Anh ngữ ILA 612
+QUOT0244,Q-202508-0244,OPP0680,Xí nghiệp Tư vấn Ernst & Young 2343,ha.h,North Regional Team,2025-08-13,2025-09-06,672443457,sent,3,Quotation for Xí nghiệp Tư vấn Ernst & Young 2343
+QUOT0245,Q-202510-0245,OPP0682,Công ty Cổ phần Máy tính Phương Nam 2235,quynh.d1,South Regional Team,2025-10-19,2025-11-02,155572134,sent,1,Quotation for Công ty Cổ phần Máy tính Phương Nam 2235
+QUOT0246,Q-202508-0246,OPP0683,Doanh nghiệp Gỗ Minh Phương 2812,cuong.d,Central Regional Team,2025-08-17,2025-09-11,184935274,draft,3,Quotation for Doanh nghiệp Gỗ Minh Phương 2812
+QUOT0247,Q-202510-0247,OPP0684,Công ty TNHH Khách hàng Tiềm năng 684,hoa.n,South Regional Team,2025-10-23,2025-11-17,671534684,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 684
+QUOT0248,Q-202511-0248,OPP0685,Công ty TNHH Khách hàng Tiềm năng 685,hoa.c,South Regional Team,2025-11-03,2025-11-28,458796060,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 685
+QUOT0249,Q-202511-0249,OPP0692,Doanh nghiệp Ô tô Toyota 1844,son.p,North Regional Team,2025-11-07,2025-12-02,182464963,sale,1,Quotation for Doanh nghiệp Ô tô Toyota 1844
+QUOT0250,Q-202511-0250,OPP0695,Công ty TNHH Khách hàng Tiềm năng 695,ha.h1,South Regional Team,2025-11-02,2025-11-29,1086714570,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 695
+QUOT0251,Q-202509-0251,OPP0696,Tập đoàn Siêu thị BigC 2022,quynh.l,Central Regional Team,2025-09-15,2025-10-07,1151117922,sent,5,Quotation for Tập đoàn Siêu thị BigC 2022
+QUOT0252,Q-202512-0252,OPP0698,Xí nghiệp Giải pháp số FPT 2913,tri.n,North Regional Team,2025-12-08,2025-12-25,189724893,sent,2,Quotation for Xí nghiệp Giải pháp số FPT 2913
+QUOT0253,Q-202508-0253,OPP0699,Công ty May mặc Hoa Sen 2673,anh.b,North Regional Team,2025-08-23,2025-09-09,95146987,sent,1,Quotation for Công ty May mặc Hoa Sen 2673
+QUOT0254,Q-202508-0254,OPP0704,Công ty TNHH Khách hàng Tiềm năng 704,quynh.d1,South Regional Team,2025-08-27,2025-09-24,707179927,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 704
+QUOT0255,Q-202510-0255,OPP0708,Tập đoàn Vật liệu xây dựng Đại Phát 1250,my.d,South Regional Team,2025-10-15,2025-11-06,127576734,sent,2,Quotation for Tập đoàn Vật liệu xây dựng Đại Phát 1250
+QUOT0256,Q-202510-0256,OPP0711,Xí nghiệp Bánh kẹo Kinh Đô 2794,huy.t,North Regional Team,2025-10-19,2025-11-14,186096016,draft,3,Quotation for Xí nghiệp Bánh kẹo Kinh Đô 2794
+QUOT0257,Q-202509-0257,OPP0718,Công ty TNHH Khách hàng Tiềm năng 718,mai.d,South Regional Team,2025-09-17,2025-10-11,146219810,sent,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 718
+QUOT0258,Q-202509-0258,OPP0719,Công ty Cổ phần Khách hàng Tiềm năng 719,lan.l,South Regional Team,2025-09-05,2025-09-25,743827285,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 719
+QUOT0259,Q-202510-0259,OPP0721,Tập đoàn Thép Việt Ý 1150,cuong.d,Central Regional Team,2025-10-25,2025-11-10,178204823,draft,2,Quotation for Tập đoàn Thép Việt Ý 1150
+QUOT0260,Q-202509-0260,OPP0722,Công ty Cổ phần Khách sạn Mường Thanh 449,hoa.n,South Regional Team,2025-09-08,2025-10-04,1094527759,draft,3,Quotation for Công ty Cổ phần Khách sạn Mường Thanh 449
+QUOT0261,Q-202509-0261,OPP0723,Công ty Bán lẻ Vinmart 2548,kien.d,South Regional Team,2025-09-27,2025-10-20,189979075,sale,2,Quotation for Công ty Bán lẻ Vinmart 2548
+QUOT0262,Q-202508-0262,OPP0726,Công ty Cổ phần Xe máy Honda 2768,huy.t,North Regional Team,2025-08-13,2025-09-03,715119793,sale,5,Quotation for Công ty Cổ phần Xe máy Honda 2768
+QUOT0263,Q-202511-0263,OPP0728,Công ty Cổ phần Truyền thông Sáng Tạo,quynh.l,Central Regional Team,2025-11-26,2025-12-17,365107576,sale,2,Quotation for Công ty Cổ phần Truyền thông Sáng Tạo
+QUOT0264,Q-202508-0264,OPP0734,Công ty Cổ phần Khách hàng Tiềm năng 734,hai.l,South Regional Team,2025-08-08,2025-08-30,201986784,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 734
+QUOT0265,Q-202508-0265,OPP0737,Doanh nghiệp Quảng cáo Việt Nam 1092,tai.d,South Regional Team,2025-08-29,2025-09-13,517253694,sent,3,Quotation for Doanh nghiệp Quảng cáo Việt Nam 1092
+QUOT0266,Q-202509-0266,OPP0739,Công ty Anh ngữ ILA 2672,linh.t,South Regional Team,2025-09-30,2025-10-24,648644489,sent,3,Quotation for Công ty Anh ngữ ILA 2672
+QUOT0267,Q-202508-0267,OPP0740,Doanh nghiệp Cơ khí Đông Á 1864,nhu.d,South Regional Team,2025-08-01,2025-08-25,282412556,draft,2,Quotation for Doanh nghiệp Cơ khí Đông Á 1864
+QUOT0268,Q-202509-0268,OPP0742,Trung tâm Bán lẻ Vinmart 2805,nhu.d,South Regional Team,2025-09-05,2025-09-28,520121079,sent,4,Quotation for Trung tâm Bán lẻ Vinmart 2805
+QUOT0269,Q-202511-0269,OPP0743,Công ty Vật liệu xây dựng Đại Phát 1155,hang.n,South Regional Team,2025-11-18,2025-12-04,372612167,sent,3,Quotation for Công ty Vật liệu xây dựng Đại Phát 1155
+QUOT0270,Q-202511-0270,OPP0757,Công ty TNHH Đồng hồ Đăng Quang 2535,son.p,North Regional Team,2025-11-26,2025-12-16,358205756,sent,2,Quotation for Công ty TNHH Đồng hồ Đăng Quang 2535
+QUOT0271,Q-202510-0271,OPP0758,Doanh nghiệp Gỗ Minh Phương 1729,quynh.d1,South Regional Team,2025-10-21,2025-11-17,517815285,sent,5,Quotation for Doanh nghiệp Gỗ Minh Phương 1729
+QUOT0272,Q-202508-0272,OPP0765,Trung tâm Điện tử Sài Gòn,huong.l,South Regional Team,2025-08-09,2025-09-01,166381660,draft,1,Quotation for Trung tâm Điện tử Sài Gòn
+QUOT0273,Q-202509-0273,OPP0767,Doanh nghiệp Nông sản sạch Đà Lạt 1649,hien.h,Central Regional Team,2025-09-30,2025-10-27,1211649954,sent,2,Quotation for Doanh nghiệp Nông sản sạch Đà Lạt 1649
+QUOT0274,Q-202510-0274,OPP0771,Chi nhánh Vận tải Phương Trang 833,duc.l,South Regional Team,2025-10-26,2025-11-17,186491763,sale,2,Quotation for Chi nhánh Vận tải Phương Trang 833
+QUOT0275,Q-202508-0275,OPP0780,Công ty TNHH Khách hàng Tiềm năng 780,quynh.v,South Regional Team,2025-08-10,2025-09-06,546664564,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 780
+QUOT0276,Q-202508-0276,OPP0781,Doanh nghiệp Đào tạo FPT 2715,hung.c,Central Regional Team,2025-08-01,2025-08-18,601604663,sent,5,Quotation for Doanh nghiệp Đào tạo FPT 2715
+QUOT0277,Q-202510-0277,OPP0785,Xí nghiệp Viễn thông Viettel,xuan.q,North Regional Team,2025-10-18,2025-11-13,407069821,draft,2,Quotation for Xí nghiệp Viễn thông Viettel
+QUOT0278,Q-202511-0278,OPP0791,Doanh nghiệp Nội thất Hoàng Gia,mai.p,Central Regional Team,2025-11-08,2025-12-03,941709247,sent,2,Quotation for Doanh nghiệp Nội thất Hoàng Gia
+QUOT0279,Q-202511-0279,OPP0795,Trung tâm Nhà xuất bản Trẻ 1741,duc.l,South Regional Team,2025-11-10,2025-11-30,391780470,sent,4,Quotation for Trung tâm Nhà xuất bản Trẻ 1741
+QUOT0280,Q-202509-0280,OPP0797,Công ty TNHH Khách hàng Tiềm năng 797,vy.l,South Regional Team,2025-09-29,2025-10-18,788198101,sent,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 797
+QUOT0281,Q-202510-0281,OPP0800,Chi nhánh Du lịch Saigon Tourist 1956,quynh.v,South Regional Team,2025-10-19,2025-11-14,256353241,sent,3,Quotation for Chi nhánh Du lịch Saigon Tourist 1956
+QUOT0282,Q-202508-0282,OPP0802,Tập đoàn Xe máy Honda 1146,thao.t,North Regional Team,2025-08-07,2025-08-27,649499386,sent,4,Quotation for Tập đoàn Xe máy Honda 1146
+QUOT0283,Q-202509-0283,OPP0807,Công ty TNHH Khách hàng Tiềm năng 807,tung.l,South Regional Team,2025-09-18,2025-10-08,1000234614,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 807
+QUOT0284,Q-202507-0284,OPP0808,Công ty TNHH Khách hàng Tiềm năng 808,phuc.v,North Regional Team,2025-07-23,2025-08-11,246271477,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 808
+QUOT0285,Q-202508-0285,OPP0813,Công ty TNHH Khách hàng Tiềm năng 813,hai.l,South Regional Team,2025-08-06,2025-08-26,976153251,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 813
+QUOT0286,Q-202509-0286,OPP0816,Xí nghiệp Dược phẩm Hà Nội 2414,anh.d,Central Regional Team,2025-09-25,2025-10-09,278966915,draft,3,Quotation for Xí nghiệp Dược phẩm Hà Nội 2414
+QUOT0287,Q-202509-0287,OPP0818,Công ty Chế biến thực phẩm Vissan 718,linh.d1,South Regional Team,2025-09-17,2025-10-11,788639437,sent,3,Quotation for Công ty Chế biến thực phẩm Vissan 718
+QUOT0288,Q-202511-0288,OPP0820,Xí nghiệp Cơ khí Đông Á 991,anh.b,North Regional Team,2025-11-13,2025-11-27,404533521,sent,1,Quotation for Xí nghiệp Cơ khí Đông Á 991
+QUOT0289,Q-202507-0289,OPP0821,Công ty TNHH Khách hàng Tiềm năng 821,mai.d,South Regional Team,2025-07-26,2025-08-12,498487516,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 821
+QUOT0290,Q-202508-0290,OPP0825,Công ty Cổ phần Sơn Jotun 439,anh.d,Central Regional Team,2025-08-17,2025-09-05,772227848,sent,4,Quotation for Công ty Cổ phần Sơn Jotun 439
+QUOT0291,Q-202510-0291,OPP0827,Doanh nghiệp Trang sức Bảo Tín 2894,dung.h,Central Regional Team,2025-10-30,2025-11-13,83867598,sale,1,Quotation for Doanh nghiệp Trang sức Bảo Tín 2894
+QUOT0292,Q-202508-0292,OPP0828,Tập đoàn Thời trang Nam Phong 1500,minh.p,South Regional Team,2025-08-23,2025-09-15,548456596,draft,4,Quotation for Tập đoàn Thời trang Nam Phong 1500
+QUOT0293,Q-202508-0293,OPP0836,Công ty TNHH Khách hàng Tiềm năng 836,dung.m,North Regional Team,2025-08-12,2025-09-03,97411764,draft,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 836
+QUOT0294,Q-202509-0294,OPP0840,Chi nhánh Khách sạn Mường Thanh 2973,mai.n,North Regional Team,2025-09-21,2025-10-05,118011720,draft,1,Quotation for Chi nhánh Khách sạn Mường Thanh 2973
+QUOT0295,Q-202511-0295,OPP0850,Xí nghiệp Tư vấn McKinsey 1886,mai.m,Central Regional Team,2025-11-30,2025-12-27,575635288,sent,4,Quotation for Xí nghiệp Tư vấn McKinsey 1886
+QUOT0296,Q-202512-0296,OPP0851,Xí nghiệp Máy tính Phương Nam 1384,linh.d,North Regional Team,2025-12-15,2026-01-08,712461665,sent,4,Quotation for Xí nghiệp Máy tính Phương Nam 1384
+QUOT0297,Q-202512-0297,OPP0855,Công ty Gỗ Minh Phương 1631,anh.d,Central Regional Team,2025-12-05,2025-12-25,1005428104,draft,5,Quotation for Công ty Gỗ Minh Phương 1631
+QUOT0298,Q-202508-0298,OPP0862,Xí nghiệp Đầu tư Bảo Việt 1641,manh.h,South Regional Team,2025-08-29,2025-09-25,731741057,sent,4,Quotation for Xí nghiệp Đầu tư Bảo Việt 1641
+QUOT0299,Q-202508-0299,OPP0865,Trung tâm Bất động sản Vinhomes 643,linh.d2,North Regional Team,2025-08-17,2025-09-07,225081382,sent,5,Quotation for Trung tâm Bất động sản Vinhomes 643
+QUOT0300,Q-202509-0300,OPP0866,Công ty Cổ phần Khách hàng Tiềm năng 866,hang.v1,South Regional Team,2025-09-01,2025-09-23,833308212,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 866
+QUOT0301,Q-202509-0301,OPP0867,Công ty TNHH Khách hàng Tiềm năng 867,xuan.l,South Regional Team,2025-09-17,2025-10-09,393682721,sent,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 867
+QUOT0302,Q-202508-0302,OPP0874,Doanh nghiệp Bệnh viện Quốc tế 2489,tung.c,North Regional Team,2025-08-08,2025-08-30,605620797,sale,2,Quotation for Doanh nghiệp Bệnh viện Quốc tế 2489
+QUOT0303,Q-202510-0303,OPP0877,Công ty TNHH May mặc Hoa Sen 844,nhu.d,South Regional Team,2025-10-06,2025-10-31,667262382,draft,4,Quotation for Công ty TNHH May mặc Hoa Sen 844
+QUOT0304,Q-202508-0304,OPP0879,Tập đoàn Máy tính Phương Nam 1542,thao.c,Central Regional Team,2025-08-22,2025-09-05,75321567,sent,2,Quotation for Tập đoàn Máy tính Phương Nam 1542
+QUOT0305,Q-202508-0305,OPP0882,Tập đoàn Trà Phúc Long 353,anh.b,North Regional Team,2025-08-20,2025-09-07,665782803,sale,4,Quotation for Tập đoàn Trà Phúc Long 353
+QUOT0306,Q-202509-0306,OPP0886,Chi nhánh Đồng hồ Đăng Quang 2520,anh.d,Central Regional Team,2025-09-22,2025-10-07,200333026,draft,1,Quotation for Chi nhánh Đồng hồ Đăng Quang 2520
+QUOT0307,Q-202508-0307,OPP0891,Công ty Cổ phần Khách hàng Tiềm năng 891,duc.l,South Regional Team,2025-08-15,2025-09-01,615205456,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 891
+QUOT0308,Q-202511-0308,OPP0892,Công ty Ô tô Toyota 1963,quan.n,South Regional Team,2025-11-22,2025-12-09,385065776,sale,2,Quotation for Công ty Ô tô Toyota 1963
+QUOT0309,Q-202508-0309,OPP0893,Xí nghiệp Siêu thị BigC 867,xuan.q,North Regional Team,2025-08-07,2025-09-03,391587563,draft,2,Quotation for Xí nghiệp Siêu thị BigC 867
+QUOT0310,Q-202510-0310,OPP0905,Công ty Cổ phần Giải pháp số FPT 2865,son.p,North Regional Team,2025-10-20,2025-11-08,35819408,sent,1,Quotation for Công ty Cổ phần Giải pháp số FPT 2865
+QUOT0311,Q-202510-0311,OPP0912,Xí nghiệp Dệt may Việt Tiến 1323,phuong.d,North Regional Team,2025-10-01,2025-10-16,250807408,draft,4,Quotation for Xí nghiệp Dệt may Việt Tiến 1323
+QUOT0312,Q-202509-0312,OPP0916,Công ty Nước giải khát Tân Hiệp Phát 2706,quynh.d,North Regional Team,2025-09-01,2025-09-20,57426062,sent,1,Quotation for Công ty Nước giải khát Tân Hiệp Phát 2706
+QUOT0313,Q-202511-0313,OPP0917,Trung tâm Thực phẩm Á Châu,hang.v1,South Regional Team,2025-11-11,2025-12-05,377892151,sent,5,Quotation for Trung tâm Thực phẩm Á Châu
+QUOT0314,Q-202510-0314,OPP0919,Công ty Cổ phần Nông sản sạch Đà Lạt 529,mai.d,South Regional Team,2025-10-01,2025-10-29,366959775,draft,2,Quotation for Công ty Cổ phần Nông sản sạch Đà Lạt 529
+QUOT0315,Q-202508-0315,OPP0921,Công ty TNHH Khách hàng Tiềm năng 921,anh.b,North Regional Team,2025-08-16,2025-09-05,351467861,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 921
+QUOT0316,Q-202508-0316,OPP0923,Xí nghiệp Siêu thị BigC 2294,lan.l,South Regional Team,2025-08-16,2025-09-03,209256762,sent,3,Quotation for Xí nghiệp Siêu thị BigC 2294
+QUOT0317,Q-202508-0317,OPP0924,Công ty Cổ phần Điện thoại Thế Giới Di Động 960,huong.l,South Regional Team,2025-08-21,2025-09-06,654349849,draft,2,Quotation for Công ty Cổ phần Điện thoại Thế Giới Di Động 960
+QUOT0318,Q-202511-0318,OPP0937,Công ty TNHH Cơ khí Đông Á 1585,tai.d1,Central Regional Team,2025-11-05,2025-12-02,788203548,sent,3,Quotation for Công ty TNHH Cơ khí Đông Á 1585
+QUOT0319,Q-202508-0319,OPP0939,Tập đoàn Quảng cáo Việt Nam 1800,hoa.t,South Regional Team,2025-08-30,2025-09-21,226927935,sale,2,Quotation for Tập đoàn Quảng cáo Việt Nam 1800
+QUOT0320,Q-202509-0320,OPP0945,Xí nghiệp Thời trang Nam Phong 682,quynh.v,South Regional Team,2025-09-04,2025-09-24,176152837,draft,1,Quotation for Xí nghiệp Thời trang Nam Phong 682
+QUOT0321,Q-202509-0321,OPP0948,Chi nhánh Truyền thông Sáng Tạo,hoa.t1,Central Regional Team,2025-09-20,2025-10-06,276415572,sent,4,Quotation for Chi nhánh Truyền thông Sáng Tạo
+QUOT0322,Q-202508-0322,OPP0949,Công ty TNHH Xây dựng Hoàng Long,huong.l,South Regional Team,2025-08-17,2025-09-10,465979904,sale,2,Quotation for Công ty TNHH Xây dựng Hoàng Long
+QUOT0323,Q-202509-0323,OPP0951,Công ty TNHH Nông sản sạch Đà Lạt 2267,quynh.d,North Regional Team,2025-09-09,2025-10-03,339629091,sent,3,Quotation for Công ty TNHH Nông sản sạch Đà Lạt 2267
+QUOT0324,Q-202508-0324,OPP0952,Công ty Cổ phần Tư vấn McKinsey 1340,long.d2,South Regional Team,2025-08-24,2025-09-08,841567554,sent,4,Quotation for Công ty Cổ phần Tư vấn McKinsey 1340
+QUOT0325,Q-202511-0325,OPP0956,Công ty Cổ phần Khách hàng Tiềm năng 956,tri.l,South Regional Team,2025-11-26,2025-12-16,657298460,draft,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 956
+QUOT0326,Q-202510-0326,OPP0957,Doanh nghiệp Logistics Hải Vân 1534,hang.d,South Regional Team,2025-10-24,2025-11-07,390656690,draft,2,Quotation for Doanh nghiệp Logistics Hải Vân 1534
+QUOT0327,Q-202511-0327,OPP0967,Công ty Cơ khí Đông Á 1552,tai.d,South Regional Team,2025-11-29,2025-12-14,777343386,sent,3,Quotation for Công ty Cơ khí Đông Á 1552
+QUOT0328,Q-202508-0328,OPP0968,Công ty Cổ phần Khách hàng Tiềm năng 968,nga.d,North Regional Team,2025-08-29,2025-09-24,1202085629,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 968
+QUOT0329,Q-202508-0329,OPP0969,Trung tâm Giải pháp số FPT,huong.n,North Regional Team,2025-08-25,2025-09-11,40612937,sent,1,Quotation for Trung tâm Giải pháp số FPT
+QUOT0330,Q-202508-0330,OPP0971,Công ty TNHH Nhà hàng Ngọc Mai 1119,linh.d,North Regional Team,2025-08-09,2025-09-01,123688989,sale,1,Quotation for Công ty TNHH Nhà hàng Ngọc Mai 1119
+QUOT0331,Q-202511-0331,OPP0972,Xí nghiệp Marketing Đỉnh Cao 1070,khanh.l,Central Regional Team,2025-11-20,2025-12-07,404281085,sent,2,Quotation for Xí nghiệp Marketing Đỉnh Cao 1070
+QUOT0332,Q-202507-0332,OPP0979,Công ty Cổ phần Kính Việt Nhật 1318,vy.m,North Regional Team,2025-07-18,2025-08-08,460925354,sent,2,Quotation for Công ty Cổ phần Kính Việt Nhật 1318
+QUOT0333,Q-202510-0333,OPP0980,Công ty TNHH Khách hàng Tiềm năng 980,manh.h,South Regional Team,2025-10-13,2025-10-30,417241012,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 980
+QUOT0334,Q-202508-0334,OPP0982,Công ty TNHH Trà Phúc Long 1965,dung.q,Central Regional Team,2025-08-08,2025-08-30,492735808,draft,3,Quotation for Công ty TNHH Trà Phúc Long 1965
+QUOT0335,Q-202510-0335,OPP0984,Chi nhánh Quảng cáo Việt Nam 2860,hoa.b,North Regional Team,2025-10-24,2025-11-09,355968275,sale,1,Quotation for Chi nhánh Quảng cáo Việt Nam 2860
+QUOT0336,Q-202508-0336,OPP0988,Công ty TNHH Khách hàng Tiềm năng 988,quynh.l,Central Regional Team,2025-08-05,2025-08-23,295752837,sale,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 988
+QUOT0337,Q-202510-0337,OPP0992,Chi nhánh Điện lạnh Bách Khoa,phuc.v,North Regional Team,2025-10-12,2025-10-27,362712693,sent,3,Quotation for Chi nhánh Điện lạnh Bách Khoa
+QUOT0338,Q-202507-0338,OPP0993,Trung tâm Ô tô Toyota 2543,hai.l,South Regional Team,2025-07-27,2025-08-20,769268847,draft,5,Quotation for Trung tâm Ô tô Toyota 2543
+QUOT0339,Q-202509-0339,OPP0995,Chi nhánh Phần mềm Trí Tuệ 2412,tai.h,Central Regional Team,2025-09-05,2025-10-01,678485822,sent,2,Quotation for Chi nhánh Phần mềm Trí Tuệ 2412
+QUOT0340,Q-202510-0340,OPP0996,Doanh nghiệp Đầu tư Bảo Việt 1440,my.d,South Regional Team,2025-10-07,2025-10-29,633807648,sale,5,Quotation for Doanh nghiệp Đầu tư Bảo Việt 1440
+QUOT0341,Q-202512-0341,OPP1004,Tập đoàn Anh ngữ ILA 2238,quynh.d,North Regional Team,2025-12-13,2026-01-09,485562198,sale,3,Quotation for Tập đoàn Anh ngữ ILA 2238
+QUOT0342,Q-202510-0342,OPP1005,Công ty Cổ phần Gỗ Minh Phương 594,hien.v,South Regional Team,2025-10-23,2025-11-18,233032030,draft,1,Quotation for Công ty Cổ phần Gỗ Minh Phương 594
+QUOT0343,Q-202509-0343,OPP1006,Công ty Cổ phần Bệnh viện Quốc tế 2669,phuong.d,North Regional Team,2025-09-04,2025-10-01,32541339,sale,1,Quotation for Công ty Cổ phần Bệnh viện Quốc tế 2669
+QUOT0344,Q-202510-0344,OPP1010,Công ty Bệnh viện Quốc tế 804,huy.t,North Regional Team,2025-10-26,2025-11-23,44138011,sale,2,Quotation for Công ty Bệnh viện Quốc tế 804
+QUOT0345,Q-202509-0345,OPP1017,Tập đoàn Máy tính Phương Nam,nhu.d,South Regional Team,2025-09-13,2025-09-28,221581359,draft,2,Quotation for Tập đoàn Máy tính Phương Nam
+QUOT0346,Q-202509-0346,OPP1019,Công ty TNHH Khách hàng Tiềm năng 1019,cuong.h,Central Regional Team,2025-09-24,2025-10-21,252289739,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 1019
+QUOT0347,Q-202510-0347,OPP1020,Doanh nghiệp Quảng cáo Việt Nam 1092,khanh.h,South Regional Team,2025-10-19,2025-11-16,271949816,sent,4,Quotation for Doanh nghiệp Quảng cáo Việt Nam 1092
+QUOT0348,Q-202510-0348,OPP1022,Chi nhánh Bất động sản Vinhomes 924,hien.h,Central Regional Team,2025-10-17,2025-11-12,549520682,sent,4,Quotation for Chi nhánh Bất động sản Vinhomes 924
+QUOT0349,Q-202508-0349,OPP1023,Công ty Trang sức Bảo Tín 617,nga.d,North Regional Team,2025-08-01,2025-08-17,229137258,draft,3,Quotation for Công ty Trang sức Bảo Tín 617
+QUOT0350,Q-202509-0350,OPP1025,Công ty Cổ phần Gỗ Minh Phương 2842,hang.v,North Regional Team,2025-09-10,2025-09-30,47204688,draft,1,Quotation for Công ty Cổ phần Gỗ Minh Phương 2842
+QUOT0351,Q-202510-0351,OPP1026,Công ty TNHH Xây dựng Hoàng Long 2240,quan.h,North Regional Team,2025-10-11,2025-10-26,252364484,draft,2,Quotation for Công ty TNHH Xây dựng Hoàng Long 2240
+QUOT0352,Q-202511-0352,OPP1030,Chi nhánh Thép Việt Ý,dung.q,Central Regional Team,2025-11-01,2025-11-28,849902096,sale,5,Quotation for Chi nhánh Thép Việt Ý
+QUOT0353,Q-202511-0353,OPP1031,Công ty Cổ phần Khách hàng Tiềm năng 1031,khanh.m,South Regional Team,2025-11-23,2025-12-18,364816111,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1031
+QUOT0354,Q-202510-0354,OPP1032,Công ty TNHH Xe máy Honda,quynh.d,North Regional Team,2025-10-10,2025-11-01,251463428,draft,1,Quotation for Công ty TNHH Xe máy Honda
+QUOT0355,Q-202507-0355,OPP1033,Công ty TNHH Khách hàng Tiềm năng 1033,diep.l,Central Regional Team,2025-07-28,2025-08-14,466199106,sent,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 1033
+QUOT0356,Q-202511-0356,OPP1038,Công ty Nhà hàng Ngọc Mai 750,mai.n,North Regional Team,2025-11-27,2025-12-24,33988541,sale,1,Quotation for Công ty Nhà hàng Ngọc Mai 750
+QUOT0357,Q-202509-0357,OPP1043,Chi nhánh Sơn Jotun 1171,hieu.h,South Regional Team,2025-09-09,2025-09-26,545486009,sale,1,Quotation for Chi nhánh Sơn Jotun 1171
+QUOT0358,Q-202508-0358,OPP1046,Công ty TNHH Khách hàng Tiềm năng 1046,bich.b,South Regional Team,2025-08-20,2025-09-10,275197087,sent,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 1046
+QUOT0359,Q-202511-0359,OPP1047,Công ty Đồng hồ Đăng Quang 2599,quynh.h1,North Regional Team,2025-11-15,2025-12-04,573010075,draft,4,Quotation for Công ty Đồng hồ Đăng Quang 2599
+QUOT0360,Q-202509-0360,OPP1050,Xí nghiệp Du lịch Saigon Tourist 2770,long.d,South Regional Team,2025-09-30,2025-10-27,60145112,sale,3,Quotation for Xí nghiệp Du lịch Saigon Tourist 2770
+QUOT0361,Q-202508-0361,OPP1054,Công ty TNHH Khách hàng Tiềm năng 1054,dung.l,South Regional Team,2025-08-18,2025-09-03,1126343110,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 1054
+QUOT0362,Q-202508-0362,OPP1056,Chi nhánh Kính Việt Nhật 2106,cuong.d,Central Regional Team,2025-08-05,2025-08-30,164011309,draft,3,Quotation for Chi nhánh Kính Việt Nhật 2106
+QUOT0363,Q-202509-0363,OPP1059,Công ty Cổ phần Bất động sản Vinhomes 476,my.d,South Regional Team,2025-09-29,2025-10-24,859500607,draft,5,Quotation for Công ty Cổ phần Bất động sản Vinhomes 476
+QUOT0364,Q-202511-0364,OPP1060,Doanh nghiệp Khách sạn Mường Thanh,hai.l,South Regional Team,2025-11-08,2025-12-03,179573221,sent,2,Quotation for Doanh nghiệp Khách sạn Mường Thanh
+QUOT0365,Q-202510-0365,OPP1065,Chi nhánh Vận tải Phương Trang 762,nhu.v,South Regional Team,2025-10-22,2025-11-08,342303414,draft,2,Quotation for Chi nhánh Vận tải Phương Trang 762
+QUOT0366,Q-202511-0366,OPP1069,Trung tâm Chế biến thực phẩm Vissan 1632,hung.v,Central Regional Team,2025-11-22,2025-12-15,1546075814,draft,4,Quotation for Trung tâm Chế biến thực phẩm Vissan 1632
+QUOT0367,Q-202508-0367,OPP1070,Công ty TNHH Khách hàng Tiềm năng 1070,quan.h,North Regional Team,2025-08-17,2025-09-01,974111778,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 1070
+QUOT0368,Q-202509-0368,OPP1075,Xí nghiệp Vật liệu xây dựng Đại Phát 733,tri.l,South Regional Team,2025-09-14,2025-09-28,66450470,draft,2,Quotation for Xí nghiệp Vật liệu xây dựng Đại Phát 733
+QUOT0369,Q-202510-0369,OPP1077,Trung tâm Viễn thông Viettel 430,quynh.l,Central Regional Team,2025-10-31,2025-11-16,96858610,draft,1,Quotation for Trung tâm Viễn thông Viettel 430
+QUOT0370,Q-202509-0370,OPP1081,Công ty Cổ phần Bánh kẹo Kinh Đô,linh.d2,North Regional Team,2025-09-23,2025-10-11,621054555,sent,5,Quotation for Công ty Cổ phần Bánh kẹo Kinh Đô
+QUOT0371,Q-202510-0371,OPP1084,Chi nhánh Giáo dục Nguyễn Hoàng 2905,ngoc.q,North Regional Team,2025-10-20,2025-11-15,798584057,sent,5,Quotation for Chi nhánh Giáo dục Nguyễn Hoàng 2905
+QUOT0372,Q-202511-0372,OPP1085,Chi nhánh Nhà xuất bản Trẻ 1026,phuc.v,North Regional Team,2025-11-12,2025-12-06,1081440513,draft,5,Quotation for Chi nhánh Nhà xuất bản Trẻ 1026
+QUOT0373,Q-202509-0373,OPP1095,Chi nhánh May mặc Hoa Sen 2951,cuong.t,North Regional Team,2025-09-24,2025-10-14,173835899,draft,3,Quotation for Chi nhánh May mặc Hoa Sen 2951
+QUOT0374,Q-202509-0374,OPP1097,Công ty Phần mềm Trí Tuệ 1944,quynh.l,Central Regional Team,2025-09-16,2025-10-01,434631880,sent,4,Quotation for Công ty Phần mềm Trí Tuệ 1944
+QUOT0375,Q-202510-0375,OPP1098,Doanh nghiệp Đào tạo FPT 2798,nhu.d,South Regional Team,2025-10-08,2025-10-28,281946127,sent,2,Quotation for Doanh nghiệp Đào tạo FPT 2798
+QUOT0376,Q-202509-0376,OPP1099,Xí nghiệp Du lịch Saigon Tourist 2110,ngoc.q,North Regional Team,2025-09-06,2025-09-25,186907805,draft,1,Quotation for Xí nghiệp Du lịch Saigon Tourist 2110
+QUOT0377,Q-202511-0377,OPP1101,Tập đoàn Xe máy Honda 1677,tuyet.h,South Regional Team,2025-11-20,2025-12-14,473905345,sent,4,Quotation for Tập đoàn Xe máy Honda 1677
+QUOT0378,Q-202508-0378,OPP1102,Doanh nghiệp Cơ khí Đông Á 1864,hung.l,South Regional Team,2025-08-14,2025-09-07,502027398,draft,1,Quotation for Doanh nghiệp Cơ khí Đông Á 1864
+QUOT0379,Q-202510-0379,OPP1105,Tập đoàn Tư vấn McKinsey 2482,mai.p,Central Regional Team,2025-10-09,2025-10-25,218211469,draft,1,Quotation for Tập đoàn Tư vấn McKinsey 2482
+QUOT0380,Q-202508-0380,OPP1107,Công ty Kính Việt Nhật 2968,phuc.l,Central Regional Team,2025-08-04,2025-08-29,1247130898,sent,3,Quotation for Công ty Kính Việt Nhật 2968
+QUOT0381,Q-202508-0381,OPP1110,Công ty TNHH Bán lẻ Vinmart 2948,mai.p,Central Regional Team,2025-08-12,2025-09-06,882616105,sent,5,Quotation for Công ty TNHH Bán lẻ Vinmart 2948
+QUOT0382,Q-202509-0382,OPP1112,Doanh nghiệp Du lịch Saigon Tourist 987,vy.l,South Regional Team,2025-09-27,2025-10-18,41485902,sent,1,Quotation for Doanh nghiệp Du lịch Saigon Tourist 987
+QUOT0383,Q-202509-0383,OPP1114,Tập đoàn Thời trang Nam Phong 1500,vy.l,South Regional Team,2025-09-11,2025-10-02,325774047,sent,5,Quotation for Tập đoàn Thời trang Nam Phong 1500
+QUOT0384,Q-202509-0384,OPP1118,Tập đoàn Logistics Hải Vân 1654,huy.t,North Regional Team,2025-09-08,2025-09-28,926261972,sale,5,Quotation for Tập đoàn Logistics Hải Vân 1654
+QUOT0385,Q-202511-0385,OPP1119,Tập đoàn Bán lẻ Vinmart,dat.q,South Regional Team,2025-11-02,2025-11-22,28621929,draft,1,Quotation for Tập đoàn Bán lẻ Vinmart
+QUOT0386,Q-202509-0386,OPP1120,Doanh nghiệp Xe máy Honda 2979,linh.d1,South Regional Team,2025-09-03,2025-09-19,902623074,sale,5,Quotation for Doanh nghiệp Xe máy Honda 2979
+QUOT0387,Q-202510-0387,OPP1123,Công ty TNHH Khách hàng Tiềm năng 1123,nhu.d,South Regional Team,2025-10-30,2025-11-18,585386504,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 1123
+QUOT0388,Q-202510-0388,OPP1124,Xí nghiệp Thép Việt Ý,yen.h,North Regional Team,2025-10-10,2025-11-02,615738848,draft,5,Quotation for Xí nghiệp Thép Việt Ý
+QUOT0389,Q-202508-0389,OPP1125,Xí nghiệp Vận tải Phương Trang 1241,kien.d,South Regional Team,2025-08-28,2025-09-19,287380949,sent,4,Quotation for Xí nghiệp Vận tải Phương Trang 1241
+QUOT0390,Q-202510-0390,OPP1127,Công ty Gỗ Minh Phương 451,khoa.t,North Regional Team,2025-10-24,2025-11-14,9593371,sent,1,Quotation for Công ty Gỗ Minh Phương 451
+QUOT0391,Q-202511-0391,OPP1128,Doanh nghiệp Gỗ Minh Phương 2947,tai.d1,Central Regional Team,2025-11-13,2025-11-29,226984533,sent,3,Quotation for Doanh nghiệp Gỗ Minh Phương 2947
+QUOT0392,Q-202509-0392,OPP1129,Công ty Cổ phần Dược phẩm Hà Nội 1642,minh.p,South Regional Team,2025-09-24,2025-10-16,875431911,sent,5,Quotation for Công ty Cổ phần Dược phẩm Hà Nội 1642
+QUOT0393,Q-202510-0393,OPP1130,Công ty Cổ phần Khách hàng Tiềm năng 1130,hien.v,South Regional Team,2025-10-11,2025-10-28,202769735,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1130
+QUOT0394,Q-202508-0394,OPP1132,Doanh nghiệp Tư vấn McKinsey 1383,tuyet.h,South Regional Team,2025-08-25,2025-09-10,545106871,sent,5,Quotation for Doanh nghiệp Tư vấn McKinsey 1383
+QUOT0395,Q-202510-0395,OPP1136,Chi nhánh Giáo dục Nguyễn Hoàng 2338,hoa.n,South Regional Team,2025-10-12,2025-10-27,54569653,sale,1,Quotation for Chi nhánh Giáo dục Nguyễn Hoàng 2338
+QUOT0396,Q-202508-0396,OPP1137,Công ty Đào tạo FPT 2967,cuong.d,Central Regional Team,2025-08-12,2025-09-07,555979210,sent,4,Quotation for Công ty Đào tạo FPT 2967
+QUOT0397,Q-202511-0397,OPP1138,Chi nhánh Trà Phúc Long 2755,quan.h,North Regional Team,2025-11-19,2025-12-10,249245055,draft,4,Quotation for Chi nhánh Trà Phúc Long 2755
+QUOT0398,Q-202510-0398,OPP1139,Tập đoàn Nhà xuất bản Trẻ 2962,tri.t,North Regional Team,2025-10-15,2025-10-31,50629478,draft,2,Quotation for Tập đoàn Nhà xuất bản Trẻ 2962
+QUOT0399,Q-202509-0399,OPP1141,Công ty Cổ phần Chế biến thực phẩm Vissan 1082,nhu.v,South Regional Team,2025-09-24,2025-10-18,569586372,sent,2,Quotation for Công ty Cổ phần Chế biến thực phẩm Vissan 1082
+QUOT0400,Q-202508-0400,OPP1143,Trung tâm Đầu tư Bảo Việt 2879,phuong.d,North Regional Team,2025-08-27,2025-09-22,377119841,sale,1,Quotation for Trung tâm Đầu tư Bảo Việt 2879
+QUOT0401,Q-202510-0401,OPP1145,Công ty Giáo dục Nguyễn Hoàng 2160,long.d1,Central Regional Team,2025-10-07,2025-10-22,674599947,draft,3,Quotation for Công ty Giáo dục Nguyễn Hoàng 2160
+QUOT0402,Q-202512-0402,OPP1148,Công ty Cổ phần Khách hàng Tiềm năng 1148,hung.v,Central Regional Team,2025-12-03,2025-12-30,45880394,sent,1,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1148
+QUOT0403,Q-202508-0403,OPP1151,Xí nghiệp Tư vấn McKinsey 2683,hieu.c,Central Regional Team,2025-08-28,2025-09-22,435449856,draft,3,Quotation for Xí nghiệp Tư vấn McKinsey 2683
+QUOT0404,Q-202510-0404,OPP1153,Tập đoàn Thời trang Nam Phong 711,hang.v1,South Regional Team,2025-10-26,2025-11-13,515214864,sent,4,Quotation for Tập đoàn Thời trang Nam Phong 711
+QUOT0405,Q-202507-0405,OPP1155,Xí nghiệp Thương mại Hùng Vương 2538,tung.l,South Regional Team,2025-07-30,2025-08-26,121265896,sent,1,Quotation for Xí nghiệp Thương mại Hùng Vương 2538
+QUOT0406,Q-202512-0406,OPP1156,Doanh nghiệp Xây dựng Hoàng Long 974,tri.l,South Regional Team,2025-12-09,2025-12-24,653479043,draft,4,Quotation for Doanh nghiệp Xây dựng Hoàng Long 974
+QUOT0407,Q-202510-0407,OPP1159,Công ty TNHH May mặc Hoa Sen 2891,phuc.l,Central Regional Team,2025-10-21,2025-11-16,658262011,draft,4,Quotation for Công ty TNHH May mặc Hoa Sen 2891
+QUOT0408,Q-202511-0408,OPP1164,Trung tâm Quảng cáo Việt Nam 1833,hai.l,South Regional Team,2025-11-22,2025-12-06,368938133,sent,2,Quotation for Trung tâm Quảng cáo Việt Nam 1833
+QUOT0409,Q-202508-0409,OPP1169,Xí nghiệp Vận tải Phương Trang 1011,hang.v,North Regional Team,2025-08-22,2025-09-18,179569950,sent,1,Quotation for Xí nghiệp Vận tải Phương Trang 1011
+QUOT0410,Q-202510-0410,OPP1174,Công ty TNHH Café Highlands 2712,quynh.l,Central Regional Team,2025-10-05,2025-10-27,557808220,sent,1,Quotation for Công ty TNHH Café Highlands 2712
+QUOT0411,Q-202510-0411,OPP1177,Công ty TNHH May mặc Hoa Sen 2053,anh.d1,North Regional Team,2025-10-19,2025-11-09,197872171,sent,3,Quotation for Công ty TNHH May mặc Hoa Sen 2053
+QUOT0412,Q-202508-0412,OPP1178,Doanh nghiệp Xây dựng Coteccons,vy.m,North Regional Team,2025-08-30,2025-09-25,246175284,sent,5,Quotation for Doanh nghiệp Xây dựng Coteccons
+QUOT0413,Q-202511-0413,OPP1179,Công ty Cổ phần Nội thất Hoàng Gia 636,thanh.h,Central Regional Team,2025-11-07,2025-12-04,799916541,sent,5,Quotation for Công ty Cổ phần Nội thất Hoàng Gia 636
+QUOT0414,Q-202510-0414,OPP1184,Trung tâm Khách sạn Mường Thanh 1354,anh.d,Central Regional Team,2025-10-13,2025-10-28,294425857,draft,4,Quotation for Trung tâm Khách sạn Mường Thanh 1354
+QUOT0415,Q-202509-0415,OPP1185,Trung tâm Nông sản sạch Đà Lạt 1097,phuong.d,North Regional Team,2025-09-22,2025-10-17,238993786,sent,1,Quotation for Trung tâm Nông sản sạch Đà Lạt 1097
+QUOT0416,Q-202507-0416,OPP1188,Trung tâm Logistics Hải Vân 530,khoa.c,Central Regional Team,2025-07-18,2025-08-12,184851640,sale,3,Quotation for Trung tâm Logistics Hải Vân 530
+QUOT0417,Q-202511-0417,OPP1197,Công ty Khách sạn Mường Thanh 1995,nhu.d,South Regional Team,2025-11-11,2025-12-07,500810810,draft,5,Quotation for Công ty Khách sạn Mường Thanh 1995
+QUOT0418,Q-202509-0418,OPP1203,Doanh nghiệp Vận tải Phương Trang 2757,hien.h,Central Regional Team,2025-09-03,2025-09-18,171657226,sent,2,Quotation for Doanh nghiệp Vận tải Phương Trang 2757
+QUOT0419,Q-202508-0419,OPP1208,Công ty TNHH Phần mềm Trí Tuệ 1316,hai.l,South Regional Team,2025-08-11,2025-08-31,777595876,draft,4,Quotation for Công ty TNHH Phần mềm Trí Tuệ 1316
+QUOT0420,Q-202511-0420,OPP1212,Doanh nghiệp Bệnh viện Quốc tế 2954,tuyet.h,South Regional Team,2025-11-16,2025-12-06,771465901,draft,4,Quotation for Doanh nghiệp Bệnh viện Quốc tế 2954
+QUOT0421,Q-202511-0421,OPP1213,Tập đoàn Thủy sản Minh Hải 1874,khoa.b,North Regional Team,2025-11-01,2025-11-17,508356975,sent,5,Quotation for Tập đoàn Thủy sản Minh Hải 1874
+QUOT0422,Q-202510-0422,OPP1214,Xí nghiệp Thực phẩm Á Châu 1576,huy.t,North Regional Team,2025-10-18,2025-11-14,385571564,sent,5,Quotation for Xí nghiệp Thực phẩm Á Châu 1576
+QUOT0423,Q-202508-0423,OPP1215,Công ty TNHH Khách hàng Tiềm năng 1215,hoa.n,South Regional Team,2025-08-26,2025-09-22,490208026,draft,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 1215
+QUOT0424,Q-202511-0424,OPP1216,Công ty TNHH Khách hàng Tiềm năng 1216,hieu.h,South Regional Team,2025-11-01,2025-11-29,1067872998,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 1216
+QUOT0425,Q-202510-0425,OPP1218,Công ty Cổ phần Thời trang Nam Phong 2144,tai.d,South Regional Team,2025-10-23,2025-11-11,912362758,draft,4,Quotation for Công ty Cổ phần Thời trang Nam Phong 2144
+QUOT0426,Q-202509-0426,OPP1222,Trung tâm Thủy sản Minh Hải 1279,tung.l,South Regional Team,2025-09-01,2025-09-24,140935053,draft,1,Quotation for Trung tâm Thủy sản Minh Hải 1279
+QUOT0427,Q-202509-0427,OPP1226,Công ty TNHH Vật liệu xây dựng Đại Phát 459,vy.m,North Regional Team,2025-09-27,2025-10-17,184261691,sent,1,Quotation for Công ty TNHH Vật liệu xây dựng Đại Phát 459
+QUOT0428,Q-202507-0428,OPP1228,Doanh nghiệp Quảng cáo Việt Nam 1092,linh.d2,North Regional Team,2025-07-24,2025-08-21,251473288,draft,4,Quotation for Doanh nghiệp Quảng cáo Việt Nam 1092
+QUOT0429,Q-202511-0429,OPP1229,Trung tâm Bánh kẹo Kinh Đô 1420,quynh.d,North Regional Team,2025-11-05,2025-11-28,483740497,sent,5,Quotation for Trung tâm Bánh kẹo Kinh Đô 1420
+QUOT0430,Q-202510-0430,OPP1230,Công ty Dược phẩm Hà Nội 362,khoa.t,North Regional Team,2025-10-17,2025-11-12,347359300,draft,3,Quotation for Công ty Dược phẩm Hà Nội 362
+QUOT0431,Q-202508-0431,OPP1231,Trung tâm Logistics Hải Vân 530,hoa.t,South Regional Team,2025-08-15,2025-09-03,604499480,sale,5,Quotation for Trung tâm Logistics Hải Vân 530
+QUOT0432,Q-202508-0432,OPP1233,Công ty Xe máy Honda 1869,tai.h,Central Regional Team,2025-08-08,2025-09-04,277882144,sent,3,Quotation for Công ty Xe máy Honda 1869
+QUOT0433,Q-202510-0433,OPP1241,Chi nhánh Thủy sản Minh Hải 1302,hoa.c,South Regional Team,2025-10-18,2025-11-05,362522863,sent,2,Quotation for Chi nhánh Thủy sản Minh Hải 1302
+QUOT0434,Q-202511-0434,OPP1243,Công ty Cổ phần Khách hàng Tiềm năng 1243,anh.d1,North Regional Team,2025-11-06,2025-12-03,230433713,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1243
+QUOT0435,Q-202508-0435,OPP1244,Tập đoàn Siêu thị BigC,thanh.h,Central Regional Team,2025-08-07,2025-09-03,164022688,draft,3,Quotation for Tập đoàn Siêu thị BigC
+QUOT0436,Q-202508-0436,OPP1245,Công ty TNHH Bánh kẹo Kinh Đô,huy.t,North Regional Team,2025-08-21,2025-09-18,285786739,draft,3,Quotation for Công ty TNHH Bánh kẹo Kinh Đô
+QUOT0437,Q-202508-0437,OPP1248,Công ty TNHH Nội thất Hoàng Gia,hang.n,South Regional Team,2025-08-18,2025-09-09,1474401081,draft,5,Quotation for Công ty TNHH Nội thất Hoàng Gia
+QUOT0438,Q-202511-0438,OPP1251,Công ty Cổ phần Khách hàng Tiềm năng 1251,vinh.c,South Regional Team,2025-11-19,2025-12-17,541000697,draft,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1251
+QUOT0439,Q-202510-0439,OPP1254,Chi nhánh Tư vấn Ernst & Young 510,thao.t,North Regional Team,2025-10-24,2025-11-18,1281408289,sent,5,Quotation for Chi nhánh Tư vấn Ernst & Young 510
+QUOT0440,Q-202509-0440,OPP1262,Công ty TNHH Khách hàng Tiềm năng 1262,khoa.b,North Regional Team,2025-09-12,2025-10-10,553593111,sent,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 1262
+QUOT0441,Q-202509-0441,OPP1263,Công ty Thương mại Hùng Vương 2867,linh.d1,South Regional Team,2025-09-02,2025-09-22,41970999,draft,1,Quotation for Công ty Thương mại Hùng Vương 2867
+QUOT0442,Q-202508-0442,OPP1267,Công ty TNHH Khách hàng Tiềm năng 1267,quan.h,North Regional Team,2025-08-15,2025-09-09,1318636637,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 1267
+QUOT0443,Q-202508-0443,OPP1268,Công ty Cổ phần Café Highlands 673,quynh.d1,South Regional Team,2025-08-26,2025-09-10,258102743,draft,3,Quotation for Công ty Cổ phần Café Highlands 673
+QUOT0444,Q-202511-0444,OPP1269,Xí nghiệp Thủy sản Minh Hải 2094,hieu.c,Central Regional Team,2025-11-25,2025-12-20,310580027,draft,2,Quotation for Xí nghiệp Thủy sản Minh Hải 2094
+QUOT0445,Q-202508-0445,OPP1270,Công ty TNHH Khách hàng Tiềm năng 1270,nga.d,North Regional Team,2025-08-28,2025-09-15,399989888,sale,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 1270
+QUOT0446,Q-202510-0446,OPP1272,Công ty Tư vấn Ernst & Young 2697,mai.m,Central Regional Team,2025-10-27,2025-11-18,739880890,draft,5,Quotation for Công ty Tư vấn Ernst & Young 2697
+QUOT0447,Q-202509-0447,OPP1275,Công ty Cổ phần Khách hàng Tiềm năng 1275,phuc.l,Central Regional Team,2025-09-15,2025-10-05,342342424,sale,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1275
+QUOT0448,Q-202510-0448,OPP1277,Trung tâm Dệt may Việt Tiến 1620,vy.m,North Regional Team,2025-10-29,2025-11-21,757005857,draft,4,Quotation for Trung tâm Dệt may Việt Tiến 1620
+QUOT0449,Q-202508-0449,OPP1282,Chi nhánh May mặc Hoa Sen 2745,hang.n,South Regional Team,2025-08-11,2025-08-30,408459794,draft,2,Quotation for Chi nhánh May mặc Hoa Sen 2745
+QUOT0450,Q-202511-0450,OPP1283,Công ty TNHH Xây dựng Hoàng Long 1856,quan.h,North Regional Team,2025-11-12,2025-12-04,266032557,sent,4,Quotation for Công ty TNHH Xây dựng Hoàng Long 1856
+QUOT0451,Q-202509-0451,OPP1286,Công ty Cổ phần Khách hàng Tiềm năng 1286,hien.v,South Regional Team,2025-09-11,2025-10-07,770707734,sent,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1286
+QUOT0452,Q-202509-0452,OPP1287,Công ty Cổ phần Khách hàng Tiềm năng 1287,khoa.b,North Regional Team,2025-09-19,2025-10-03,398638369,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1287
+QUOT0453,Q-202508-0453,OPP1296,Doanh nghiệp Điện thoại Thế Giới Di Động 2827,tai.h,Central Regional Team,2025-08-24,2025-09-20,280184196,draft,4,Quotation for Doanh nghiệp Điện thoại Thế Giới Di Động 2827
+QUOT0454,Q-202508-0454,OPP1297,Chi nhánh In ấn Thành Công 350,linh.d1,South Regional Team,2025-08-18,2025-09-03,329956862,sent,3,Quotation for Chi nhánh In ấn Thành Công 350
+QUOT0455,Q-202511-0455,OPP1298,Trung tâm Tư vấn Ernst & Young 1904,thanh.h,Central Regional Team,2025-11-05,2025-11-19,230170195,draft,3,Quotation for Trung tâm Tư vấn Ernst & Young 1904
+QUOT0456,Q-202511-0456,OPP1302,Chi nhánh Dược phẩm Hà Nội 1577,phuc.l,Central Regional Team,2025-11-02,2025-11-25,833981995,draft,5,Quotation for Chi nhánh Dược phẩm Hà Nội 1577
+QUOT0457,Q-202510-0457,OPP1303,Xí nghiệp Xây dựng Coteccons 2918,linh.d3,Central Regional Team,2025-10-27,2025-11-15,289795070,sent,2,Quotation for Xí nghiệp Xây dựng Coteccons 2918
+QUOT0458,Q-202511-0458,OPP1304,Xí nghiệp Nước giải khát Tân Hiệp Phát 694,tri.n,North Regional Team,2025-11-19,2025-12-17,371154310,draft,2,Quotation for Xí nghiệp Nước giải khát Tân Hiệp Phát 694
+QUOT0459,Q-202510-0459,OPP1310,Công ty Tư vấn Ernst & Young 1679,tai.h,Central Regional Team,2025-10-17,2025-11-09,440728699,sale,3,Quotation for Công ty Tư vấn Ernst & Young 1679
+QUOT0460,Q-202511-0460,OPP1313,Tập đoàn Khách sạn Mường Thanh 615,hoa.t,South Regional Team,2025-11-15,2025-12-11,20369279,draft,1,Quotation for Tập đoàn Khách sạn Mường Thanh 615
+QUOT0461,Q-202510-0461,OPP1315,Xí nghiệp Đầu tư Bảo Việt 388,tai.h,Central Regional Team,2025-10-03,2025-10-26,915887299,sent,4,Quotation for Xí nghiệp Đầu tư Bảo Việt 388
+QUOT0462,Q-202510-0462,OPP1318,Công ty TNHH Marketing Đỉnh Cao 2703,phuc.l,Central Regional Team,2025-10-27,2025-11-19,419362134,sent,5,Quotation for Công ty TNHH Marketing Đỉnh Cao 2703
+QUOT0463,Q-202510-0463,OPP1323,Chi nhánh Thời trang Nam Phong 1850,quynh.l,Central Regional Team,2025-10-03,2025-10-20,522668316,draft,5,Quotation for Chi nhánh Thời trang Nam Phong 1850
+QUOT0464,Q-202509-0464,OPP1325,Tập đoàn Chế biến thực phẩm Vissan 521,mai.n,North Regional Team,2025-09-04,2025-09-26,529908547,sale,5,Quotation for Tập đoàn Chế biến thực phẩm Vissan 521
+QUOT0465,Q-202510-0465,OPP1326,Chi nhánh Vận tải Phương Trang 2580,nhu.v,South Regional Team,2025-10-17,2025-11-06,328568064,sent,1,Quotation for Chi nhánh Vận tải Phương Trang 2580
+QUOT0466,Q-202508-0466,OPP1327,Tập đoàn Viễn thông Viettel 577,huong.n,North Regional Team,2025-08-13,2025-09-10,635165203,draft,3,Quotation for Tập đoàn Viễn thông Viettel 577
+QUOT0467,Q-202509-0467,OPP1329,Tập đoàn Nhà xuất bản Trẻ 779,hang.n,South Regional Team,2025-09-26,2025-10-24,793923290,draft,5,Quotation for Tập đoàn Nhà xuất bản Trẻ 779
+QUOT0468,Q-202511-0468,OPP1338,Xí nghiệp Tư vấn Ernst & Young 2084,yen.h,North Regional Team,2025-11-04,2025-11-28,68848971,sale,1,Quotation for Xí nghiệp Tư vấn Ernst & Young 2084
+QUOT0469,Q-202510-0469,OPP1339,Trung tâm May mặc Hoa Sen 2006,thao.c,Central Regional Team,2025-10-20,2025-11-13,255807096,draft,4,Quotation for Trung tâm May mặc Hoa Sen 2006
+QUOT0470,Q-202509-0470,OPP1343,Công ty Bán lẻ Vinmart 2548,tri.n,North Regional Team,2025-09-09,2025-10-07,667428206,draft,5,Quotation for Công ty Bán lẻ Vinmart 2548
+QUOT0471,Q-202511-0471,OPP1344,Công ty TNHH Khách hàng Tiềm năng 1344,khoa.b,North Regional Team,2025-11-10,2025-11-27,681857512,sent,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 1344
+QUOT0472,Q-202512-0472,OPP1347,Công ty TNHH Khách hàng Tiềm năng 1347,phuong.d,North Regional Team,2025-12-10,2026-01-01,546749943,draft,3,Quotation for Công ty TNHH Khách hàng Tiềm năng 1347
+QUOT0473,Q-202509-0473,OPP1349,Tập đoàn Logistics Hải Vân 1654,bich.d1,Central Regional Team,2025-09-04,2025-09-22,36636827,draft,1,Quotation for Tập đoàn Logistics Hải Vân 1654
+QUOT0474,Q-202510-0474,OPP1353,Công ty Cổ phần Khách hàng Tiềm năng 1353,thanh.h,Central Regional Team,2025-10-07,2025-10-28,255437490,sent,2,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1353
+QUOT0475,Q-202510-0475,OPP1358,Công ty TNHH Khách hàng Tiềm năng 1358,dung.q,Central Regional Team,2025-10-11,2025-10-25,125033571,sent,2,Quotation for Công ty TNHH Khách hàng Tiềm năng 1358
+QUOT0476,Q-202509-0476,OPP1360,Công ty Cổ phần Khách hàng Tiềm năng 1360,thao.t,North Regional Team,2025-09-21,2025-10-08,567425783,sale,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1360
+QUOT0477,Q-202508-0477,OPP1361,Doanh nghiệp Xe máy Honda 835,ha.h1,South Regional Team,2025-08-12,2025-09-06,362919627,sale,3,Quotation for Doanh nghiệp Xe máy Honda 835
+QUOT0478,Q-202509-0478,OPP1371,Trung tâm Trang sức Bảo Tín 1707,anh.d,Central Regional Team,2025-09-18,2025-10-02,103311729,sent,2,Quotation for Trung tâm Trang sức Bảo Tín 1707
+QUOT0479,Q-202511-0479,OPP1374,Chi nhánh Thời trang Nam Phong 1850,hung.c,Central Regional Team,2025-11-16,2025-12-09,494526081,sale,2,Quotation for Chi nhánh Thời trang Nam Phong 1850
+QUOT0480,Q-202508-0480,OPP1375,Công ty Cổ phần Khách hàng Tiềm năng 1375,dat.q,South Regional Team,2025-08-19,2025-09-15,504642624,sent,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1375
+QUOT0481,Q-202508-0481,OPP1376,Tập đoàn Đào tạo FPT 773,quynh.d,North Regional Team,2025-08-16,2025-08-31,982078025,draft,3,Quotation for Tập đoàn Đào tạo FPT 773
+QUOT0482,Q-202508-0482,OPP1378,Chi nhánh Đào tạo FPT 1798,dung.m,North Regional Team,2025-08-11,2025-09-08,232015391,sent,4,Quotation for Chi nhánh Đào tạo FPT 1798
+QUOT0483,Q-202509-0483,OPP1380,Tập đoàn Vận tải Phương Trang,linh.d1,South Regional Team,2025-09-28,2025-10-14,518922483,sent,4,Quotation for Tập đoàn Vận tải Phương Trang
+QUOT0484,Q-202508-0484,OPP1382,Công ty TNHH Nước giải khát Tân Hiệp Phát 963,anh.d2,Central Regional Team,2025-08-26,2025-09-19,412395595,sale,5,Quotation for Công ty TNHH Nước giải khát Tân Hiệp Phát 963
+QUOT0485,Q-202510-0485,OPP1383,Công ty Cổ phần Dược phẩm Hà Nội 584,tai.d1,Central Regional Team,2025-10-18,2025-11-03,204671760,draft,2,Quotation for Công ty Cổ phần Dược phẩm Hà Nội 584
+QUOT0486,Q-202509-0486,OPP1385,Công ty Chế biến thực phẩm Vissan 2702,ngoc.q,North Regional Team,2025-09-26,2025-10-24,404138134,sent,4,Quotation for Công ty Chế biến thực phẩm Vissan 2702
+QUOT0487,Q-202511-0487,OPP1386,Công ty May mặc Hoa Sen 2673,khoa.b,North Regional Team,2025-11-06,2025-11-27,216067672,sent,2,Quotation for Công ty May mặc Hoa Sen 2673
+QUOT0488,Q-202509-0488,OPP1388,Tập đoàn Trà Phúc Long 353,duc.l,South Regional Team,2025-09-29,2025-10-24,460481270,draft,3,Quotation for Tập đoàn Trà Phúc Long 353
+QUOT0489,Q-202511-0489,OPP1392,Công ty TNHH Ô tô Toyota,hung.v,Central Regional Team,2025-11-19,2025-12-08,118959894,draft,1,Quotation for Công ty TNHH Ô tô Toyota
+QUOT0490,Q-202511-0490,OPP1393,Công ty TNHH Điện lạnh Bách Khoa 2104,hoa.n,South Regional Team,2025-11-20,2025-12-17,511487989,draft,3,Quotation for Công ty TNHH Điện lạnh Bách Khoa 2104
+QUOT0491,Q-202510-0491,OPP1398,Trung tâm Bánh kẹo Kinh Đô 737,ha.h1,South Regional Team,2025-10-07,2025-11-03,1231270986,draft,5,Quotation for Trung tâm Bánh kẹo Kinh Đô 737
+QUOT0492,Q-202511-0492,OPP1408,Chi nhánh Máy tính Phương Nam 472,huong.n,North Regional Team,2025-11-06,2025-11-27,19581671,sent,1,Quotation for Chi nhánh Máy tính Phương Nam 472
+QUOT0493,Q-202508-0493,OPP1409,Doanh nghiệp Dệt may Việt Tiến,tri.t,North Regional Team,2025-08-10,2025-08-27,218038907,sent,2,Quotation for Doanh nghiệp Dệt may Việt Tiến
+QUOT0494,Q-202511-0494,OPP1414,Công ty Cổ phần Khách hàng Tiềm năng 1414,hung.l,South Regional Team,2025-11-22,2025-12-20,379281807,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1414
+QUOT0495,Q-202508-0495,OPP1416,Tập đoàn Thời trang Nam Phong 877,nam.v,Central Regional Team,2025-08-27,2025-09-23,100166513,sale,1,Quotation for Tập đoàn Thời trang Nam Phong 877
+QUOT0496,Q-202510-0496,OPP1418,Trung tâm Thủy sản Minh Hải 537,cuong.h,Central Regional Team,2025-10-12,2025-10-30,376543119,draft,4,Quotation for Trung tâm Thủy sản Minh Hải 537
+QUOT0497,Q-202509-0497,OPP1423,Công ty TNHH Vật liệu xây dựng Đại Phát 1648,linh.d2,North Regional Team,2025-09-29,2025-10-17,45369639,draft,1,Quotation for Công ty TNHH Vật liệu xây dựng Đại Phát 1648
+QUOT0498,Q-202510-0498,OPP1426,Công ty TNHH Truyền thông Sáng Tạo 1191,mai.d,South Regional Team,2025-10-22,2025-11-13,985419212,draft,5,Quotation for Công ty TNHH Truyền thông Sáng Tạo 1191
+QUOT0499,Q-202511-0499,OPP1431,Trung tâm Máy tính Phương Nam 708,quan.h,North Regional Team,2025-11-06,2025-12-04,1011948741,draft,4,Quotation for Trung tâm Máy tính Phương Nam 708
+QUOT0500,Q-202510-0500,OPP1433,Công ty TNHH Khách hàng Tiềm năng 1433,quynh.h,Central Regional Team,2025-10-14,2025-10-29,983088497,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 1433
+QUOT0501,Q-202510-0501,OPP1435,Trung tâm Thủy sản Minh Hải 1279,hoa.c,South Regional Team,2025-10-18,2025-11-03,443671514,sent,3,Quotation for Trung tâm Thủy sản Minh Hải 1279
+QUOT0502,Q-202511-0502,OPP1438,Công ty TNHH Bán lẻ Vinmart,tung.c,North Regional Team,2025-11-06,2025-11-24,56960641,sale,1,Quotation for Công ty TNHH Bán lẻ Vinmart
+QUOT0503,Q-202508-0503,OPP1440,Trung tâm Truyền thông Sáng Tạo 2504,cuong.t,North Regional Team,2025-08-14,2025-08-30,721915501,sent,5,Quotation for Trung tâm Truyền thông Sáng Tạo 2504
+QUOT0504,Q-202509-0504,OPP1444,Doanh nghiệp Xe máy Honda 2204,thao.c,Central Regional Team,2025-09-09,2025-10-01,190872608,sent,3,Quotation for Doanh nghiệp Xe máy Honda 2204
+QUOT0505,Q-202512-0505,OPP1445,Chi nhánh Chế biến thực phẩm Vissan 2239,tai.d1,Central Regional Team,2025-12-02,2025-12-25,248278058,draft,3,Quotation for Chi nhánh Chế biến thực phẩm Vissan 2239
+QUOT0506,Q-202508-0506,OPP1446,Doanh nghiệp Kính Việt Nhật,cuong.t,North Regional Team,2025-08-16,2025-09-11,3521919,draft,1,Quotation for Doanh nghiệp Kính Việt Nhật
+QUOT0507,Q-202509-0507,OPP1449,Trung tâm Marketing Đỉnh Cao 1753,dung.m,North Regional Team,2025-09-09,2025-09-24,519471065,sent,4,Quotation for Trung tâm Marketing Đỉnh Cao 1753
+QUOT0508,Q-202511-0508,OPP1452,Trung tâm Điện thoại Thế Giới Di Động 2283,hien.v,South Regional Team,2025-11-08,2025-12-01,664019104,draft,5,Quotation for Trung tâm Điện thoại Thế Giới Di Động 2283
+QUOT0509,Q-202512-0509,OPP1454,Doanh nghiệp Quảng cáo Việt Nam 2924,quynh.d,North Regional Team,2025-12-10,2025-12-29,471043276,sent,4,Quotation for Doanh nghiệp Quảng cáo Việt Nam 2924
+QUOT0510,Q-202509-0510,OPP1455,Công ty TNHH Khách hàng Tiềm năng 1455,hung.v,Central Regional Team,2025-09-30,2025-10-23,328964789,draft,1,Quotation for Công ty TNHH Khách hàng Tiềm năng 1455
+QUOT0511,Q-202508-0511,OPP1461,Công ty Cổ phần Khách hàng Tiềm năng 1461,hang.d,South Regional Team,2025-08-30,2025-09-25,334175370,sent,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1461
+QUOT0512,Q-202510-0512,OPP1464,Công ty Thời trang Nam Phong 728,hung.c,Central Regional Team,2025-10-19,2025-11-05,140330696,sent,1,Quotation for Công ty Thời trang Nam Phong 728
+QUOT0513,Q-202509-0513,OPP1465,Công ty Cổ phần Chế biến thực phẩm Vissan 1912,quynh.l,Central Regional Team,2025-09-04,2025-09-27,278887721,draft,2,Quotation for Công ty Cổ phần Chế biến thực phẩm Vissan 1912
+QUOT0514,Q-202511-0514,OPP1469,Chi nhánh Trà Phúc Long 1314,tri.l,South Regional Team,2025-11-17,2025-12-11,70807032,sale,1,Quotation for Chi nhánh Trà Phúc Long 1314
+QUOT0515,Q-202510-0515,OPP1471,Công ty Cổ phần Khách hàng Tiềm năng 1471,thanh.h,Central Regional Team,2025-10-14,2025-10-29,801412568,sent,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1471
+QUOT0516,Q-202508-0516,OPP1476,Công ty Cổ phần Dược phẩm Hà Nội 1932,duc.l,South Regional Team,2025-08-18,2025-09-04,853699810,sent,5,Quotation for Công ty Cổ phần Dược phẩm Hà Nội 1932
+QUOT0517,Q-202512-0517,OPP1479,Công ty Cổ phần Nhà hàng Ngọc Mai 2902,tri.n,North Regional Team,2025-12-04,2025-12-29,742778532,sent,5,Quotation for Công ty Cổ phần Nhà hàng Ngọc Mai 2902
+QUOT0518,Q-202509-0518,OPP1486,Công ty TNHH Đào tạo FPT 587,hung.l,South Regional Team,2025-09-09,2025-09-27,604824708,draft,3,Quotation for Công ty TNHH Đào tạo FPT 587
+QUOT0519,Q-202508-0519,OPP1488,Xí nghiệp Kính Việt Nhật 2955,anh.d1,North Regional Team,2025-08-14,2025-09-04,811720904,draft,3,Quotation for Xí nghiệp Kính Việt Nhật 2955
+QUOT0520,Q-202510-0520,OPP1489,Công ty TNHH Khách hàng Tiềm năng 1489,linh.d,North Regional Team,2025-10-01,2025-10-24,602608616,sent,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 1489
+QUOT0521,Q-202510-0521,OPP1490,Doanh nghiệp Giáo dục Nguyễn Hoàng 1762,ha.h,North Regional Team,2025-10-30,2025-11-17,248881152,sent,3,Quotation for Doanh nghiệp Giáo dục Nguyễn Hoàng 1762
+QUOT0522,Q-202510-0522,OPP1491,Xí nghiệp Nội thất Hoàng Gia 2223,tai.d,South Regional Team,2025-10-19,2025-11-14,301427886,sale,4,Quotation for Xí nghiệp Nội thất Hoàng Gia 2223
+QUOT0523,Q-202509-0523,OPP1494,Chi nhánh Viễn thông Viettel 1423,xuan.l,South Regional Team,2025-09-28,2025-10-12,333680472,sale,3,Quotation for Chi nhánh Viễn thông Viettel 1423
+QUOT0524,Q-202510-0524,OPP1497,Tập đoàn Điện lạnh Bách Khoa 1880,dung.h,Central Regional Team,2025-10-05,2025-11-02,58314597,draft,2,Quotation for Tập đoàn Điện lạnh Bách Khoa 1880
+QUOT0525,Q-202510-0525,OPP1498,Xí nghiệp Công nghệ Việt Nam 1563,bich.b,South Regional Team,2025-10-18,2025-11-01,277471229,sent,2,Quotation for Xí nghiệp Công nghệ Việt Nam 1563
+QUOT0526,Q-202510-0526,OPP0974,Công ty TNHH Logistics Hải Vân 2260,nga.d,North Regional Team,2025-10-29,2025-11-13,209422557,draft,2,Quotation for Công ty TNHH Logistics Hải Vân 2260
+QUOT0527,Q-202508-0527,OPP1288,Công ty TNHH Thép Việt Ý 1859,bich.b,South Regional Team,2025-08-03,2025-08-27,564797005,draft,4,Quotation for Công ty TNHH Thép Việt Ý 1859
+QUOT0528,Q-202512-0528,OPP1192,Xí nghiệp Trà Phúc Long 2804,hang.d,South Regional Team,2025-12-03,2025-12-31,515111081,draft,2,Quotation for Xí nghiệp Trà Phúc Long 2804
+QUOT0529,Q-202511-0529,OPP0004,Công ty TNHH May mặc Hoa Sen 632,huong.n,North Regional Team,2025-11-12,2025-11-28,438307790,draft,3,Quotation for Công ty TNHH May mặc Hoa Sen 632
+QUOT0530,Q-202512-0530,OPP0732,Doanh nghiệp Vận tải Phương Trang 2191,hoa.t,South Regional Team,2025-12-03,2025-12-20,164342769,draft,2,Quotation for Doanh nghiệp Vận tải Phương Trang 2191
+QUOT0531,Q-202510-0531,OPP0631,Công ty Phần mềm Trí Tuệ,quynh.d,North Regional Team,2025-10-02,2025-10-23,258718336,draft,2,Quotation for Công ty Phần mềm Trí Tuệ
+QUOT0532,Q-202510-0532,OPP0149,Công ty Điện thoại Thế Giới Di Động 1253,huong.l,South Regional Team,2025-10-12,2025-10-31,541391761,draft,3,Quotation for Công ty Điện thoại Thế Giới Di Động 1253
+QUOT0533,Q-202508-0533,OPP1293,Doanh nghiệp Tư vấn Ernst & Young 2832,dat.q,South Regional Team,2025-08-13,2025-09-09,201317528,cancel,1,Quotation for Doanh nghiệp Tư vấn Ernst & Young 2832
+QUOT0534,Q-202510-0534,OPP1049,Công ty Nhà xuất bản Trẻ,quynh.h1,North Regional Team,2025-10-24,2025-11-21,462286502,draft,3,Quotation for Công ty Nhà xuất bản Trẻ
+QUOT0535,Q-202511-0535,OPP1260,Trung tâm May mặc Hoa Sen 1096,hai.l,South Regional Team,2025-11-05,2025-11-23,990925773,draft,5,Quotation for Trung tâm May mặc Hoa Sen 1096
+QUOT0536,Q-202509-0536,OPP0745,Công ty Vật liệu xây dựng Đại Phát 882,mai.p,Central Regional Team,2025-09-18,2025-10-02,412138111,draft,1,Quotation for Công ty Vật liệu xây dựng Đại Phát 882
+QUOT0537,Q-202510-0537,OPP0405,Công ty Thời trang Nam Phong 2553,anh.d1,North Regional Team,2025-10-11,2025-10-26,604174103,draft,5,Quotation for Công ty Thời trang Nam Phong 2553
+QUOT0538,Q-202511-0538,OPP1225,Công ty Thép Việt Ý 607,hien.v,South Regional Team,2025-11-28,2025-12-23,1224539935,draft,4,Quotation for Công ty Thép Việt Ý 607
+QUOT0539,Q-202509-0539,OPP0258,Công ty Cổ phần Khách hàng Tiềm năng 258,tai.t,South Regional Team,2025-09-22,2025-10-20,224726493,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 258
+QUOT0540,Q-202511-0540,OPP0402,Công ty Cổ phần Nội thất Hoàng Gia 1016,ha.h,North Regional Team,2025-11-12,2025-11-27,125647546,draft,1,Quotation for Công ty Cổ phần Nội thất Hoàng Gia 1016
+QUOT0541,Q-202510-0541,OPP1412,Công ty TNHH Phần mềm Trí Tuệ 1289,khoa.c,Central Regional Team,2025-10-07,2025-10-25,153035407,draft,2,Quotation for Công ty TNHH Phần mềm Trí Tuệ 1289
+QUOT0542,Q-202511-0542,OPP0393,Tập đoàn Chế biến thực phẩm Vissan 2061,vy.m,North Regional Team,2025-11-06,2025-12-03,690421722,draft,4,Quotation for Tập đoàn Chế biến thực phẩm Vissan 2061
+QUOT0543,Q-202510-0543,OPP1367,Xí nghiệp Sơn Jotun,khanh.l,Central Regional Team,2025-10-21,2025-11-16,163049813,draft,2,Quotation for Xí nghiệp Sơn Jotun
+QUOT0544,Q-202510-0544,OPP0350,Chi nhánh Thời trang Nam Phong 656,xuan.q,North Regional Team,2025-10-31,2025-11-17,449960549,draft,4,Quotation for Chi nhánh Thời trang Nam Phong 656
+QUOT0545,Q-202510-0545,OPP0997,Công ty TNHH Logistics Hải Vân 2516,cuong.d,Central Regional Team,2025-10-11,2025-10-30,86642110,cancel,1,Quotation for Công ty TNHH Logistics Hải Vân 2516
+QUOT0546,Q-202509-0546,OPP0741,Chi nhánh Máy tính Phương Nam 2642,linh.d3,Central Regional Team,2025-09-10,2025-10-04,115003973,draft,2,Quotation for Chi nhánh Máy tính Phương Nam 2642
+QUOT0547,Q-202510-0547,OPP0145,Xí nghiệp Khách sạn Mường Thanh 2076,khanh.h,South Regional Team,2025-10-14,2025-10-29,446568782,draft,2,Quotation for Xí nghiệp Khách sạn Mường Thanh 2076
+QUOT0548,Q-202510-0548,OPP0613,Công ty Cổ phần Khách hàng Tiềm năng 613,vy.m,North Regional Team,2025-10-04,2025-10-23,543350165,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 613
+QUOT0549,Q-202510-0549,OPP0577,Công ty TNHH May mặc Hoa Sen 2829,phuc.l,Central Regional Team,2025-10-05,2025-10-29,205273083,draft,1,Quotation for Công ty TNHH May mặc Hoa Sen 2829
+QUOT0550,Q-202508-0550,OPP0895,Chi nhánh In ấn Thành Công 678,hien.h,Central Regional Team,2025-08-20,2025-09-10,227945383,draft,2,Quotation for Chi nhánh In ấn Thành Công 678
+QUOT0551,Q-202511-0551,OPP0415,Công ty Cổ phần Chế biến thực phẩm Vissan 1082,tri.n,North Regional Team,2025-11-10,2025-11-29,565126153,draft,5,Quotation for Công ty Cổ phần Chế biến thực phẩm Vissan 1082
+QUOT0552,Q-202510-0552,OPP0928,Công ty TNHH Bán lẻ Vinmart 982,hang.v1,South Regional Team,2025-10-19,2025-11-10,279810863,draft,5,Quotation for Công ty TNHH Bán lẻ Vinmart 982
+QUOT0553,Q-202509-0553,OPP1495,Doanh nghiệp Bán lẻ Vinmart 940,hoa.c,South Regional Team,2025-09-16,2025-10-13,298795508,draft,3,Quotation for Doanh nghiệp Bán lẻ Vinmart 940
+QUOT0554,Q-202508-0554,OPP1221,Doanh nghiệp Thời trang Nam Phong,hoa.t1,Central Regional Team,2025-08-18,2025-09-06,47592179,draft,1,Quotation for Doanh nghiệp Thời trang Nam Phong
+QUOT0555,Q-202510-0555,OPP0889,Doanh nghiệp Máy tính Phương Nam 2700,quynh.l,Central Regional Team,2025-10-25,2025-11-15,100802276,draft,1,Quotation for Doanh nghiệp Máy tính Phương Nam 2700
+QUOT0556,Q-202511-0556,OPP0507,Trung tâm Thép Việt Ý 1411,bich.d1,Central Regional Team,2025-11-01,2025-11-18,336843996,draft,2,Quotation for Trung tâm Thép Việt Ý 1411
+QUOT0557,Q-202512-0557,OPP0799,Công ty TNHH Anh ngữ ILA 639,hien.h,Central Regional Team,2025-12-10,2026-01-02,425041675,cancel,2,Quotation for Công ty TNHH Anh ngữ ILA 639
+QUOT0558,Q-202508-0558,OPP0853,Xí nghiệp Trang sức Bảo Tín 1450,phuong.d,North Regional Team,2025-08-26,2025-09-21,225266247,draft,2,Quotation for Xí nghiệp Trang sức Bảo Tín 1450
+QUOT0559,Q-202510-0559,OPP0222,Công ty Cổ phần Đồng hồ Đăng Quang 2402,khoa.b,North Regional Team,2025-10-18,2025-11-09,119060305,draft,2,Quotation for Công ty Cổ phần Đồng hồ Đăng Quang 2402
+QUOT0560,Q-202510-0560,OPP0208,Công ty TNHH May mặc Hoa Sen,bich.d1,Central Regional Team,2025-10-26,2025-11-15,733224289,draft,5,Quotation for Công ty TNHH May mặc Hoa Sen
+QUOT0561,Q-202509-0561,OPP0710,Tập đoàn Viễn thông Viettel 1164,tai.d,South Regional Team,2025-09-25,2025-10-19,639840231,draft,4,Quotation for Tập đoàn Viễn thông Viettel 1164
+QUOT0562,Q-202510-0562,OPP0888,Doanh nghiệp Bệnh viện Quốc tế 2489,cuong.h,Central Regional Team,2025-10-10,2025-11-01,158982641,draft,1,Quotation for Doanh nghiệp Bệnh viện Quốc tế 2489
+QUOT0563,Q-202510-0563,OPP0460,Xí nghiệp Xe máy Honda,hoa.b,North Regional Team,2025-10-04,2025-10-31,89688907,draft,1,Quotation for Xí nghiệp Xe máy Honda
+QUOT0564,Q-202511-0564,OPP1008,Công ty Cổ phần Nông sản sạch Đà Lạt 2868,mai.p,Central Regional Team,2025-11-23,2025-12-07,881348349,draft,4,Quotation for Công ty Cổ phần Nông sản sạch Đà Lạt 2868
+QUOT0565,Q-202511-0565,OPP1165,Doanh nghiệp Vật liệu xây dựng Đại Phát 2671,vy.m,North Regional Team,2025-11-13,2025-12-09,90924598,draft,1,Quotation for Doanh nghiệp Vật liệu xây dựng Đại Phát 2671
+QUOT0566,Q-202509-0566,OPP0072,Công ty Cổ phần Khách hàng Tiềm năng 72,xuan.l,South Regional Team,2025-09-12,2025-09-30,46074520,draft,1,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 72
+QUOT0567,Q-202508-0567,OPP1427,Công ty Trang sức Bảo Tín 1711,lan.l,South Regional Team,2025-08-18,2025-09-01,343153436,draft,3,Quotation for Công ty Trang sức Bảo Tín 1711
+QUOT0568,Q-202508-0568,OPP1028,Xí nghiệp Công nghệ Việt Nam 1516,tri.t,North Regional Team,2025-08-21,2025-09-15,1224688087,draft,3,Quotation for Xí nghiệp Công nghệ Việt Nam 1516
+QUOT0569,Q-202510-0569,OPP1330,Tập đoàn Tư vấn McKinsey 1334,phuc.v,North Regional Team,2025-10-29,2025-11-16,174157335,draft,1,Quotation for Tập đoàn Tư vấn McKinsey 1334
+QUOT0570,Q-202508-0570,OPP0714,Xí nghiệp Sơn Jotun 2347,khanh.m,South Regional Team,2025-08-19,2025-09-10,632152172,cancel,5,Quotation for Xí nghiệp Sơn Jotun 2347
+QUOT0571,Q-202510-0571,OPP0283,Công ty TNHH Khách hàng Tiềm năng 283,ha.h,North Regional Team,2025-10-21,2025-11-08,548893394,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 283
+QUOT0572,Q-202508-0572,OPP0707,Công ty Cổ phần Khách hàng Tiềm năng 707,phuc.d,North Regional Team,2025-08-22,2025-09-08,500592301,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 707
+QUOT0573,Q-202509-0573,OPP1037,Công ty Cổ phần Khách sạn Mường Thanh 1597,quynh.h1,North Regional Team,2025-09-30,2025-10-28,1011141245,draft,5,Quotation for Công ty Cổ phần Khách sạn Mường Thanh 1597
+QUOT0574,Q-202508-0574,OPP1219,Công ty Kính Việt Nhật,manh.h,South Regional Team,2025-08-26,2025-09-18,125647546,draft,1,Quotation for Công ty Kính Việt Nhật
+QUOT0575,Q-202511-0575,OPP0589,Công ty Cổ phần Khách hàng Tiềm năng 589,linh.d2,North Regional Team,2025-11-14,2025-12-08,531434990,draft,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 589
+QUOT0576,Q-202507-0576,OPP0262,Công ty TNHH Khách hàng Tiềm năng 262,hoa.c,South Regional Team,2025-07-27,2025-08-14,1491321994,draft,5,Quotation for Công ty TNHH Khách hàng Tiềm năng 262
+QUOT0577,Q-202510-0577,OPP0263,Công ty TNHH Khách hàng Tiềm năng 263,linh.d3,Central Regional Team,2025-10-30,2025-11-24,1102559022,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 263
+QUOT0578,Q-202510-0578,OPP0810,Công ty TNHH Đồng hồ Đăng Quang 2535,quynh.l,Central Regional Team,2025-10-14,2025-10-30,50982812,draft,1,Quotation for Công ty TNHH Đồng hồ Đăng Quang 2535
+QUOT0579,Q-202509-0579,OPP1328,Công ty Cổ phần Khách hàng Tiềm năng 1328,anh.d1,North Regional Team,2025-09-29,2025-10-21,84582178,draft,3,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 1328
+QUOT0580,Q-202509-0580,OPP0428,Công ty TNHH Đào tạo FPT 791,dat.q,South Regional Team,2025-09-28,2025-10-20,593993572,draft,4,Quotation for Công ty TNHH Đào tạo FPT 791
+QUOT0581,Q-202507-0581,OPP0496,Công ty Khách sạn Mường Thanh 462,quan.h,North Regional Team,2025-07-27,2025-08-21,87829248,draft,2,Quotation for Công ty Khách sạn Mường Thanh 462
+QUOT0582,Q-202510-0582,OPP0401,Công ty Cổ phần Khách hàng Tiềm năng 401,mai.d,South Regional Team,2025-10-28,2025-11-11,507795586,draft,4,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 401
+QUOT0583,Q-202510-0583,OPP1024,Chi nhánh Truyền thông Sáng Tạo 1445,linh.d2,North Regional Team,2025-10-14,2025-11-06,280941136,cancel,3,Quotation for Chi nhánh Truyền thông Sáng Tạo 1445
+QUOT0584,Q-202509-0584,OPP0783,Chi nhánh Tư vấn Ernst & Young 1417,quynh.v,South Regional Team,2025-09-26,2025-10-11,147768606,draft,2,Quotation for Chi nhánh Tư vấn Ernst & Young 1417
+QUOT0585,Q-202510-0585,OPP0127,Doanh nghiệp Trà Phúc Long 2514,linh.d,North Regional Team,2025-10-21,2025-11-13,299628567,draft,2,Quotation for Doanh nghiệp Trà Phúc Long 2514
+QUOT0586,Q-202509-0586,OPP0169,Chi nhánh Nước giải khát Tân Hiệp Phát 2627,hung.l,South Regional Team,2025-09-20,2025-10-16,109815298,draft,2,Quotation for Chi nhánh Nước giải khát Tân Hiệp Phát 2627
+QUOT0587,Q-202508-0587,OPP1204,Công ty TNHH Thực phẩm Á Châu 2473,tuyet.l,North Regional Team,2025-08-12,2025-08-30,1137047255,draft,4,Quotation for Công ty TNHH Thực phẩm Á Châu 2473
+QUOT0588,Q-202508-0588,OPP1057,Xí nghiệp Marketing Đỉnh Cao 2138,long.d2,South Regional Team,2025-08-18,2025-09-05,164918652,draft,1,Quotation for Xí nghiệp Marketing Đỉnh Cao 2138
+QUOT0589,Q-202508-0589,OPP0131,Công ty Cổ phần Khách hàng Tiềm năng 131,hang.d,South Regional Team,2025-08-06,2025-08-29,1032590612,draft,5,Quotation for Công ty Cổ phần Khách hàng Tiềm năng 131
+QUOT0590,Q-202508-0590,OPP0279,Chi nhánh Đầu tư Bảo Việt 2583,minh.p,South Regional Team,2025-08-13,2025-09-10,176633034,draft,1,Quotation for Chi nhánh Đầu tư Bảo Việt 2583
+QUOT0591,Q-202510-0591,OPP1011,Tập đoàn Giáo dục Nguyễn Hoàng 2102,bich.d1,Central Regional Team,2025-10-01,2025-10-25,897544557,draft,5,Quotation for Tập đoàn Giáo dục Nguyễn Hoàng 2102
+QUOT0592,Q-202508-0592,OPP1377,Trung tâm Ô tô Toyota 1972,dung.l,South Regional Team,2025-08-29,2025-09-25,832442502,draft,4,Quotation for Trung tâm Ô tô Toyota 1972
+QUOT0593,Q-202510-0593,OPP0927,Công ty Cổ phần Du lịch Saigon Tourist 2136,hoa.n,South Regional Team,2025-10-12,2025-11-08,727178848,draft,5,Quotation for Công ty Cổ phần Du lịch Saigon Tourist 2136
+QUOT0594,Q-202510-0594,OPP1066,Doanh nghiệp Đầu tư Bảo Việt 2203,nhu.v,South Regional Team,2025-10-08,2025-10-28,849302764,draft,4,Quotation for Doanh nghiệp Đầu tư Bảo Việt 2203
+QUOT0595,Q-202507-0595,OPP0910,Công ty TNHH Khách hàng Tiềm năng 910,mai.d,South Regional Team,2025-07-30,2025-08-23,715775292,draft,4,Quotation for Công ty TNHH Khách hàng Tiềm năng 910
+QUOT0596,Q-202509-0596,OPP0755,Trung tâm Dệt may Việt Tiến 1270,phuc.d,North Regional Team,2025-09-15,2025-10-02,475306490,draft,4,Quotation for Trung tâm Dệt may Việt Tiến 1270
+QUOT0597,Q-202510-0597,OPP0593,Tập đoàn Tư vấn McKinsey 976,tai.d,South Regional Team,2025-10-09,2025-11-01,334160434,draft,2,Quotation for Tập đoàn Tư vấn McKinsey 976
+QUOT0598,Q-202508-0598,OPP0947,Chi nhánh Dược phẩm Hà Nội,khanh.m,South Regional Team,2025-08-26,2025-09-13,712060279,draft,4,Quotation for Chi nhánh Dược phẩm Hà Nội
+QUOT0599,Q-202507-0599,OPP0989,Trung tâm Thực phẩm Á Châu 1407,khanh.h,South Regional Team,2025-07-31,2025-08-21,55780822,draft,1,Quotation for Trung tâm Thực phẩm Á Châu 1407
+QUOT0600,Q-202509-0600,OPP0158,Công ty Thời trang Nam Phong 1369,binh.p,North Regional Team,2025-09-10,2025-09-25,214862202,draft,2,Quotation for Công ty Thời trang Nam Phong 1369
