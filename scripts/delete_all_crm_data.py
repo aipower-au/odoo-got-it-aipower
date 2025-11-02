@@ -192,7 +192,7 @@ def delete_quotations(uid, models):
 
 
 def delete_customers(uid, models):
-    """Delete customer partners (non-user partners)"""
+    """Delete customer partners (non-user partners, non-company partners)"""
     print(f"\n🗑️  Deleting customers...")
 
     try:
@@ -204,11 +204,22 @@ def delete_customers(uid, models):
         )
         user_partner_ids = [u['partner_id'][0] for u in users if u.get('partner_id')]
 
-        # Get all partners except user partners
+        # Get all company partner IDs
+        companies = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'res.company', 'search_read',
+            [[]], {'fields': ['partner_id']}
+        )
+        company_partner_ids = [c['partner_id'][0] for c in companies if c.get('partner_id')]
+
+        # Combine excluded IDs
+        excluded_partner_ids = list(set(user_partner_ids + company_partner_ids))
+
+        # Get all partners except user partners and company partners
         partner_ids = models.execute_kw(
             ODOO_DB, uid, ODOO_PASSWORD,
             'res.partner', 'search',
-            [[['id', 'not in', user_partner_ids]]]
+            [[['id', 'not in', excluded_partner_ids]]]
         )
 
         total = len(partner_ids)
