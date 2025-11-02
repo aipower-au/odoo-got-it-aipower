@@ -1,8 +1,0 @@
-stage_id,name,sequence,probability,fold,is_won
-STAGE01,New,1,5,False,False
-STAGE02,Qualified,2,20,False,False
-STAGE03,Meeting Scheduled,3,40,False,False
-STAGE04,Proposal,4,60,False,False
-STAGE05,Negotiation,5,75,False,False
-STAGE06,Won,6,100,False,True
-STAGE07,Lost,7,0,True,False

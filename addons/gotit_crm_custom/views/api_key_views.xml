@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- API Key List View -->
+    <record id="view_api_key_list" model="ir.ui.view">
+        <field name="name">gotit.api.key.list</field>
+        <field name="model">gotit.api.key</field>
+        <field name="arch" type="xml">
+            <list string="API Keys">
+                <field name="name"/>
+                <field name="key" password="True"/>
+                <field name="usage_count"/>
+                <field name="last_used_date"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- API Key Form View -->
+    <record id="view_api_key_form" model="ir.ui.view">
+        <field name="name">gotit.api.key.form</field>
+        <field name="model">gotit.api.key</field>
+        <field name="arch" type="xml">
+            <form string="API Key">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived"
+                            bg_color="text-bg-danger"
+                            invisible="active"/>
+
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="active" widget="boolean_toggle"/>
+                            <field name="key" password="True"/>
+                        </group>
+                        <group>
+                            <field name="usage_count"/>
+                            <field name="last_used_date"/>
+                        </group>
+                    </group>
+
+                    <group string="Security">
+                        <field name="allowed_ips" placeholder="e.g. 192.168.1.1, 10.0.0.1"/>
+                    </group>
+
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Warning:</strong> Keep this API key secure. Anyone with this key can create customers and leads in your system.
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- API Key Action -->
+    <record id="action_api_key" model="ir.actions.act_window">
+        <field name="name">API Keys</field>
+        <field name="res_model">gotit.api.key</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first API key
+            </p>
+            <p>
+                API keys allow external systems to create customers and leads.
+            </p>
+        </field>
+    </record>
+
+</odoo>

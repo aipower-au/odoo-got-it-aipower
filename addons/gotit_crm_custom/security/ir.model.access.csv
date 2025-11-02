@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_assignment_rule_user,gotit.assignment.rule.user,model_gotit_assignment_rule,sales_team.group_sale_salesman,1,0,0,0
+access_assignment_rule_manager,gotit.assignment.rule.manager,model_gotit_assignment_rule,sales_team.group_sale_manager,1,1,1,1
+access_api_key_manager,gotit.api.key.manager,model_gotit_api_key,base.group_system,1,1,1,1
+access_wizard_bulk_change_salesperson,wizard.bulk.change.salesperson,model_wizard_bulk_change_salesperson,sales_team.group_sale_salesman,1,1,1,1
