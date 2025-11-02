@@ -138,6 +138,59 @@ def delete_users(uid, models, keep_admin=True):
         return 0
 
 
+def delete_quotations(uid, models):
+    """Delete all quotations (cancel first, then delete with cascade)"""
+    print(f"\n🗑️  Deleting Quotations...")
+
+    try:
+        # Get all quotations
+        order_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'sale.order', 'search', [[]]
+        )
+
+        total = len(order_ids)
+        if total == 0:
+            print(f"   No records to delete")
+            return 0
+
+        print(f"   Found {total} records")
+
+        # Cancel all first (required before deletion)
+        print(f"   Cancelling all quotations...")
+        try:
+            models.execute_kw(
+                ODOO_DB, uid, ODOO_PASSWORD,
+                'sale.order', 'write',
+                [order_ids, {'state': 'cancel'}]
+            )
+            print(f"   ✓ Cancelled {total} quotations")
+        except Exception as e:
+            print(f"   ⚠️  Error cancelling: {e}")
+
+        # Now delete (this will cascade delete the lines)
+        print(f"   Deleting quotations and their lines...")
+        deleted = 0
+        batch_size = 100
+        for i in range(0, total, batch_size):
+            batch = order_ids[i:i+batch_size]
+            try:
+                models.execute_kw(
+                    ODOO_DB, uid, ODOO_PASSWORD,
+                    'sale.order', 'unlink', [batch]
+                )
+                deleted += len(batch)
+            except Exception as e:
+                print(f"   ⚠️  Batch error: {e}")
+
+        print(f"   ✓ Deleted {deleted} quotations (and their lines)")
+        return deleted
+
+    except Exception as e:
+        print(f"   ❌ Error: {e}")
+        return 0
+
+
 def delete_customers(uid, models):
     """Delete customer partners (non-user partners)"""
     print(f"\n🗑️  Deleting customers...")
@@ -241,12 +294,11 @@ def main():
 
     total_deleted = 0
 
-    # 1. Activities
+    # 1. Activities (must be first - linked to many models)
     total_deleted += delete_records(uid, models, 'mail.activity', 'Activities')
 
-    # 2. Quotations and lines
-    total_deleted += delete_records(uid, models, 'sale.order.line', 'Quotation Lines')
-    total_deleted += delete_records(uid, models, 'sale.order', 'Quotations')
+    # 2. Quotations (cancel first, then delete - cascade deletes lines)
+    total_deleted += delete_quotations(uid, models)
 
     # 3. Leads and Opportunities (same model)
     total_deleted += delete_records(uid, models, 'crm.lead', 'Leads & Opportunities', batch_size=200)
