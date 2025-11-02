@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 CRM Demo Data Generator for Odoo 18
-Generates: leads (2000), opportunities (1500), activities (3000), products (50), quotations (600)
+Generates: leads, opportunities, activities, products, quotations
 
 Usage:
-  python3 generate_crm_demo_data.py                    # Full enterprise scale
-  python3 generate_crm_demo_data.py --test              # Small test (20/15/30/10/10)
-  python3 generate_crm_demo_data.py --leads 100 --opportunities 50 --activities 100 --products 20 --quotations 30
+  python3 generate_crm_demo_data.py                    # Production config (default)
+  python3 generate_crm_demo_data.py --config test      # Test config
+  python3 generate_crm_demo_data.py --config production # Production config (explicit)
 
 Requires: staff_sprint1_enterprise.csv and customers_sprint1_enterprise.csv
 """
@@ -15,6 +15,7 @@ Requires: staff_sprint1_enterprise.csv and customers_sprint1_enterprise.csv
 import csv
 import random
 import argparse
+import importlib
 from datetime import datetime, timedelta
 from collections import defaultdict
 
@@ -23,36 +24,36 @@ from collections import defaultdict
 # ============================================================================
 
 parser = argparse.ArgumentParser(description='Generate CRM demo data for Odoo')
-parser.add_argument('--test', action='store_true', help='Generate small test dataset (20 leads, 15 opps, 30 activities, 10 products, 10 quotations)')
-parser.add_argument('--leads', type=int, help='Number of leads (default: 2000)')
-parser.add_argument('--opportunities', type=int, help='Number of opportunities (default: 1500)')
-parser.add_argument('--activities', type=int, help='Number of activities (default: 3000)')
-parser.add_argument('--products', type=int, help='Number of products (default: 50)')
-parser.add_argument('--quotations', type=int, help='Number of quotations (default: 600)')
+parser.add_argument('--config', type=str, choices=['test', 'production'], default='production',
+                    help='Configuration to use: test (small dataset) or production (full scale)')
 args = parser.parse_args()
 
 # ============================================================================
-# CONFIGURATION
+# LOAD CONFIGURATION
 # ============================================================================
 
-if args.test:
-    TARGET_LEADS = 20
-    TARGET_OPPORTUNITIES = 15
-    TARGET_ACTIVITIES = 30
-    TARGET_PRODUCTS = 10
-    TARGET_QUOTATIONS = 10
-else:
-    TARGET_LEADS = args.leads or 2000
-    TARGET_OPPORTUNITIES = args.opportunities or 1500
-    TARGET_ACTIVITIES = args.activities or 3000
-    TARGET_PRODUCTS = args.products or 50
-    TARGET_QUOTATIONS = args.quotations or 600
+config_module = f"config_{args.config}"
+try:
+    config = importlib.import_module(config_module)
+    TARGET_LEADS = config.TARGET_LEADS
+    TARGET_OPPORTUNITIES = config.TARGET_OPPORTUNITIES
+    TARGET_ACTIVITIES = config.TARGET_ACTIVITIES
+    TARGET_PRODUCTS = config.TARGET_PRODUCTS
+    TARGET_QUOTATIONS = config.TARGET_QUOTATIONS
+except ImportError:
+    print(f"❌ Error: Could not find {config_module}.py")
+    print(f"   Please ensure config_{args.config}.py exists in the current directory")
+    exit(1)
 
 print("=" * 80)
 print("CRM DEMO DATA GENERATOR")
 print("=" * 80)
-print(f"Configuration: {TARGET_LEADS} leads, {TARGET_OPPORTUNITIES} opportunities, {TARGET_ACTIVITIES} activities")
-print(f"               {TARGET_PRODUCTS} products, {TARGET_QUOTATIONS} quotations")
+print(f"Configuration: {config.CONFIG_NAME}")
+print(f"  - Leads: {TARGET_LEADS}")
+print(f"  - Opportunities: {TARGET_OPPORTUNITIES}")
+print(f"  - Activities: {TARGET_ACTIVITIES}")
+print(f"  - Products: {TARGET_PRODUCTS}")
+print(f"  - Quotations: {TARGET_QUOTATIONS}")
 print("=" * 80)
 print()
 

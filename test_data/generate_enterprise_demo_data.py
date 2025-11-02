@@ -2,17 +2,18 @@
 # -*- coding: utf-8 -*-
 """
 Enterprise-Scale Demo Data Generator for Odoo CRM
-Generates: staff (150), customers (3000), and sales teams (35)
+Generates: staff, customers, and sales teams
 
 Usage:
-  python3 generate_enterprise_demo_data.py                    # Full enterprise scale
-  python3 generate_enterprise_demo_data.py --test              # Small test (10/50/5)
-  python3 generate_enterprise_demo_data.py --staff 20 --customers 100 --teams 5
+  python3 generate_enterprise_demo_data.py                    # Production config (default)
+  python3 generate_enterprise_demo_data.py --config test      # Test config
+  python3 generate_enterprise_demo_data.py --config production # Production config (explicit)
 """
 
 import csv
 import random
 import argparse
+import importlib
 from datetime import datetime, timedelta
 from collections import defaultdict
 
@@ -21,61 +22,35 @@ from collections import defaultdict
 # ============================================================================
 
 parser = argparse.ArgumentParser(description='Generate enterprise demo data for Odoo CRM')
-parser.add_argument('--test', action='store_true', help='Generate small test dataset (10 staff, 50 customers, 5 teams)')
-parser.add_argument('--staff', type=int, help='Number of staff members (default: 150)')
-parser.add_argument('--customers', type=int, help='Number of customers (default: 3000)')
-parser.add_argument('--teams', type=int, help='Number of sales teams (default: 35)')
+parser.add_argument('--config', type=str, choices=['test', 'production'], default='production',
+                    help='Configuration to use: test (small dataset) or production (full scale)')
 args = parser.parse_args()
 
 # ============================================================================
-# CONFIGURATION
+# LOAD CONFIGURATION
 # ============================================================================
 
-# Target volumes
-if args.test:
-    TARGET_STAFF = 10
-    TARGET_CUSTOMERS = 50
-    TARGET_TEAMS = 5
-else:
-    TARGET_STAFF = args.staff or 150
-    TARGET_CUSTOMERS = args.customers or 3000
-    TARGET_TEAMS = args.teams or 35
+config_module = f"config_{args.config}"
+try:
+    config = importlib.import_module(config_module)
+    TARGET_STAFF = config.TARGET_STAFF
+    TARGET_CUSTOMERS = config.TARGET_CUSTOMERS
+    TARGET_TEAMS = config.TARGET_TEAMS
+    STAFF_DISTRIBUTION = config.STAFF_DISTRIBUTION
+except ImportError:
+    print(f"❌ Error: Could not find {config_module}.py")
+    print(f"   Please ensure config_{args.config}.py exists in the current directory")
+    exit(1)
 
 print("=" * 80)
 print("ENTERPRISE CRM DEMO DATA GENERATOR")
 print("=" * 80)
-print(f"Configuration: {TARGET_STAFF} staff, {TARGET_CUSTOMERS} customers, {TARGET_TEAMS} teams")
+print(f"Configuration: {config.CONFIG_NAME}")
+print(f"  - Staff: {TARGET_STAFF}")
+print(f"  - Customers: {TARGET_CUSTOMERS}")
+print(f"  - Teams: {TARGET_TEAMS}")
 print("=" * 80)
 print()
-
-# Staff distribution (scales with TARGET_STAFF)
-if TARGET_STAFF <= 10:
-    # Small test dataset
-    STAFF_DISTRIBUTION = {
-        'director': 1,      # 1 Sales Director
-        'manager': 1,       # 1 Manager
-        'sales': 5,         # 5 Sales Executives
-        'telesales': 2,     # 2 Telesales
-        'support': 1        # 1 Support
-    }
-elif TARGET_STAFF <= 50:
-    # Medium dataset
-    STAFF_DISTRIBUTION = {
-        'director': 1,      # 1 Sales Director
-        'manager': 5,       # 5 Managers
-        'sales': 30,        # 30 Sales Executives
-        'telesales': 10,    # 10 Telesales
-        'support': 4        # 4 Support
-    }
-else:
-    # Enterprise scale
-    STAFF_DISTRIBUTION = {
-        'director': 1,          # 1 Sales Director
-        'manager': 15,          # 15 Sales Managers/Regional Directors
-        'sales': 100,           # 100 Sales Executives
-        'telesales': 25,        # 25 Telesales/SDR
-        'support': 9            # 9 Support roles
-    }
 
 # ============================================================================
 # VIETNAMESE NAME POOLS (EXPANDED)
