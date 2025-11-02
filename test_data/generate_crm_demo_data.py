@@ -354,13 +354,14 @@ def generate_opportunities(staff_list, customer_list, count=TARGET_OPPORTUNITIES
         if i % 500 == 0:
             print(f"  ... generating opportunity {i}/{count}")
 
-        # Link to customer (80% linked, 20% new prospects)
-        if random.random() < 0.80 and customer_list:
+        # Link to customer (always use real customers from list)
+        if customer_list:
             customer = random.choice(customer_list)
             partner_name = customer['company_name']
             email = customer['email']
             phone = customer['phone']
         else:
+            # Fallback if no customers loaded (shouldn't happen)
             partner_name = f"Công ty {random.choice(['TNHH', 'Cổ phần'])} Khách hàng Tiềm năng {i}"
             contact_name = generate_person_name()
             email = generate_email(contact_name)
