@@ -43,14 +43,14 @@ python3 verify_data.py
 
 ## Configuration
 
-Edit `config.py` or set environment variables:
+Copy the example config and edit with your credentials:
 
 ```bash
-export ODOO_URL=http://localhost:8069
-export ODOO_DB=odoo
-export ODOO_USERNAME=admin@gotit.vn
-export ODOO_PASSWORD=Aipower!123
+cp config.example.py config.py
+# Edit config.py with your credentials
 ```
+
+The `config.py` file is git-ignored for security.
 
 ## Common Commands
 

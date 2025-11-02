@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Configuration file for Odoo Sprint 1 testing scripts
-Centralized connection settings and file paths
+Copy this file to config.py and fill in your credentials
 """
 
 import os
@@ -12,14 +12,14 @@ import os
 # ============================================================================
 
 # Odoo server URL (accessible from host machine)
-ODOO_URL = os.getenv('ODOO_URL', 'http://localhost:8069')
+ODOO_URL = 'http://localhost:8069'
 
 # Database name
-ODOO_DB = os.getenv('ODOO_DB', 'odoo')
+ODOO_DB = 'odoo'
 
-# Admin credentials
-ODOO_USERNAME = os.getenv('ODOO_USERNAME', 'admin@gotit.vn')
-ODOO_PASSWORD = os.getenv('ODOO_PASSWORD', 'Aipower!123')
+# Admin credentials - FILL IN YOUR CREDENTIALS HERE
+ODOO_USERNAME = 'your_admin_username'
+ODOO_PASSWORD = 'your_admin_password'
 
 # ============================================================================
 # FILE PATHS
@@ -40,8 +40,8 @@ CUSTOMERS_CSV = os.path.join(TEST_DATA_DIR, 'customers_sprint1.csv')
 # IMPORT SETTINGS
 # ============================================================================
 
-# Default password for imported users
-DEFAULT_USER_PASSWORD = 'gotit2025'
+# Default password for imported users - CHANGE THIS
+DEFAULT_USER_PASSWORD = 'changeme123'
 
 # User groups to assign
 USER_GROUPS = {
@@ -89,7 +89,7 @@ def get_connection_info():
         'url': ODOO_URL,
         'database': ODOO_DB,
         'username': ODOO_USERNAME,
-        'password_length': len(ODOO_PASSWORD)
+        'password_length': len(ODOO_PASSWORD) if ODOO_PASSWORD else 0
     }
 
 def validate_config():
@@ -107,9 +107,14 @@ def validate_config():
         errors.append(f"Customers CSV not found: {CUSTOMERS_CSV}")
 
     # Check if credentials are set
-    if ODOO_USERNAME == 'admin@gotit.vn' or ODOO_PASSWORD == 'Aipower!123':
-        print("⚠️  Warning: Using default credentials from config.py")
-        print("   Set environment variables ODOO_USERNAME and ODOO_PASSWORD to override")
+    if not ODOO_USERNAME or ODOO_USERNAME == 'your_admin_username':
+        errors.append("ODOO_USERNAME must be configured")
+
+    if not ODOO_PASSWORD or ODOO_PASSWORD == 'your_admin_password':
+        errors.append("ODOO_PASSWORD must be configured")
+
+    if not DEFAULT_USER_PASSWORD or DEFAULT_USER_PASSWORD == 'changeme123':
+        errors.append("DEFAULT_USER_PASSWORD must be changed")
 
     return errors
 

@@ -125,3 +125,4 @@ sessions/
 
 # Credentials
 CREDENTIALS.md
+scripts/config.py
