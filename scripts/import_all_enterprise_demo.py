@@ -371,6 +371,90 @@ def import_products(uid, models):
     return True
 
 
+def import_leads(uid, models):
+    """Import leads (2000 records)"""
+    print("\n" + "=" * 80)
+    print("STEP 6: IMPORTING LEADS (2000 records)")
+    print("=" * 80)
+
+    csv_file = '../test_data/leads_demo.csv'
+    print(f"\n📄 Reading: {csv_file}")
+
+    # Import using the import_leads script logic
+    try:
+        import sys
+        sys.path.append('.')
+        from import_leads import import_leads_batch
+        import_leads_batch(uid, models, csv_file)
+        return True
+    except Exception as e:
+        print(f"❌ Error importing leads: {e}")
+        return False
+
+
+def import_opportunities(uid, models):
+    """Import opportunities (1500 records)"""
+    print("\n" + "=" * 80)
+    print("STEP 7: IMPORTING OPPORTUNITIES (1500 records)")
+    print("=" * 80)
+
+    csv_file = '../test_data/opportunities_demo.csv'
+    print(f"\n📄 Reading: {csv_file}")
+
+    try:
+        from import_opportunities import import_opportunities_batch
+        import_opportunities_batch(uid, models, csv_file)
+        return True
+    except Exception as e:
+        print(f"❌ Error importing opportunities: {e}")
+        return False
+
+
+def import_quotations_full(uid, models):
+    """Import quotations and quotation lines (600 + 1801 records)"""
+    print("\n" + "=" * 80)
+    print("STEP 8: IMPORTING QUOTATIONS & LINES (600 quotations, ~1800 lines)")
+    print("=" * 80)
+
+    quotations_file = '../test_data/quotations_demo.csv'
+    lines_file = '../test_data/quotation_lines_demo.csv'
+
+    try:
+        from import_quotations import import_quotations_batch, import_quotation_lines_batch
+
+        # Import quotations first
+        quotation_id_map = import_quotations_batch(uid, models, quotations_file)
+
+        # Then import lines
+        if quotation_id_map:
+            import_quotation_lines_batch(uid, models, lines_file, quotation_id_map)
+            return True
+        else:
+            print("⚠️  Skipping quotation lines due to quotations import failure")
+            return False
+    except Exception as e:
+        print(f"❌ Error importing quotations: {e}")
+        return False
+
+
+def import_activities_full(uid, models):
+    """Import activities (3000 records)"""
+    print("\n" + "=" * 80)
+    print("STEP 9: IMPORTING ACTIVITIES (3000 records)")
+    print("=" * 80)
+
+    csv_file = '../test_data/activities_demo.csv'
+    print(f"\n📄 Reading: {csv_file}")
+
+    try:
+        from import_activities import import_activities_batch
+        import_activities_batch(uid, models, csv_file)
+        return True
+    except Exception as e:
+        print(f"❌ Error importing activities: {e}")
+        return False
+
+
 def print_final_summary(start_time):
     """Print final summary"""
     duration = time.time() - start_time
@@ -382,6 +466,15 @@ def print_final_summary(start_time):
     print("=" * 80)
     print(f"\n⏱️  Total time: {minutes}m {seconds}s")
     print("\n✅ Enterprise CRM demo data imported successfully!")
+    print("\nImported:")
+    print("  • 150 staff members")
+    print("  • 35 sales teams")
+    print("  • 3000 customers")
+    print("  • 50 products")
+    print("  • 2000 leads")
+    print("  • 1500 opportunities")
+    print("  • 600 quotations (~1800 lines)")
+    print("  • 3000 activities")
     print("\nNext steps:")
     print("  1. Run verification script: python3 verify_enterprise_demo.py")
     print("  2. Log into Odoo and review the data")
@@ -427,6 +520,19 @@ def main():
 
     if not import_products(uid, models):
         print("\n⚠️  Products import had issues, but continuing...")
+
+    # Import CRM pipeline data
+    if not import_leads(uid, models):
+        print("\n⚠️  Leads import had issues, but continuing...")
+
+    if not import_opportunities(uid, models):
+        print("\n⚠️  Opportunities import had issues, but continuing...")
+
+    if not import_quotations_full(uid, models):
+        print("\n⚠️  Quotations import had issues, but continuing...")
+
+    if not import_activities_full(uid, models):
+        print("\n⚠️  Activities import had issues, but continuing...")
 
     print_final_summary(start_time)
 
