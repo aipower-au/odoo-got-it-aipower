@@ -33,13 +33,32 @@ def connect_odoo():
         sys.exit(1)
 
 
-def get_user_id(uid, models, user_name):
-    """Get user ID by name"""
+def get_user_id(uid, models, user_name_or_login):
+    """Get user ID by name or login"""
     try:
+        # Try by login first (e.g., "son.p")
         user_ids = models.execute_kw(
             ODOO_DB, uid, ODOO_PASSWORD,
             'res.users', 'search',
-            [[['name', '=', user_name]]]
+            [[['login', '=', f"{user_name_or_login}@gotit.vn"]]]
+        )
+        if user_ids:
+            return user_ids[0]
+
+        # Try without @gotit.vn suffix
+        user_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'res.users', 'search',
+            [[['login', '=', user_name_or_login]]]
+        )
+        if user_ids:
+            return user_ids[0]
+
+        # Try by name
+        user_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'res.users', 'search',
+            [[['name', '=', user_name_or_login]]]
         )
         return user_ids[0] if user_ids else None
     except:
