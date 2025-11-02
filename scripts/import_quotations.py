@@ -1,124 +1,64 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Import quotations and quotation lines from CSV (600 quotations, ~1800 lines)
+Import Quotations and Quotation Lines from CSV
 
-Usage: python3 import_quotations.py [--quotations FILE] [--lines FILE]
+Imports quotations (sale.order) and their line items (sale.order.line) from CSV files.
+
+CSV Columns Required:
+    Quotations:
+        - quotation_id: Unique reference (e.g., QUOT0001)
+        - name: Quotation name
+        - partner_name: Customer name (must exist in res.partner)
+        - assigned_to: Salesperson login or name
+        - team: Sales team name (optional)
+        - opportunity_id: Linked opportunity name (optional)
+        - date_order: Order date (YYYY-MM-DD)
+        - amount_total: Total amount
+        - state: draft, sent, sale, or cancel
+
+    Quotation Lines:
+        - quotation_id: Reference to parent quotation
+        - product_id or product_name: Product name (must exist)
+        - quantity: Quantity
+        - unit_price or price_unit: Unit price
+        - discount: Discount percentage (optional)
+
+Usage:
+    python3 import_quotations.py
+    python3 import_quotations.py --quotations custom_quotes.csv --lines custom_lines.csv
 """
 
 import xmlrpc.client
 import csv
-import sys
 import argparse
 from datetime import datetime
-from config import ODOO_URL, ODOO_DB, ODOO_USERNAME, ODOO_PASSWORD
+from config import ODOO_DB, ODOO_PASSWORD
+from odoo_utils import (
+    connect_odoo,
+    get_partner_id,
+    get_user_id,
+    get_team_id,
+    get_opportunity_id,
+    get_product_id,
+    print_stats
+)
 
 BATCH_SIZE = 100
 
 
-def connect_odoo():
-    """Connect to Odoo and return connection objects"""
-    try:
-        common = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/common')
-        uid = common.authenticate(ODOO_DB, ODOO_USERNAME, ODOO_PASSWORD, {})
-
-        if not uid:
-            raise Exception("Authentication failed")
-
-        models = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/object')
-        return uid, models
-
-    except Exception as e:
-        print(f"❌ Connection Error: {e}")
-        sys.exit(1)
-
-
-def get_partner_id(uid, models, partner_name):
-    """Get partner ID by name"""
-    try:
-        partner_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.partner', 'search',
-            [[['name', '=', partner_name]]]
-        )
-        return partner_ids[0] if partner_ids else None
-    except:
-        return None
-
-
-def get_user_id(uid, models, user_name_or_login):
-    """Get user ID by name or login"""
-    try:
-        # Try by login first (e.g., "son.p")
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['login', '=', f"{user_name_or_login}@gotit.vn"]]]
-        )
-        if user_ids:
-            return user_ids[0]
-
-        # Try without @gotit.vn suffix
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['login', '=', user_name_or_login]]]
-        )
-        if user_ids:
-            return user_ids[0]
-
-        # Try by name
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['name', '=', user_name_or_login]]]
-        )
-        return user_ids[0] if user_ids else None
-    except:
-        return None
-
-
-def get_team_id(uid, models, team_name):
-    """Get sales team ID by name"""
-    try:
-        team_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'crm.team', 'search',
-            [[['name', '=', team_name]]]
-        )
-        return team_ids[0] if team_ids else None
-    except:
-        return None
-
-
-def get_opportunity_id(uid, models, opp_name):
-    """Get opportunity ID by name"""
-    try:
-        opp_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'crm.lead', 'search',
-            [[['name', '=', opp_name], ['type', '=', 'opportunity']]]
-        )
-        return opp_ids[0] if opp_ids else None
-    except:
-        return None
-
-
-def get_product_id(uid, models, product_name):
-    """Get product ID by name"""
-    try:
-        product_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'product.product', 'search',
-            [[['name', '=', product_name]]]
-        )
-        return product_ids[0] if product_ids else None
-    except:
-        return None
-
-
 def get_order_id_by_ref(uid, models, client_order_ref):
-    """Get sale order ID by client_order_ref"""
+    """
+    Get sale order ID by client_order_ref.
+
+    Args:
+        uid: Authenticated user ID
+        models: Odoo models proxy
+        client_order_ref: Client order reference (e.g., QUOT0001)
+
+    Returns:
+        Order ID if found, None otherwise
+    """
     try:
         order_ids = models.execute_kw(
             ODOO_DB, uid, ODOO_PASSWORD,
@@ -126,7 +66,7 @@ def get_order_id_by_ref(uid, models, client_order_ref):
             [[['client_order_ref', '=', client_order_ref]]]
         )
         return order_ids[0] if order_ids else None
-    except:
+    except (xmlrpc.client.Fault, Exception):
         return None
 
 

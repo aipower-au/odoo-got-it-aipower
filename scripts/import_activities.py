@@ -1,100 +1,58 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Import activities from CSV (3000 records)
+Import Activities from CSV
 
-Usage: python3 import_activities.py [--csv FILENAME]
+Imports activities (mail.activity) linked to leads or opportunities.
+
+CSV Columns Required:
+    - activity_id: Unique reference (optional)
+    - res_model: Model name (crm.lead)
+    - res_id: Lead or opportunity name
+    - res_type: 'lead' or 'opportunity'
+    - activity_type_id or activity_type_name: Activity type
+    - summary: Activity summary
+    - date_deadline or due_date: Due date (YYYY-MM-DD)
+    - assigned_to: User login or name
+    - note or description: Activity notes (optional)
+
+Usage:
+    python3 import_activities.py
+    python3 import_activities.py --csv custom_activities.csv
 """
 
 import xmlrpc.client
 import csv
-import sys
 import argparse
 from datetime import datetime
-from config import ODOO_URL, ODOO_DB, ODOO_USERNAME, ODOO_PASSWORD
+from config import ODOO_DB, ODOO_PASSWORD
+from odoo_utils import (
+    connect_odoo,
+    get_user_id,
+    get_lead_id,
+    get_opportunity_id,
+    print_stats
+)
 
 BATCH_SIZE = 200
 
 
-def connect_odoo():
-    """Connect to Odoo and return connection objects"""
-    try:
-        common = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/common')
-        uid = common.authenticate(ODOO_DB, ODOO_USERNAME, ODOO_PASSWORD, {})
-
-        if not uid:
-            raise Exception("Authentication failed")
-
-        models = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/object')
-        return uid, models
-
-    except Exception as e:
-        print(f"❌ Connection Error: {e}")
-        sys.exit(1)
-
-
-def get_user_id(uid, models, user_name_or_login):
-    """Get user ID by name or login"""
-    try:
-        # Try by login first (e.g., "son.p")
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['login', '=', f"{user_name_or_login}@gotit.vn"]]]
-        )
-        if user_ids:
-            return user_ids[0]
-
-        # Try without @gotit.vn suffix
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['login', '=', user_name_or_login]]]
-        )
-        if user_ids:
-            return user_ids[0]
-
-        # Try by name
-        user_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'res.users', 'search',
-            [[['name', '=', user_name_or_login]]]
-        )
-        return user_ids[0] if user_ids else None
-    except:
-        return None
-
-
-def get_lead_id(uid, models, lead_name):
-    """Get lead ID by name"""
-    try:
-        lead_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'crm.lead', 'search',
-            [[['name', '=', lead_name], ['type', '=', 'lead']]]
-        )
-        return lead_ids[0] if lead_ids else None
-    except:
-        return None
-
-
-def get_opportunity_id(uid, models, opp_name):
-    """Get opportunity ID by name"""
-    try:
-        opp_ids = models.execute_kw(
-            ODOO_DB, uid, ODOO_PASSWORD,
-            'crm.lead', 'search',
-            [[['name', '=', opp_name], ['type', '=', 'opportunity']]]
-        )
-        return opp_ids[0] if opp_ids else None
-    except:
-        return None
-
-
 def get_activity_type_id(uid, models, activity_type_name):
-    """Get or create activity type by name"""
+    """
+    Get or map activity type by name to standard Odoo activity types.
+
+    Odoo has standard activity types: Call, Email, Meeting, To Do, Upload Document
+
+    Args:
+        uid: Authenticated user ID
+        models: Odoo models proxy
+        activity_type_name: Activity type name from CSV
+
+    Returns:
+        Activity type ID if found, fallback to first available type
+    """
     try:
-        # Common activity types mapping
+        # Common activity types mapping to standard Odoo types
         activity_type_mapping = {
             'Call': 'Call',
             'Email': 'Email',
@@ -102,7 +60,8 @@ def get_activity_type_id(uid, models, activity_type_name):
             'To Do': 'To Do',
             'Follow-up': 'To Do',
             'Demo': 'Meeting',
-            'Proposal': 'To Do'
+            'Proposal': 'To Do',
+            'Upload Document': 'Upload Document'
         }
 
         # Map to standard Odoo activity type
@@ -126,7 +85,30 @@ def get_activity_type_id(uid, models, activity_type_name):
         )
         return type_ids[0] if type_ids else None
 
-    except:
+    except (xmlrpc.client.Fault, Exception):
+        return None
+
+
+def get_model_id(uid, models, model_name):
+    """
+    Get model ID by model name (for activities linking).
+
+    Args:
+        uid: Authenticated user ID
+        models: Odoo models proxy
+        model_name: Model name (e.g., 'crm.lead')
+
+    Returns:
+        Model ID if found, None otherwise
+    """
+    try:
+        model_ids = models.execute_kw(
+            ODOO_DB, uid, ODOO_PASSWORD,
+            'ir.model', 'search',
+            [[['model', '=', model_name]]]
+        )
+        return model_ids[0] if model_ids else None
+    except (xmlrpc.client.Fault, Exception):
         return None
 
 
