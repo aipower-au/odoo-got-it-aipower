@@ -14,7 +14,11 @@ docker compose up -d
 
 ## Database Setup
 
-The database is pre-configured as `gotit_odoo`. On first run, initialize it:
+Choose one of the following setup options based on your needs:
+
+### Option 1: Clean Setup (No Demo Data) - Production Ready
+
+For production or when you want to start with an empty database:
 
 ```bash
 # Initialize database with base modules
@@ -27,7 +31,30 @@ docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init --with
 docker compose restart odoo
 ```
 
-**Note:** After running these commands, open http://localhost:8069/odoo/apps and click the "Activate" button on the Sales app to complete its installation. The CLI command installs all 59 modules but doesn't finalize the app's UI status.
+**Note:** After running these commands, open http://localhost:8069/odoo/apps and click the "Activate" button on the Sales app to complete its installation.
+
+### Option 2: Setup with Demo Data - Testing & Training
+
+For testing, training, or exploring Odoo features with sample data:
+
+```bash
+# Initialize database with base modules and demo data
+docker compose exec odoo odoo -d gotit_odoo -i base --stop-after-init
+
+# Install CRM and Sales apps with demo data
+docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init
+
+# Restart Odoo to apply changes
+docker compose restart odoo
+```
+
+**Demo data includes:**
+- Sample leads and opportunities in various pipeline stages
+- Sample customers and contacts with full details
+- Sample products with prices and categories
+- Sample quotations and sales orders
+- Sales teams with members
+- Pre-configured activities and tasks
 
 ## Access Points
 
@@ -46,7 +73,25 @@ docker compose restart odoo
 Place your custom Odoo modules in the `addons/` directory. They will be automatically available to Odoo.
 
 ```bash
-# After adding a module to addons/, install it
+# Install without demo data (production)
 docker compose exec odoo odoo -d gotit_odoo -i <your_module_name> --stop-after-init --without-demo=all
 docker compose restart odoo
+
+# OR install with demo data (testing)
+docker compose exec odoo odoo -d gotit_odoo -i <your_module_name> --stop-after-init
+docker compose restart odoo
+```
+
+## Clean Start
+
+To reset and start fresh:
+
+```bash
+# Stop and remove all containers and volumes
+docker compose down -v
+
+# Start services again
+docker compose up -d
+
+# Wait for services to be ready, then follow Database Setup steps above
 ```
