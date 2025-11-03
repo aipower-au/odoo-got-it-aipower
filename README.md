@@ -20,12 +20,14 @@ The database is pre-configured as `gotit_odoo`. On first run, initialize it:
 # Initialize database with base modules
 docker compose exec odoo odoo -d gotit_odoo -i base --stop-after-init --without-demo=all
 
-# Install CRM and Sales apps (wait 30s for full installation)
-timeout 30s docker compose exec odoo odoo -d gotit_odoo -i crm,sale --without-demo=all || true
+# Install CRM and Sales apps
+docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init --without-demo=all
 
 # Restart Odoo to apply changes
 docker compose restart odoo
 ```
+
+**Note:** After running these commands, open http://localhost:8069/odoo/apps and click the "Activate" button on the Sales app to complete its installation. The CLI command installs all 59 modules but doesn't finalize the app's UI status.
 
 ## Access Points
 
