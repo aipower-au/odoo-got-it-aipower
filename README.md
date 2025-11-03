@@ -16,15 +16,21 @@ docker compose up -d
 
 Choose one of the following setup options based on your needs:
 
+### Key Difference
+
+The key difference between the two options is the `--without-demo=all` flag:
+- **Without demo data (production):** Add `--without-demo=all` to each install command
+- **With demo data (testing/training):** Omit `--without-demo=all` from install commands
+
 ### Option 1: Clean Setup (No Demo Data) - Production Ready
 
 For production or when you want to start with an empty database:
 
 ```bash
-# Initialize database with base modules
+# Initialize database with base modules (NO demo data)
 docker compose exec odoo odoo -d gotit_odoo -i base --stop-after-init --without-demo=all
 
-# Install CRM and Sales apps
+# Install CRM and Sales apps (NO demo data)
 docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init --without-demo=all
 
 # Restart Odoo to apply changes
@@ -38,10 +44,10 @@ docker compose restart odoo
 For testing, training, or exploring Odoo features with sample data:
 
 ```bash
-# Initialize database with base modules and demo data
+# Initialize database with base modules (WITH demo data)
 docker compose exec odoo odoo -d gotit_odoo -i base --stop-after-init
 
-# Install CRM and Sales apps with demo data
+# Install CRM and Sales apps (WITH demo data)
 docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init
 
 # Restart Odoo to apply changes
