@@ -27,16 +27,6 @@ docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init --with
 docker compose restart odoo
 ```
 
-## Install Custom Modules (Optional)
-
-```bash
-# Install all GotIt custom modules
-docker compose exec odoo odoo -d gotit_odoo -i gotit_crm_base,gotit_crm_lead_assignment,gotit_crm_customer_mgmt,gotit_crm_tax_id_api,gotit_crm_product_ext,gotit_crm_api --stop-after-init --without-demo=all
-
-# Restart Odoo
-docker compose restart odoo
-```
-
 ## Access Points
 
 - **Odoo**: http://localhost:8069
@@ -49,84 +39,12 @@ docker compose restart odoo
 - **Email**: admin
 - **Password**: admin (set during first login)
 
-## Development Commands
+## Adding Custom Modules
+
+Place your custom Odoo modules in the `addons/` directory. They will be automatically available to Odoo.
 
 ```bash
-# View logs
-docker compose logs -f odoo
-
-# Update a module after code changes
-docker compose exec odoo odoo -d gotit_odoo -u <module_name> --stop-after-init
+# After adding a module to addons/, install it
+docker compose exec odoo odoo -d gotit_odoo -i <your_module_name> --stop-after-init --without-demo=all
 docker compose restart odoo
-
-# Run tests for a module
-docker compose exec odoo odoo -d gotit_odoo -i <module_name> --test-enable --stop-after-init --log-level=test
-
-# Access Odoo shell
-docker compose exec odoo odoo shell -d gotit_odoo
-
-# Access PostgreSQL
-docker compose exec db psql -U odoo -d gotit_odoo
-
-# Stop all services
-docker compose down
-
-# Clean slate (WARNING: deletes all data!)
-docker compose down -v
 ```
-
-## Custom Modules
-
-Located in `addons/` directory:
-
-- **gotit_crm_base**: Shared audit logging and base configuration
-- **gotit_crm_lead_assignment**: Automated lead assignment with configurable rules
-- **gotit_crm_customer_mgmt**: Duplicate detection and extended customer fields
-- **gotit_crm_tax_id_api**: Tax ID enrichment via VNPT/Viettel API
-- **gotit_crm_product_ext**: Product multiple pricing and physical gifts
-- **gotit_crm_api**: External API for lead creation (website/hotline integration)
-
-## Configuration Files
-
-- **docker-compose.yml**: Docker services configuration
-- **config/odoo.conf**: Odoo server configuration
-- **.env**: Environment variables (database name, passwords, ports)
-
-## Requirements
-
-- Docker 20.10+
-- Docker Compose 2.0+
-- 8GB RAM minimum (16GB recommended)
-- 10GB free disk space
-
-## Troubleshooting
-
-```bash
-# Check container status
-docker compose ps
-
-# View recent logs
-docker compose logs odoo --tail 100
-
-# Restart specific service
-docker compose restart odoo
-
-# Check database exists
-docker compose exec db psql -U odoo -d postgres -c "\l"
-
-# Rebuild containers
-docker compose down
-docker compose up -d --build
-```
-
-## Documentation
-
-- **Implementation Plan**: `specs/001-gotit-crm-customization/plan.md`
-- **Data Model**: `specs/001-gotit-crm-customization/data-model.md`
-- **Quickstart Guide**: `specs/001-gotit-crm-customization/quickstart.md`
-
----
-
-**Database**: `gotit_odoo`
-**Odoo Version**: 18.0
-**Branch**: `playground`
