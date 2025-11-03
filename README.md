@@ -27,6 +27,8 @@ docker compose exec odoo odoo -d gotit_odoo -i crm,sale --stop-after-init --with
 docker compose restart odoo
 ```
 
+**Note:** After running the installation commands, the Sales app may still show an "Activate" button in the Odoo Apps UI (http://localhost:8069/odoo/apps). This is because the `--stop-after-init` flag stops Odoo before it fully commits the app installation state. If you see the "Activate" button, simply click it to finalize the Sales app installation. The CRM app should be fully installed after the commands above.
+
 ## Access Points
 
 - **Odoo**: http://localhost:8069
