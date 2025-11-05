@@ -1,5 +1,9 @@
 # SPRINT 1 - REQUIREMENTS
 
+## Important Context
+
+**Current State:** Got It currently uses Excel files to manage customers and sales data. A critical requirement is to convert/import these Excel files into Odoo CRM as part of the migration process.
+
 ## 1. Customer/Merchant/Supplier Management
 
 - Check duplicate Tax ID (MST)
