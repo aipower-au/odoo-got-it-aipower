@@ -111,6 +111,66 @@ chmod +x demo_data/generate_sprint1_data.py
 ./demo_data/generate_sprint1_data.py
 ```
 
+## Cleaning Demo Data
+
+When you want to start fresh or remove all demo data, use the cleanup script:
+
+### Preview What Will Be Deleted
+
+```bash
+# See what will be deleted without actually deleting
+python3 demo_data/clean_demo_data.py --preview
+```
+
+### Clean All Demo Data (Interactive)
+
+```bash
+# Will ask for confirmation before deleting
+python3 demo_data/clean_demo_data.py
+```
+
+### Clean All Demo Data (Non-Interactive)
+
+```bash
+# Skip confirmation prompt (useful for scripts)
+python3 demo_data/clean_demo_data.py --yes
+```
+
+### What Gets Deleted
+
+The cleanup script removes:
+- ✓ All activities/tasks
+- ✓ All quotations and order lines
+- ✓ All opportunities
+- ✓ All leads
+- ✓ All demo customers/partners (keeps system records)
+- ✓ All demo products (keeps Odoo defaults)
+- ✓ All demo sales teams (keeps Odoo defaults)
+- ✓ All demo CRM stages (keeps Odoo defaults)
+
+**Safety Features:**
+- Preview mode to see what will be deleted
+- Confirmation prompt (unless --yes flag used)
+- Preserves system records (admin user, default products, etc.)
+- Shows detailed cleanup report
+
+**Example Output:**
+```
+📊 RECORDS TO BE DELETED:
+----------------------------------------------------------------------
+  Activities........................................   60 records
+  Sale Order Lines..................................  236 records
+  Sale Orders.......................................   80 records
+  Products (demo)...................................  120 records
+  Opportunities.....................................  100 records
+  Leads.............................................  160 records
+  Customers/Partners................................  568 records
+  Sales Teams (demo)................................   45 records
+  CRM Stages (demo).................................    6 records
+----------------------------------------------------------------------
+  TOTAL............................................. 1375 records
+```
+
 ## Configuration
 
 Edit `config.py` to customize data volume and distribution:
@@ -341,9 +401,11 @@ curl http://localhost:8069
 
 **Duplicate records on re-run:**
 - The script doesn't clean existing data by default
-- To start fresh, either:
-  1. Reinitialize the database (see main README.md)
-  2. Manually delete demo records from Odoo UI
+- To start fresh, use the cleanup script:
+  ```bash
+  python3 demo_data/clean_demo_data.py
+  ```
+- Or reinitialize the database (see main README.md)
 
 ## File Structure
 
@@ -352,6 +414,7 @@ demo_data/
 ├── config.py                  # Configuration settings
 ├── vietnam_data.py            # Vietnamese data sets
 ├── generate_sprint1_data.py   # Main generation script
+├── clean_demo_data.py         # Cleanup script (remove all demo data)
 ├── requirements.txt           # Python dependencies (none needed)
 └── README.md                  # This file
 ```
