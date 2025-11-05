@@ -83,20 +83,34 @@ class OdooDataCleaner:
         """Delete all quotations/sale orders"""
         print("\nCleaning Quotations/Sale Orders...")
 
-        # First delete order lines (dependent records)
-        line_ids = self.search_records('sale.order.line', [])
-        deleted_lines = self.delete_records('sale.order.line', line_ids)
-        print(f"  → Deleted {deleted_lines} order lines")
-
-        # Then delete orders
+        # Get all sale orders
         order_ids = self.search_records('sale.order', [])
-        deleted_orders = self.delete_records('sale.order', order_ids)
 
-        self.stats['sale.order.line'] = deleted_lines
-        self.stats['sale.order'] = deleted_orders
-        print(f"  → Deleted {deleted_orders} sale orders")
+        if order_ids:
+            # First, try to cancel confirmed orders by setting state
+            print(f"  → Cancelling {len(order_ids)} sale orders...")
+            try:
+                # Set state to 'cancel' for all orders
+                self.execute('sale.order', 'write', [order_ids, {'state': 'cancel'}])
+                print(f"  → Cancelled {len(order_ids)} orders")
+            except Exception as e:
+                print(f"  ⚠ Could not cancel all orders: {str(e)[:80]}")
+                # Try to delete draft orders only
+                draft_ids = self.search_records('sale.order', [('state', 'in', ['draft', 'cancel'])])
+                if draft_ids:
+                    order_ids = draft_ids
+                    print(f"  → Will delete {len(draft_ids)} draft/cancelled orders only")
 
-        return deleted_orders + deleted_lines
+            # Now delete the orders (this will cascade delete lines)
+            deleted_orders = self.delete_records('sale.order', order_ids)
+            self.stats['sale.order'] = deleted_orders
+            print(f"  → Deleted {deleted_orders} sale orders")
+
+            return deleted_orders
+        else:
+            self.stats['sale.order'] = 0
+            print(f"  → No sale orders to delete")
+            return 0
 
     def clean_products(self):
         """Delete all products (except system defaults)"""
@@ -211,8 +225,7 @@ class OdooDataCleaner:
 
         counts = {
             'Activities': self.count_records('mail.activity', []),
-            'Sale Order Lines': self.count_records('sale.order.line', []),
-            'Sale Orders': self.count_records('sale.order', []),
+            'Sale Orders (& lines)': self.count_records('sale.order', []),
             'Products (demo)': self.count_records('product.product', [('create_uid', '!=', 1)]),
             'Opportunities': self.count_records('crm.lead', [('type', '=', 'opportunity')]),
             'Leads': self.count_records('crm.lead', [('type', '=', 'lead')]),
