@@ -59,19 +59,41 @@
 
 **Yêu cầu chi tiết & Cách triển khai:**
 
-- **Thêm trường "Người chăm sóc lead" (Care Owner)**
+- **Người chăm sóc lead (Care Owner):**
+  - Thêm trường thông tin "Người chăm sóc lead" để quản lý lead khi chưa nhận dạng được lead này thuộc về khách hàng nào hoặc thuộc về Sales nào.
+  - **Quy trình xử lý**: Care Owner chăm sóc lead → Khi nhận dạng được khách hàng → Hệ thống tự động trả lead về cho Sales phụ trách khách hàng đó.
+  - Mục đích: Đảm bảo không có lead nào bị bỏ sót trong quá trình chờ nhận dạng.
 
-- **Tự động assign lead theo rule GOT IT**
+- **Tự động phân công lead theo rule GOT IT:**
+  - Hệ thống tự động phân bổ lead cho Sales dựa trên bộ rules có thể cấu hình, theo thứ tự ưu tiên:
+    1. **Nhóm ngành hàng** (Industry Group)
+    2. **Khu vực** (Region)
+    3. **Đối tượng khách hàng** (Customer Type)
+    4. **Giá trị order** (Order Value)
+  - Bộ rules này có thể thay đổi theo từng thời điểm khác nhau tùy thuộc vào chiến lược kinh doanh và cơ cấu tổ chức.
+  - Hệ thống cần hỗ trợ quản trị viên dễ dàng cập nhật và điều chỉnh rules phân bổ mà không cần can thiệp kỹ thuật.
 
-- **Kiểm tra trùng lead và cảnh báo**
+- **Phát hiện lead trùng lặp:**
+  - Hệ thống cảnh báo khi phát hiện lead trùng lặp với nhau hoặc trùng với thông tin khách hàng đã có sẵn trong database (DayOne).
+  - Kiểm tra dựa trên: MST, số điện thoại, email.
+  - Tích hợp với hệ thống phát hiện trùng lặp khách hàng để đảm bảo tính nhất quán.
 
-- **Thông báo khi nhận được lead được assign** (qua email, thông báo trong hệ thống).
+- **Thông báo khi được phân công lead:**
+  - Sales nhận được thông báo ngay lập tức khi có lead mới được assign cho mình.
+  - Các kênh thông báo: Email và thông báo trong hệ thống (in-app notification).
+  - Thông báo bao gồm thông tin tóm tắt về lead để Sales có thể nhanh chóng đánh giá và xử lý.
 
-- **Thay đổi Sales hàng loạt ở lead**.
+- **Thay đổi Sales hàng loạt cho lead:**
+  - Cho phép quản lý gán lại hàng loạt lead cho Sales khác khi có thay đổi về phân công công việc hoặc tái cấu trúc team.
+  - Ghi log đầy đủ lịch sử thay đổi để theo dõi và audit.
 
-- **Chuyển đổi dữ liệu cũ** vào hệ thống CRM.
+- **Chuyển đổi dữ liệu cũ vào hệ thống:**
+  - Import dữ liệu lead từ hệ thống cũ (Excel, database cũ) vào CRM mới.
+  - Đảm bảo mapping đúng các trường thông tin và lịch sử tương tác.
 
-- **Kết nối website → API tạo lead tự động** vào hệ thống CRM.
+- **Tích hợp API từ website:**
+  - Cung cấp API endpoint cho phép các website gọi và tạo lead tự động vào hệ thống CRM.
+  - API hỗ trợ nhận thông tin lead từ form đăng ký, landing page, và các nguồn digital marketing khác.
 
 ---
 
