@@ -123,6 +123,9 @@ sessions/
 *.sqlite
 *.sqlite3
 
+# MST API data
+mst-api-data/
+
 # Credentials
 CREDENTIALS.md
 scripts/config.py
