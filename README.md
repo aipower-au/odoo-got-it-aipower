@@ -4,6 +4,30 @@ Docker-based Odoo 18 CRM development environment with PostgreSQL, pgAdmin, and N
 
 ## Quick Start
 
+### Automated Setup (Recommended)
+
+Use the automated setup script for a one-command fresh installation:
+
+```bash
+# Interactive mode (asks for confirmation)
+./scripts/setup-odoo.sh
+
+# Skip confirmation (for automation)
+./scripts/setup-odoo.sh --yes
+
+# Verbose mode (see all output)
+./scripts/setup-odoo.sh -v
+```
+
+The script will:
+- Tear down existing containers and volumes
+- Start fresh containers
+- Initialize the database with base modules
+- Verify the setup
+- Display access URLs
+
+### Manual Quick Start
+
 ```bash
 # Start all services
 docker compose up -d
@@ -90,7 +114,17 @@ docker compose restart odoo
 
 ## Clean Start
 
-To reset and start fresh:
+### Automated Clean Start (Recommended)
+
+Use the setup script to completely reset and reinitialize:
+
+```bash
+./scripts/setup-odoo.sh --yes
+```
+
+### Manual Clean Start
+
+To reset and start fresh manually:
 
 ```bash
 # Stop and remove all containers and volumes
@@ -101,3 +135,11 @@ docker compose up -d
 
 # Wait for services to be ready, then follow Database Setup steps above
 ```
+
+## Useful Scripts
+
+- **`scripts/setup-odoo.sh`** - Automated environment setup (see [scripts/README.md](scripts/README.md) for details)
+
+## Troubleshooting
+
+For detailed troubleshooting and script options, see [scripts/README.md](scripts/README.md).

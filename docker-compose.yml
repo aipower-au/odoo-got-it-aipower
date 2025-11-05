@@ -16,7 +16,7 @@ services:
       - odoo-network
     restart: always
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-odoo}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-odoo} -d ${POSTGRES_DB:-gotit_odoo}"]
       interval: 10s
       timeout: 5s
       retries: 5
