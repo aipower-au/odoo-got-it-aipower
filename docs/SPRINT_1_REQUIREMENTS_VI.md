@@ -14,6 +14,12 @@
   - **Validation rule**: Cảnh báo real-time khi người dùng nhập dữ liệu mới có khả năng trùng lặp với khách hàng đã tồn tại trong hệ thống.
   - **Chức năng hợp nhất (Merge)**: Sau khi phát hiện trùng lặp, cho phép người dùng hợp nhất các bản ghi trùng lặp thành một bản ghi duy nhất, đồng thời giữ lại toàn bộ lịch sử giao dịch và thông tin quan trọng.
 
+- **Ràng buộc Sale phụ trách cho khách hàng trùng lặp:**
+  - Khi phát hiện các bản ghi khách hàng trùng lặp (dựa trên MST, SĐT, hoặc email), hệ thống phải đảm bảo tất cả các bản ghi trùng lặp được gán cho **cùng một Salesperson**.
+  - Mục đích: Tránh xung đột khi nhiều Sale cùng làm việc với một khách hàng thông qua các bản ghi khác nhau.
+  - Khi hợp nhất các bản ghi trùng lặp, hệ thống cần cung cấp quy trình để xác định Sale nào sẽ phụ trách bản ghi khách hàng sau khi hợp nhất (ưu tiên Sale có nhiều giao dịch nhất, Sale được gán gần đây nhất, hoặc do quản lý quyết định).
+  - Nếu phát hiện bản ghi trùng lặp thuộc về các Sale khác nhau, hệ thống cần cảnh báo và yêu cầu xử lý trước khi cho phép tạo/cập nhật.
+
 - **Phân công Salesperson tự động**
   - Nếu **khách hàng có MST**: tự động gán Sales theo **rule của GOT IT**.
   - Nếu **khách hàng chưa có MST**: gán cho **Telesale** để xác minh → sau khi xác minh → **Convert** sang Sale chính thức.
