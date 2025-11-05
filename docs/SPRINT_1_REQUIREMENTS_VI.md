@@ -9,19 +9,80 @@
 **Yêu cầu chi tiết & Cách triển khai:**
 
 - **Quản lý trùng lặp khách hàng và phân công Sale:**
-  - **Tiêu chí phát hiện trùng lặp:**
-    - Hệ thống kiểm tra trùng lặp dựa trên ba trường thông tin: **Mã số thuế (MST)**, **Số điện thoại**, và **Email**.
-    - Phát hiện trùng lặp xảy ra khi: (1) tạo mới hoặc cập nhật khách hàng, (2) sử dụng công cụ quét dữ liệu hiện có trong database.
-  - **Cơ chế phát hiện và cảnh báo:**
-    - **Validation real-time**: Cảnh báo ngay lập tức khi người dùng nhập thông tin trùng với khách hàng đã tồn tại.
-    - **Công cụ quét dữ liệu**: Cho phép quét toàn bộ database để phát hiện các bản ghi trùng lặp trong dữ liệu hiện có.
-    - Hiển thị thông tin bản ghi trùng lặp để người dùng đối chiếu và xác nhận.
-  - **Quy tắc phân công Sale:**
-    - Tất cả các bản ghi khách hàng trùng lặp phải được gán cho **cùng một Salesperson** để tránh xung đột khi nhiều Sale cùng làm việc với một khách hàng.
-    - Nếu phát hiện bản ghi trùng lặp thuộc về các Sale khác nhau, hệ thống cảnh báo và yêu cầu xử lý trước khi cho phép tạo/cập nhật.
-  - **Quy trình giải quyết trùng lặp:**
-    - **Chức năng hợp nhất (Merge)**: Cho phép hợp nhất các bản ghi trùng lặp thành một bản ghi duy nhất, đồng thời bảo toàn toàn bộ lịch sử giao dịch và thông tin quan trọng.
-    - **Xác định Sale phụ trách**: Hệ thống hỗ trợ xác định Sale nào sẽ phụ trách khách hàng sau hợp nhất dựa trên: Sale có nhiều giao dịch nhất, Sale được gán gần đây nhất, hoặc quyết định của quản lý.
+
+  **Business Context:**
+  Đảm bảo dữ liệu khách hàng sạch, tránh nhiều Sale cùng làm việc với một khách hàng, và duy trì lịch sử giao dịch đầy đủ.
+
+  **User Stories:**
+
+  **Story 1: Phát hiện trùng lặp khi tạo/cập nhật khách hàng**
+  - **Vai trò**: Sales/Admin
+  - **Mục đích**: Khi tạo hoặc cập nhật khách hàng, tôi muốn hệ thống cảnh báo ngay nếu thông tin trùng với khách hàng đã tồn tại, để tôi có thể xử lý trước khi lưu dữ liệu.
+
+  **Workflow:**
+  1. User nhập thông tin khách hàng (MST, SĐT, hoặc Email)
+  2. Hệ thống kiểm tra real-time khi user blur khỏi trường nhập
+  3. **NẾU** phát hiện trùng lặp:
+     - Hiển thị cảnh báo với thông tin khách hàng trùng lặp
+     - Hiển thị tên Sale đang phụ trách (nếu có)
+     - **NẾU** Sale khác nhau: Chặn lưu, yêu cầu xử lý trước
+     - **NẾU** cùng Sale hoặc chưa có Sale: Đưa ra tùy chọn: (a) Hợp nhất, (b) Tiếp tục tạo mới, (c) Hủy bỏ
+  4. **NẾU** không trùng lặp: Cho phép lưu bình thường
+
+  **Story 2: Quét và phát hiện trùng lặp trong dữ liệu hiện có**
+  - **Vai trò**: Admin
+  - **Mục đích**: Tôi muốn quét toàn bộ database để tìm các bản ghi khách hàng trùng lặp đã tồn tại, để có thể dọn dẹp dữ liệu hàng loạt.
+
+  **Workflow:**
+  1. Admin mở công cụ "Quét trùng lặp"
+  2. Admin chọn tiêu chí quét: MST / SĐT / Email / Tất cả
+  3. Hệ thống quét database và tạo báo cáo
+  4. Báo cáo hiển thị:
+     - Các nhóm bản ghi trùng lặp
+     - Số lượng trùng lặp trong mỗi nhóm
+     - Thông tin Sale phụ trách mỗi bản ghi
+     - Số lượng giao dịch của mỗi bản ghi
+  5. Admin xem chi tiết và quyết định hành động (xem Story 3)
+
+  **Story 3: Hợp nhất các bản ghi trùng lặp**
+  - **Vai trò**: Admin/Sales Manager
+  - **Mục đích**: Khi phát hiện trùng lặp, tôi muốn hợp nhất các bản ghi thành một, giữ lại đầy đủ lịch sử, và xác định Sale phụ trách hợp lý.
+
+  **Workflow:**
+  1. User chọn các bản ghi cần hợp nhất (từ danh sách trùng lặp)
+  2. Hệ thống hiển thị wizard hợp nhất:
+     - So sánh thông tin của các bản ghi
+     - Cho phép chọn thông tin nào giữ lại (master record)
+     - Hiển thị tổng số giao dịch, leads, opportunities sẽ được chuyển
+  3. **Xác định Sale phụ trách** (tự động đề xuất):
+     - **Ưu tiên 1**: Sale có nhiều giao dịch nhất với khách hàng này
+     - **Ưu tiên 2**: Sale được gán gần đây nhất
+     - **Ưu tiên 3**: Admin/Manager quyết định thủ công
+  4. User xác nhận hợp nhất
+  5. Hệ thống thực hiện:
+     - Chuyển tất cả leads, opportunities, orders, invoices sang bản ghi master
+     - Cập nhật Sale phụ trách
+     - Lưu log lịch sử hợp nhất
+     - Đánh dấu các bản ghi cũ là "Merged" (không xóa hoàn toàn)
+
+  **Acceptance Criteria:**
+  - ✓ **Cho Story 1**: Khi nhập MST/SĐT/Email trùng, hệ thống cảnh báo trong vòng 1 giây
+  - ✓ **Cho Story 1**: Nếu trùng lặp thuộc Sale khác, hệ thống chặn không cho lưu
+  - ✓ **Cho Story 2**: Công cụ quét có thể xử lý database > 100,000 khách hàng trong < 5 phút
+  - ✓ **Cho Story 2**: Báo cáo hiển thị đầy đủ thông tin để ra quyết định
+  - ✓ **Cho Story 3**: Sau hợp nhất, không mất bất kỳ giao dịch hoặc thông tin nào
+  - ✓ **Cho Story 3**: Có thể rollback (undo merge) trong vòng 24 giờ
+
+  **Business Rules:**
+  - **Tiêu chí trùng lặp**: MST HOẶC SĐT HOẶC Email giống nhau
+  - **Ràng buộc Sale**: Các bản ghi trùng lặp phải cùng 1 Sale (nếu đã có Sale)
+  - **Ưu tiên hợp nhất**: Master record = bản ghi có nhiều giao dịch nhất
+  - **Bảo toàn dữ liệu**: Không xóa cứng, chỉ đánh dấu "Merged"
+
+  **Edge Cases:**
+  - **Trường hợp 1**: MST giống nhau nhưng SĐT/Email khác → Vẫn coi là trùng (MST là unique identifier)
+  - **Trường hợp 2**: 3+ bản ghi trùng lặp → Hỗ trợ merge nhiều bản ghi cùng lúc
+  - **Trường hợp 3**: Trùng một phần thông tin (fuzzy match) → Đưa vào báo cáo "Có thể trùng" để review thủ công
 
 - **Phân công Salesperson tự động**
   - Nếu **khách hàng có MST**: tự động gán Sales theo **rule của GOT IT**.
