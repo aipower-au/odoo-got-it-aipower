@@ -28,9 +28,14 @@
   - Nếu **khách hàng chưa có MST**: gán cho **Telesale** để xác minh → sau khi xác minh → **Convert** sang Sale chính thức.
   - Cho phép thay đổi Sales hàng loạt đối với khách hàng khi cần. Khi có điều chỉnh nhân sự hoặc tái phân bổ khu vực, admin có thể chọn nhiều khách hàng và gán lại Sales phụ trách trong một lần thao tác. Hệ thống sẽ cập nhật đồng bộ các lead, cơ hội, và ghi log để theo dõi lịch sử thay đổi.
 
-- **Cập nhật thông tin khách hàng theo mã số thuế (MST)**
+- **Cập nhật thông tin khách hàng theo mã số thuế (MST):**
+  - Kết nối đến dịch vụ của third party để tự động lấy thông tin chi tiết của khách hàng dựa trên mã số thuế.
+  - Hệ thống tự động điền các thông tin như: tên doanh nghiệp, địa chỉ đăng ký, người đại diện pháp luật, ngành nghề kinh doanh, và các thông tin công khai khác.
 
-- **Chuyển trạng thái khách hàng tự động**
+- **Chuyển trạng thái khách hàng tự động:**
+  - Hệ thống quản lý ba trạng thái chính của khách hàng: **Potential** (tiềm năng), **Client** (khách hàng chính thức), và **Lost** (khách hàng mất).
+  - **Chuyển từ Potential → Client**: Tự động chuyển trạng thái khi hoàn tất tạo account trong hệ thống.
+  - **Trạng thái Lost**: Áp dụng cho khách hàng không còn hoạt động hoặc không còn quan tâm đến sản phẩm/dịch vụ. Hệ thống cần hỗ trợ đánh dấu và theo dõi lý do chuyển sang trạng thái này.
 
 - **Quản lý thông tin chi tiết khách hàng:**
   - Điều khoản thanh toán (Terms)
