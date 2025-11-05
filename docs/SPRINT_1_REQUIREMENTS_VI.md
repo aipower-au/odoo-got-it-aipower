@@ -8,17 +8,20 @@
 
 **Yêu cầu chi tiết & Cách triển khai:**
 
-- **Kiểm tra trùng lặp thông tin khách hàng:**
-  - Kiểm tra trùng **mã số thuế (MST)**, **số điện thoại**, và **email** khi tạo hoặc cập nhật khách hàng.
-  - **Quét dữ liệu hiện có**: Cung cấp chức năng quét toàn bộ database để phát hiện các bản ghi khách hàng trùng lặp dựa trên MST, SĐT, hoặc email.
-  - **Validation rule**: Cảnh báo real-time khi người dùng nhập dữ liệu mới có khả năng trùng lặp với khách hàng đã tồn tại trong hệ thống.
-  - **Chức năng hợp nhất (Merge)**: Sau khi phát hiện trùng lặp, cho phép người dùng hợp nhất các bản ghi trùng lặp thành một bản ghi duy nhất, đồng thời giữ lại toàn bộ lịch sử giao dịch và thông tin quan trọng.
-
-- **Ràng buộc Sale phụ trách cho khách hàng trùng lặp:**
-  - Khi phát hiện các bản ghi khách hàng trùng lặp (dựa trên MST, SĐT, hoặc email), hệ thống phải đảm bảo tất cả các bản ghi trùng lặp được gán cho **cùng một Salesperson**.
-  - Mục đích: Tránh xung đột khi nhiều Sale cùng làm việc với một khách hàng thông qua các bản ghi khác nhau.
-  - Khi hợp nhất các bản ghi trùng lặp, hệ thống cần cung cấp quy trình để xác định Sale nào sẽ phụ trách bản ghi khách hàng sau khi hợp nhất (ưu tiên Sale có nhiều giao dịch nhất, Sale được gán gần đây nhất, hoặc do quản lý quyết định).
-  - Nếu phát hiện bản ghi trùng lặp thuộc về các Sale khác nhau, hệ thống cần cảnh báo và yêu cầu xử lý trước khi cho phép tạo/cập nhật.
+- **Quản lý trùng lặp khách hàng và phân công Sale:**
+  - **Tiêu chí phát hiện trùng lặp:**
+    - Hệ thống kiểm tra trùng lặp dựa trên ba trường thông tin: **Mã số thuế (MST)**, **Số điện thoại**, và **Email**.
+    - Phát hiện trùng lặp xảy ra khi: (1) tạo mới hoặc cập nhật khách hàng, (2) sử dụng công cụ quét dữ liệu hiện có trong database.
+  - **Cơ chế phát hiện và cảnh báo:**
+    - **Validation real-time**: Cảnh báo ngay lập tức khi người dùng nhập thông tin trùng với khách hàng đã tồn tại.
+    - **Công cụ quét dữ liệu**: Cho phép quét toàn bộ database để phát hiện các bản ghi trùng lặp trong dữ liệu hiện có.
+    - Hiển thị thông tin bản ghi trùng lặp để người dùng đối chiếu và xác nhận.
+  - **Quy tắc phân công Sale:**
+    - Tất cả các bản ghi khách hàng trùng lặp phải được gán cho **cùng một Salesperson** để tránh xung đột khi nhiều Sale cùng làm việc với một khách hàng.
+    - Nếu phát hiện bản ghi trùng lặp thuộc về các Sale khác nhau, hệ thống cảnh báo và yêu cầu xử lý trước khi cho phép tạo/cập nhật.
+  - **Quy trình giải quyết trùng lặp:**
+    - **Chức năng hợp nhất (Merge)**: Cho phép hợp nhất các bản ghi trùng lặp thành một bản ghi duy nhất, đồng thời bảo toàn toàn bộ lịch sử giao dịch và thông tin quan trọng.
+    - **Xác định Sale phụ trách**: Hệ thống hỗ trợ xác định Sale nào sẽ phụ trách khách hàng sau hợp nhất dựa trên: Sale có nhiều giao dịch nhất, Sale được gán gần đây nhất, hoặc quyết định của quản lý.
 
 - **Phân công Salesperson tự động**
   - Nếu **khách hàng có MST**: tự động gán Sales theo **rule của GOT IT**.
