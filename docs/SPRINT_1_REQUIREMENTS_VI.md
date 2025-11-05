@@ -8,7 +8,11 @@
 
 **Yêu cầu chi tiết & Cách triển khai:**
 
-- **Kiểm tra trùng mã số thuế (MST)** khi tạo hoặc cập nhật khách hàng.
+- **Kiểm tra trùng lặp thông tin khách hàng:**
+  - Kiểm tra trùng **mã số thuế (MST)**, **số điện thoại**, và **email** khi tạo hoặc cập nhật khách hàng.
+  - **Quét dữ liệu hiện có**: Cung cấp chức năng quét toàn bộ database để phát hiện các bản ghi khách hàng trùng lặp dựa trên MST, SĐT, hoặc email.
+  - **Validation rule**: Cảnh báo real-time khi người dùng nhập dữ liệu mới có khả năng trùng lặp với khách hàng đã tồn tại trong hệ thống.
+  - **Chức năng hợp nhất (Merge)**: Sau khi phát hiện trùng lặp, cho phép người dùng hợp nhất các bản ghi trùng lặp thành một bản ghi duy nhất, đồng thời giữ lại toàn bộ lịch sử giao dịch và thông tin quan trọng.
 
 - **Phân công Salesperson tự động**
   - Nếu **khách hàng có MST**: tự động gán Sales theo **rule của GOT IT**.
