@@ -1,0 +1,6 @@
+# Python dependencies for Sprint 1 Demo Data Generator
+# The script uses xmlrpc.client which is part of Python standard library (3.x)
+# No additional packages required for basic functionality
+
+# Optional: For enhanced output and reporting
+# None required - script uses only Python standard library
