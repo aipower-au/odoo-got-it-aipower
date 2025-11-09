@@ -202,6 +202,9 @@ class CrmLead(models.Model):
             self.duplicate_customer_id = match_result['customer_id']
             self.duplicate_match_confidence = match_result['confidence']
 
+            # Detect conflicts with matched customer
+            conflicts = self._detect_conflicts(self.duplicate_customer_id)
+
             # Log the match
             processing_time = int((time.time() - start_time) * 1000)
             self.env['crm.lead.audit.log'].create({
@@ -214,6 +217,8 @@ class CrmLead(models.Model):
                     'confidence': match_result['confidence'],
                     'match_fields': match_result['match_fields'],
                     'match_reason': match_result['reason'],
+                    'conflicts_detected': conflicts if conflicts else None,
+                    'conflict_count': len(conflicts) if conflicts else 0,
                 }
             })
 
@@ -238,6 +243,175 @@ class CrmLead(models.Model):
             # Apply assignment rules for new customer
             self.apply_assignment_rules()
 
+    def _detect_conflicts(self, matched_customer):
+        """
+        Detect conflicts between lead data and matched customer data.
+        REQ: Customer Duplicate Detection - Detect Conflicting Customer Information
+
+        Args:
+            matched_customer: res.partner record
+
+        Returns:
+            list: List of dict with conflicting field information
+        """
+        self.ensure_one()
+        if not matched_customer:
+            return []
+
+        conflicts = []
+
+        # Compare company name (if MST matched)
+        if self.normalized_mst and matched_customer.vat == self.normalized_mst:
+            lead_company = (self.partner_name or '').strip().lower()
+            customer_company = (matched_customer.name or '').strip().lower()
+            if lead_company and customer_company and lead_company != customer_company:
+                conflicts.append({
+                    'field': 'company_name',
+                    'lead_value': self.partner_name,
+                    'customer_value': matched_customer.name,
+                    'severity': 'high',  # Same MST but different company name is significant
+                })
+
+        # Compare contact person name
+        lead_contact = (self.contact_name or '').strip().lower()
+        customer_contact = (matched_customer.contact_name or '').strip().lower()
+        if lead_contact and customer_contact and lead_contact != customer_contact:
+            conflicts.append({
+                'field': 'contact_name',
+                'lead_value': self.contact_name,
+                'customer_value': matched_customer.contact_name,
+                'severity': 'medium',
+            })
+
+        # Compare address fields
+        if self.street and matched_customer.street:
+            lead_street = self.street.strip().lower()
+            customer_street = matched_customer.street.strip().lower()
+            if lead_street != customer_street:
+                conflicts.append({
+                    'field': 'street',
+                    'lead_value': self.street,
+                    'customer_value': matched_customer.street,
+                    'severity': 'low',
+                })
+
+        # Compare city
+        if self.city and matched_customer.city:
+            lead_city = self.city.strip().lower()
+            customer_city = matched_customer.city.strip().lower()
+            if lead_city != customer_city:
+                conflicts.append({
+                    'field': 'city',
+                    'lead_value': self.city,
+                    'customer_value': matched_customer.city,
+                    'severity': 'low',
+                })
+
+        # Compare phone (if different from matched field)
+        if self.normalized_phone and matched_customer.phone:
+            if self.normalized_phone != self.env['crm.lead.normalizer'].normalize_phone(matched_customer.phone):
+                conflicts.append({
+                    'field': 'phone',
+                    'lead_value': self.phone or self.mobile,
+                    'customer_value': matched_customer.phone or matched_customer.mobile,
+                    'severity': 'medium',
+                })
+
+        return conflicts
+
+    def _validate_assignment(self, salesperson, customer=None):
+        """
+        Validate assignment to prevent conflicts.
+        REQ: Automated Sales Assignment - Handle Assignment Conflicts
+
+        Args:
+            salesperson: res.users record
+            customer: res.partner record (optional)
+
+        Returns:
+            dict: {'valid': bool, 'reason': str, 'conflicts': list}
+        """
+        self.ensure_one()
+
+        conflicts = []
+
+        # Check if lead is already assigned to a different salesperson
+        if self.user_id and self.user_id.id != salesperson.id:
+            conflicts.append({
+                'type': 'lead_already_assigned',
+                'current_owner': self.user_id.name,
+                'proposed_owner': salesperson.name,
+            })
+
+        # Check if customer has leads assigned to different salespeople
+        if customer:
+            conflicting_leads = self.env['crm.lead'].search([
+                ('partner_id', '=', customer.id),
+                ('user_id', '!=', False),
+                ('user_id', '!=', salesperson.id),
+                ('id', '!=', self.id),
+            ])
+            if conflicting_leads:
+                conflicts.append({
+                    'type': 'customer_has_different_sales',
+                    'customer_name': customer.name,
+                    'other_leads': conflicting_leads.ids,
+                    'other_sales': list(set(conflicting_leads.mapped('user_id.name'))),
+                })
+
+        return {
+            'valid': len(conflicts) == 0,
+            'reason': 'no_conflicts' if len(conflicts) == 0 else 'conflicts_detected',
+            'conflicts': conflicts,
+        }
+
+    def _handle_assignment_conflict(self, validation_result, customer):
+        """
+        Handle assignment conflict by logging and notifying manager.
+
+        Args:
+            validation_result: dict from _validate_assignment
+            customer: res.partner record
+        """
+        self.ensure_one()
+
+        # Mark as requiring manual assignment
+        self.assignment_method = 'manual'
+        self.assignment_reason = f'Assignment conflict detected for customer {customer.name}'
+
+        # Log the conflict
+        self.env['crm.lead.audit.log'].create({
+            'lead_id': self.id,
+            'customer_id': customer.id,
+            'operation_type': 'assignment',
+            'operation_result': 'conflict_detected',
+            'details': {
+                'method': 'conflict_prevention',
+                'validation_result': validation_result,
+                'conflicts': validation_result.get('conflicts', []),
+            }
+        })
+
+        # Notify sales manager
+        sales_managers = self.env['res.users'].search([
+            ('groups_id', 'in', self.env.ref('sales_team.group_sale_manager').id)
+        ])
+
+        activity_type = self.env.ref('gotit_crm_automation.mail_activity_type_manual_assignment', raise_if_not_found=False)
+        if not activity_type:
+            activity_type = self.env['mail.activity.type'].search([('name', '=', 'Manual Assignment Required')], limit=1)
+
+        if activity_type and sales_managers:
+            for manager in sales_managers[:1]:
+                self.activity_schedule(
+                    activity_type_id=activity_type.id,
+                    user_id=manager.id,
+                    summary=f'Assignment Conflict: {self.name}',
+                    note=f'Assignment conflict detected for customer {customer.name}. '
+                         f'Conflicts: {validation_result.get("reason")}. '
+                         f'Manual resolution required.',
+                )
+
     def _assign_to_existing_owner(self):
         """
         Assign lead to existing customer owner.
@@ -251,7 +425,14 @@ class CrmLead(models.Model):
         # Get salesperson from matched customer
         customer = self.duplicate_customer_id
         if customer.user_id:
-            # Customer has assigned salesperson
+            # Validate assignment to prevent conflicts
+            validation_result = self._validate_assignment(customer.user_id, customer)
+            if not validation_result['valid']:
+                # Assignment conflict detected - log and notify
+                self._handle_assignment_conflict(validation_result, customer)
+                return
+
+            # Customer has assigned salesperson - proceed with assignment
             self.user_id = customer.user_id
             self.team_id = customer.team_id if customer.team_id else self.team_id
             self.assignment_method = 'automatic'
