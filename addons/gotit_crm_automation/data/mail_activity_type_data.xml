@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Lead Assignment Activity Type -->
+        <record id="mail_activity_type_lead_assignment" model="mail.activity.type">
+            <field name="name">Lead Assignment</field>
+            <field name="summary">New Lead Assignment</field>
+            <field name="delay_count">0</field>
+            <field name="delay_unit">days</field>
+            <field name="delay_from">current_date</field>
+            <field name="icon">fa-user-plus</field>
+            <field name="res_model_id" ref="crm.model_crm_lead"/>
+        </record>
+
+        <!-- Manual Assignment Required Activity Type -->
+        <record id="mail_activity_type_manual_assignment" model="mail.activity.type">
+            <field name="name">Manual Assignment Required</field>
+            <field name="summary">Lead Requires Manual Assignment</field>
+            <field name="delay_count">0</field>
+            <field name="delay_unit">days</field>
+            <field name="delay_from">current_date</field>
+            <field name="icon">fa-hand-paper-o</field>
+            <field name="res_model_id" ref="crm.model_crm_lead"/>
+        </record>
+
+        <!-- Customer Verification Needed Activity Type -->
+        <record id="mail_activity_type_customer_verification" model="mail.activity.type">
+            <field name="name">Customer Verification Needed</field>
+            <field name="summary">Verify Customer Information</field>
+            <field name="delay_count">1</field>
+            <field name="delay_unit">days</field>
+            <field name="delay_from">current_date</field>
+            <field name="icon">fa-check-circle</field>
+            <field name="res_model_id" ref="crm.model_crm_lead"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Extend CRM Lead Form View -->
+    <record id="view_crm_lead_form_automation" model="ir.ui.view">
+        <field name="name">crm.lead.form.automation</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <!-- Add automation fields to extra info page -->
+            <xpath expr="//page[@name='extra']" position="after">
+                <page string="Automation" name="automation">
+                    <group>
+                        <group string="Validation">
+                            <field name="validation_status" widget="badge"/>
+                            <field name="normalized_phone" readonly="1"/>
+                            <field name="normalized_email" readonly="1"/>
+                            <field name="normalized_mst" readonly="1"/>
+                        </group>
+                        <group string="Duplicate Detection">
+                            <field name="duplicate_match_confidence" widget="badge"/>
+                            <field name="duplicate_customer_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Assignment">
+                            <field name="assignment_method" widget="badge"/>
+                            <field name="assignment_reason"/>
+                        </group>
+                        <group string="Verification">
+                            <field name="verification_status" widget="badge"/>
+                            <field name="verified_by"/>
+                            <field name="verification_date"/>
+                        </group>
+                    </group>
+
+                    <!-- Verification Actions -->
+                    <group string="Verification Actions" invisible="verification_status != 'pending'">
+                        <button name="action_confirm_customer_match"
+                                string="Confirm Match"
+                                type="object"
+                                class="btn-primary"
+                                invisible="not duplicate_customer_id"/>
+                        <button name="action_reject_match_create_new"
+                                string="Reject Match - Create New Customer"
+                                type="object"
+                                class="btn-warning"
+                                invisible="not duplicate_customer_id"/>
+                        <button name="action_create_new_customer"
+                                string="Create New Customer"
+                                type="object"
+                                class="btn-success"
+                                invisible="duplicate_customer_id"/>
+                    </group>
+                </page>
+            </xpath>
+
+            <!-- Add MST field to main form -->
+            <xpath expr="//field[@name='phone']" position="after">
+                <field name="vat" placeholder="e.g., 0123456789"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Add filters for validation and duplicate status -->
+    <record id="view_crm_lead_search_automation" model="ir.ui.view">
+        <field name="name">crm.lead.search.automation</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_leads_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='activities_my']" position="after">
+                <separator/>
+                <filter string="Complete Leads" name="validation_complete"
+                        domain="[('validation_status', '=', 'complete')]"/>
+                <filter string="Incomplete Leads" name="validation_incomplete"
+                        domain="[('validation_status', '=', 'incomplete')]"/>
+                <separator/>
+                <filter string="Duplicate Detected" name="has_duplicate"
+                        domain="[('duplicate_customer_id', '!=', False)]"/>
+                <filter string="New Customer" name="new_customer"
+                        domain="[('duplicate_match_confidence', '=', 'none')]"/>
+                <separator/>
+                <filter string="Pending Verification" name="pending_verification"
+                        domain="[('verification_status', '=', 'pending')]"/>
+            </xpath>
+            <xpath expr="//group[@name='group_by']" position="inside">
+                <filter string="Validation Status" name="group_validation"
+                        context="{'group_by': 'validation_status'}"/>
+                <filter string="Assignment Method" name="group_assignment"
+                        context="{'group_by': 'assignment_method'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

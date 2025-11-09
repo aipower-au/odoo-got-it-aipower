@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Assignment Rule Tree View -->
+    <record id="view_crm_assignment_rule_tree" model="ir.ui.view">
+        <field name="name">crm.assignment.rule.tree</field>
+        <field name="model">crm.assignment.rule</field>
+        <field name="arch" type="xml">
+            <tree string="Assignment Rules" decoration-muted="not active">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="condition_type"/>
+                <field name="condition_value"/>
+                <field name="assignment_method"/>
+                <field name="assign_to_user_id"/>
+                <field name="assign_to_team_id"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Assignment Rule Form View -->
+    <record id="view_crm_assignment_rule_form" model="ir.ui.view">
+        <field name="name">crm.assignment.rule.form</field>
+        <field name="model">crm.assignment.rule</field>
+        <field name="arch" type="xml">
+            <form string="Assignment Rule">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="active" invisible="1"/>
+                            <field name="name" placeholder="e.g., Technology Industry to Tech Team"/>
+                            <field name="sequence"/>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                    </group>
+                    <group string="Conditions">
+                        <group>
+                            <field name="condition_type"/>
+                            <field name="condition_value"
+                                   placeholder="e.g., Technology, Hanoi, Merchant"/>
+                        </group>
+                    </group>
+                    <group string="Assignment">
+                        <group>
+                            <field name="assignment_method"/>
+                            <field name="assign_to_user_id"
+                                   invisible="assignment_method != 'direct'"
+                                   required="assignment_method == 'direct'"/>
+                            <field name="assign_to_team_id"/>
+                        </group>
+                    </group>
+                    <group string="Help">
+                        <div class="alert alert-info" role="alert">
+                            <p><strong>Rule Evaluation:</strong></p>
+                            <ul>
+                                <li>Rules are evaluated in sequence order (lower numbers first)</li>
+                                <li>First matching rule wins</li>
+                                <li>If no rules match, manual assignment is triggered</li>
+                            </ul>
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Assignment Rule Search View -->
+    <record id="view_crm_assignment_rule_search" model="ir.ui.view">
+        <field name="name">crm.assignment.rule.search</field>
+        <field name="model">crm.assignment.rule</field>
+        <field name="arch" type="xml">
+            <search string="Assignment Rules">
+                <field name="name"/>
+                <field name="condition_type"/>
+                <field name="condition_value"/>
+                <field name="assign_to_user_id"/>
+                <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <group string="Group By">
+                    <filter string="Condition Type" name="group_condition_type"
+                            context="{'group_by': 'condition_type'}"/>
+                    <filter string="Assignment Method" name="group_assignment_method"
+                            context="{'group_by': 'assignment_method'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Assignment Rule Action -->
+    <record id="action_crm_assignment_rule" model="ir.actions.act_window">
+        <field name="name">Assignment Rules</field>
+        <field name="res_model">crm.assignment.rule</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first assignment rule
+            </p>
+            <p>
+                Assignment rules automatically route new leads to the appropriate salesperson based on configurable criteria.
+            </p>
+        </field>
+    </record>
+</odoo>

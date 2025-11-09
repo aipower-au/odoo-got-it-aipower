@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- CRM Automation Menu -->
+    <menuitem id="menu_crm_automation"
+              name="Automation"
+              parent="crm.crm_menu_config"
+              sequence="50"/>
+
+    <!-- Assignment Rules Menu -->
+    <menuitem id="menu_crm_assignment_rule"
+              name="Assignment Rules"
+              parent="menu_crm_automation"
+              action="action_crm_assignment_rule"
+              sequence="10"/>
+
+    <!-- Audit Logs Menu -->
+    <menuitem id="menu_crm_lead_audit_log"
+              name="Audit Logs"
+              parent="menu_crm_automation"
+              action="action_crm_lead_audit_log"
+              sequence="20"/>
+</odoo>
